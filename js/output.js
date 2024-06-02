@@ -20,11 +20,10 @@ function InitPage() {
     let eventDataClient = new XMLHttpRequest();
     eventDataClient.onerror = function (e) { console.log(this, e, "Error"); };
     eventDataClient.onloadend = DataLoaded;
-    eventDataClient.open("GET", localFile);
+    eventDataClient.open("GET", fileURL);
     eventDataClient.send();
 }
 function DataLoaded(e) {
-    console.log(this);
     let fileContent = this.responseText;
     let firstNewLine = fileContent.indexOf("\r\n");
     let header = fileContent.substring(0, firstNewLine);

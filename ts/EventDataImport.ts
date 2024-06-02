@@ -22,13 +22,11 @@ function InitPage(): void {
     let eventDataClient: XMLHttpRequest = new XMLHttpRequest();
     eventDataClient.onerror = function (this: XMLHttpRequest, e: ProgressEvent<EventTarget>) { console.log(this, e, "Error"); }
     eventDataClient.onloadend = DataLoaded;
-    eventDataClient.open("GET", localFile);
+    eventDataClient.open("GET", fileURL);
     eventDataClient.send();
 }
 
 function DataLoaded(this: XMLHttpRequest, e: ProgressEvent<EventTarget>) {
-    console.log(this);
-
     let fileContent: string = this.responseText;
     let firstNewLine: number = fileContent.indexOf("\r\n");
     let header: string = fileContent.substring(0, firstNewLine);
