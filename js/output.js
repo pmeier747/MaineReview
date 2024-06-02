@@ -120,15 +120,19 @@ function createTable(events) {
             continue;
         }
         let elem = document.createElement("div");
-        let titleText = document.createElement("p");
+        let titleText = document.createElement("h2");
         titleText.textContent = event.Title;
+        let dateText = document.createElement("h3");
+        dateText.textContent = event.ShowDate.toDateString() + " @" + event.StartTime?.getHours() + ":" + event.EndTime?.getMinutes();
+        let ticketLink = document.createElement("a");
+        ticketLink.textContent = "TICKETS";
+        ticketLink.href = event.TicketLink?.toString() ?? "";
         let descriptionText = document.createElement("p");
         descriptionText.innerHTML = event.FullDescription.replaceAll("\n", "<br/>");
-        let dateText = document.createElement("p");
-        dateText.textContent = event.ShowDate.toDateString();
         elem.append(titleText);
-        elem.append(descriptionText);
         elem.append(dateText);
+        elem.append(ticketLink);
+        elem.append(descriptionText);
         elem.append(document.createElement("hr"));
         eventsContainer.append(elem);
     }

@@ -137,16 +137,26 @@ function createTable(events: EventDetails[]): void {
         if (event.ShowEvent == false) { continue; }
 
         let elem: HTMLDivElement = document.createElement("div");
-        let titleText: HTMLParagraphElement = document.createElement("p");
+
+        let titleText: HTMLHeadingElement = document.createElement("h2");
         titleText.textContent = event.Title;
+
+        let dateText: HTMLHeadingElement = document.createElement("h3");
+        dateText.textContent = event.ShowDate.toDateString() + " @" + event.StartTime?.getHours() + ":" + event.EndTime?.getMinutes();
+
+        let ticketLink: HTMLAnchorElement = document.createElement("a");
+        ticketLink.textContent = "TICKETS";
+        ticketLink.href = event.TicketLink?.toString() ?? "";
+
         let descriptionText: HTMLParagraphElement = document.createElement("p");
         descriptionText.innerHTML = event.FullDescription.replaceAll("\n", "<br/>");
-        let dateText: HTMLParagraphElement = document.createElement("p");
-        dateText.textContent = event.ShowDate.toDateString();
+
         elem.append(titleText);
-        elem.append(descriptionText);
         elem.append(dateText);
+        elem.append(ticketLink);
+        elem.append(descriptionText);
         elem.append(document.createElement("hr"));
+
         eventsContainer.append(elem);
     }
     let elem: HTMLDivElement = document.createElement("div");
