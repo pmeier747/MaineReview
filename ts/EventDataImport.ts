@@ -1,4 +1,5 @@
 class EventDetails {
+    public ID: `${string}-${string}-${string}-${string}-${string}` = crypto.randomUUID();
     public ShowEvent: boolean = false;
     public Title: string = "";
     public ShortDescription: string = "";
@@ -114,7 +115,7 @@ function parseDate(dateString: string): Date {
     let month: number = parseInt(splitDates[1]);
     let year: number = parseInt(splitDates[2]);
 
-    return new Date(year, month, day);
+    return new Date(Date.UTC(year, month, day));
 }
 
 function parseTime(timeString: string, baseDate: Date): Date {
@@ -122,7 +123,7 @@ function parseTime(timeString: string, baseDate: Date): Date {
     let hour: number = parseInt(splitTimes[0]);
     let minute: number = parseInt(splitTimes[1]);
 
-    return new Date(baseDate.getFullYear(), baseDate.getMonth(), baseDate.getDay(), hour, minute);
+    return new Date(Date.UTC(baseDate.getFullYear(), baseDate.getMonth(), baseDate.getDay(), hour, minute));
 }
 
 function createTable(events: EventDetails[]): void {
@@ -135,29 +136,36 @@ function createTable(events: EventDetails[]): void {
     for (let i: number = 0; i < events.length; i++) {
         let event: EventDetails = events[i];
         if (event.ShowEvent == false) { continue; }
-
+        
         let elem: HTMLDivElement = document.createElement("div");
+        elem.id = event.ID;
+        elem.className = "eventElement"
 
-        let titleText: HTMLHeadingElement = document.createElement("h2");
-        titleText.textContent = event.Title;
-
-        let dateText: HTMLHeadingElement = document.createElement("h3");
-        dateText.textContent = event.ShowDate.toDateString() + " @" + event.StartTime?.getHours() + ":" + event.EndTime?.getMinutes();
-
-        let ticketLink: HTMLAnchorElement = document.createElement("a");
-        ticketLink.textContent = "TICKETS";
-        ticketLink.href = event.TicketLink?.toString() ?? "";
-
-        let descriptionText: HTMLParagraphElement = document.createElement("p");
-        descriptionText.innerHTML = event.FullDescription.replaceAll("\n", "<br/>");
-
-        elem.append(titleText);
-        elem.append(dateText);
-        elem.append(ticketLink);
-        elem.append(descriptionText);
-        elem.append(document.createElement("hr"));
-
+        addDivElement(elem, event.ID, "eventID");
+        addDivElement(elem, event.Title, "eventTitle");
+        addDivElement(elem, event.Town, "eventTown");
+        addDivElement(elem, event.Location, "eventLocation");
+        addDivElement(elem, event.ShortDescription.replaceAll("\n", "<br/>"), "eventShortDescription", true);
+        addDivElement(elem, event.FullDescription.replaceAll("\n", "<br/>"), "eventFullDescription", true);
+        addDivElement(elem, event.ShowDate.toLocaleDateString("en-GB"), "eventDate");
+        addDivElement(elem, event.StartTime?.toLocaleTimeString("en-GB", {timeStyle: "short"}) ?? "", "eventDoorTime");
+        addDivElement(elem, event.DoorTime?.toLocaleTimeString("en-GB", {timeStyle: "short"}) ?? "", "eventStartTime");
+        addDivElement(elem, event.EndTime?.toLocaleTimeString("en-GB", {timeStyle: "short"}) ?? "", "eventEndTime");
+        addDivElement(elem, event.TicketLink?.toString() ?? "", "eventURL");
+        
         eventsContainer.append(elem);
     }
     let elem: HTMLDivElement = document.createElement("div");
+}
+
+function addDivElement(element: HTMLElement, text: string, className: string, isHTML: boolean = true): void {
+    let divElement: HTMLDivElement = document.createElement("div");
+    if (isHTML) {
+        divElement.innerHTML = text;
+    }
+    else {
+        divElement.textContent = text;
+    }
+    divElement.className = className;
+    element.append(divElement);
 }

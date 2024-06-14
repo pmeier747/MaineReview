@@ -1,5 +1,6 @@
 "use strict";
 class EventDetails {
+    ID = crypto.randomUUID();
     ShowEvent = false;
     Title = "";
     ShortDescription = "";
@@ -100,13 +101,13 @@ function parseDate(dateString) {
     let day = parseInt(splitDates[0]);
     let month = parseInt(splitDates[1]);
     let year = parseInt(splitDates[2]);
-    return new Date(year, month, day);
+    return new Date(Date.UTC(year, month, day));
 }
 function parseTime(timeString, baseDate) {
     let splitTimes = timeString.split(":");
     let hour = parseInt(splitTimes[0]);
     let minute = parseInt(splitTimes[1]);
-    return new Date(baseDate.getFullYear(), baseDate.getMonth(), baseDate.getDay(), hour, minute);
+    return new Date(Date.UTC(baseDate.getFullYear(), baseDate.getMonth(), baseDate.getDay(), hour, minute));
 }
 function createTable(events) {
     let eventsContainer = document.getElementById("eventsContainer");
@@ -120,21 +121,31 @@ function createTable(events) {
             continue;
         }
         let elem = document.createElement("div");
-        let titleText = document.createElement("h2");
-        titleText.textContent = event.Title;
-        let dateText = document.createElement("h3");
-        dateText.textContent = event.ShowDate.toDateString() + " @" + event.StartTime?.getHours() + ":" + event.EndTime?.getMinutes();
-        let ticketLink = document.createElement("a");
-        ticketLink.textContent = "TICKETS";
-        ticketLink.href = event.TicketLink?.toString() ?? "";
-        let descriptionText = document.createElement("p");
-        descriptionText.innerHTML = event.FullDescription.replaceAll("\n", "<br/>");
-        elem.append(titleText);
-        elem.append(dateText);
-        elem.append(ticketLink);
-        elem.append(descriptionText);
-        elem.append(document.createElement("hr"));
+        elem.id = event.ID;
+        elem.className = "eventElement";
+        addDivElement(elem, event.ID, "eventID");
+        addDivElement(elem, event.Title, "eventTitle");
+        addDivElement(elem, event.Town, "eventTown");
+        addDivElement(elem, event.Location, "eventLocation");
+        addDivElement(elem, event.ShortDescription.replaceAll("\n", "<br/>"), "eventShortDescription", true);
+        addDivElement(elem, event.FullDescription.replaceAll("\n", "<br/>"), "eventFullDescription", true);
+        addDivElement(elem, event.ShowDate.toLocaleDateString("en-GB"), "eventDate");
+        addDivElement(elem, event.StartTime?.toLocaleTimeString("en-GB", { timeStyle: "short" }) ?? "", "eventDoorTime");
+        addDivElement(elem, event.DoorTime?.toLocaleTimeString("en-GB", { timeStyle: "short" }) ?? "", "eventStartTime");
+        addDivElement(elem, event.EndTime?.toLocaleTimeString("en-GB", { timeStyle: "short" }) ?? "", "eventEndTime");
+        addDivElement(elem, event.TicketLink?.toString() ?? "", "eventURL");
         eventsContainer.append(elem);
     }
     let elem = document.createElement("div");
+}
+function addDivElement(element, text, className, isHTML = true) {
+    let divElement = document.createElement("div");
+    if (isHTML) {
+        divElement.innerHTML = text;
+    }
+    else {
+        divElement.textContent = text;
+    }
+    divElement.className = className;
+    element.append(divElement);
 }

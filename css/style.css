@@ -1,0 +1,36 @@
+body,
+h1 {
+    margin: 0;
+}
+
+#eventsContainer {
+    background-color: lightcyan;
+    display: grid;
+}
+
+.eventElement {
+    border-width: 2px 0px;
+    border-style: solid;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+}
+
+.eventID {
+    display: none;
+}
+
+.eventTown {
+    display: none;
+}
+
+.eventFullDescription {
+    display: none;
+}
+
+.eventDoorTime {
+    display: none;
+}
+
+.eventEndTime {
+    display: none;
+}
