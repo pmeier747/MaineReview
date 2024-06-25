@@ -15,7 +15,7 @@ h1 {
     grid-template-columns: 2fr 1fr 1fr;
 }
 
-.eventID {
+/* .eventID {
     display: none;
 }
 
@@ -33,4 +33,4 @@ h1 {
 
 .eventEndTime {
     display: none;
-}
+} */
