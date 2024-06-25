@@ -134,11 +134,13 @@ function createTable(events) {
         addDivElement(elem, event.DoorTime?.toLocaleTimeString("en-GB", { timeStyle: "short" }) ?? "", "eventStartTime");
         addDivElement(elem, event.EndTime?.toLocaleTimeString("en-GB", { timeStyle: "short" }) ?? "", "eventEndTime");
         addDivElement(elem, event.TicketLink?.toString() ?? "", "eventURL");
+        addDivElement(elem, "More Info", "eventInfo");
+        // addDivElement(elem, "LOGO", "eventLogo");
         eventsContainer.append(elem);
     }
     let elem = document.createElement("div");
 }
-function addDivElement(element, text, className, isHTML = true) {
+function addDivElement(element, text, className, isHTML = false) {
     let divElement = document.createElement("div");
     if (isHTML) {
         divElement.innerHTML = text;

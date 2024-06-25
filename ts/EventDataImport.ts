@@ -152,13 +152,15 @@ function createTable(events: EventDetails[]): void {
         addDivElement(elem, event.DoorTime?.toLocaleTimeString("en-GB", {timeStyle: "short"}) ?? "", "eventStartTime");
         addDivElement(elem, event.EndTime?.toLocaleTimeString("en-GB", {timeStyle: "short"}) ?? "", "eventEndTime");
         addDivElement(elem, event.TicketLink?.toString() ?? "", "eventURL");
+        addDivElement(elem, "More Info", "eventInfo");
+        // addDivElement(elem, "LOGO", "eventLogo");
         
         eventsContainer.append(elem);
     }
     let elem: HTMLDivElement = document.createElement("div");
 }
 
-function addDivElement(element: HTMLElement, text: string, className: string, isHTML: boolean = true): void {
+function addDivElement(element: HTMLElement, text: string, className: string, isHTML: boolean = false): void {
     let divElement: HTMLDivElement = document.createElement("div");
     if (isHTML) {
         divElement.innerHTML = text;
