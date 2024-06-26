@@ -147,10 +147,10 @@ function createTable(events: EventDetails[]): void {
         addDivElement(elem, "📍" + event.Location, "eventLocation");
         addDivElement(elem, event.ShortDescription.replaceAll("\n", "<br/>"), "eventShortDescription", true);
         addDivElement(elem, event.FullDescription.replaceAll("\n", "<br/>"), "eventFullDescription", true);
-        addDivElement(elem, event.ShowDate.toLocaleDateString("en-GB", {day: "2-digit"}) + "<br/>" + event.ShowDate.toLocaleDateString("en-GB", { month: "short"}), "eventDate", true);
-        addDivElement(elem, "@" + event.StartTime?.toLocaleTimeString("en-GB", {timeStyle: "short"}) ?? "", "eventDoorTime");
-        addDivElement(elem, "@" + event.DoorTime?.toLocaleTimeString("en-GB", {timeStyle: "short"}) ?? "", "eventStartTime");
-        addDivElement(elem, "@" + event.EndTime?.toLocaleTimeString("en-GB", {timeStyle: "short"}) ?? "", "eventEndTime");
+        addDivElement(elem, event.ShowDate.toLocaleDateString("en-GB", {day: "2-digit"}) + "<br/>" + event.ShowDate.toLocaleDateString("en-GB", { month: "short"}).toLocaleUpperCase("en-GB"), "eventDate", true);
+        addDivElement(elem, event.StartTime?.toLocaleTimeString("en-GB", {timeStyle: "long"}) ?? "", "eventDoorTime");
+        addDivElement(elem, event.DoorTime?.toLocaleTimeString("en-GB", {hour: "numeric", minute: "2-digit", hour12: true}) ?? "", "eventStartTime");
+        addDivElement(elem, event.EndTime?.toLocaleTimeString("en-GB", {timeStyle: "short"}) ?? "", "eventEndTime");
         addDivElement(elem, event.TicketLink?.toString() ?? "", "eventURL");
         addDivElement(elem, "More Info", "eventInfo");
         // addDivElement(elem, "LOGO", "eventLogo");

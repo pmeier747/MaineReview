@@ -1,6 +1,12 @@
 body,
 h1 {
     margin: 0;
+    font-family: "DMSans";
+}
+
+@font-face {
+    font-family: "DMSans";
+    src: url("./../font/DMSans-VariableFont_opsz\,wght.ttf");
 }
 
 #eventsContainer {
@@ -9,29 +15,20 @@ h1 {
 
     
 
-    max-width: 1400px;
+    max-width: 1000px;
     margin: auto;
 }
 
 .eventElement {
-    /* background-color: lightgreen; */
-    /* background-image: url("./../img/logo.png"); */
     background-position: right top;
     background-repeat: no-repeat;
-    /* background-clip: border-box; */
-    /* background-; */
-    /* border-width: 1px 1px; */
-    /* margin: 5px 0px; */
-    /* border-style: solid; */
     display: grid;
-    /* width: 100%; */
-    /* grid-template-columns: 2fr 1fr 1fr; */
     grid-template-areas:
         "guid   guid    guid    guid    guid"
         "date   title   title   title   title"
         "date   sdesc   sdesc   sdesc   sdesc"
-        "date   time    town    loc     ."
-        "ticket ticket  ticket  info    info"
+        "date info  info  info    info"
+        "time time   town    loc   ticket "
     ;
     
     grid-template-rows:    auto auto 1fr auto auto;
@@ -67,8 +64,8 @@ h1 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bolder;
 
-    margin: 2px;
-    padding: 3px;
+    /* margin: 0px 2px; */
+    /* padding: 0px 3px; */
 }
 
 .eventShortDescription {
@@ -103,6 +100,8 @@ h1 {
 
 .eventURL {
     grid-area: ticket;
+    background-color: yellow;
+    font-weight: 900;
 }
 
 .eventInfo {
