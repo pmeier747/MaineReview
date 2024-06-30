@@ -24,7 +24,7 @@ h1 {
 }
 
 .eventElement {
-    background-color: darkmagenta;
+    background-color: white;
 
     background-position: right top;
     background-repeat: no-repeat;
@@ -47,7 +47,7 @@ h1 {
     ;
     
     grid-template-rows:    auto auto 1fr auto;
-    grid-template-columns: auto 1fr 1fr 1fr auto;
+    grid-template-columns: 100px 1fr 1fr 1fr auto;
 }
 
 .bigView {
@@ -68,24 +68,49 @@ h1 {
     font-size: 25px;
     font-weight: bold;
 
-    background-color: gold;
+    line-height: 100%;
+
+    border-bottom: 2px solid black;
 }
 
 .eventDate {
     grid-area: date;
 
-    background-color: aqua;
+    background-color: white;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
 
-    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bolder;
+    /* padding: 5px; */
+    border: 2px dashed black;
+    /* line-height: 100%; */
+}
 
-    /* margin: 0px 2px; */
-    /* padding: 0px 3px; */
+.eventMonth {
+    font-size: 26px;
+    letter-spacing: 0px;
+}
+
+.eventDay {
+    font-size: 34px;
+}
+
+.eventWeekday {
+    font-size: 24px;
+    letter-spacing: 0px;
+}
+
+.eventTime {
+    font-size: 20px;
+    background-color: black;
+    width: 100%;
+    color: white;
 }
 
 .eventShortDescription {

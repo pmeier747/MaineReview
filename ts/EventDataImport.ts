@@ -142,13 +142,17 @@ function createTable(events: EventDetails[]): void {
         elem.className = "eventElement"
         elem.classList.add("smallView");
 
+        elem.append(createShowDateElement(event));
+
+
+
         // addDivElement(elem, event.ID, "eventID");
         addDivElement(elem, event.Title, "eventTitle");
         addDivElement(elem, event.Town, "eventTown");
         addDivElement(elem, event.Location, "eventLocation");
         addDivElement(elem, event.ShortDescription.replaceAll("\n", "<br/>"), "eventShortDescription", true);
         addDivElement(elem, event.FullDescription.replaceAll("\n", "<br/>"), "eventFullDescription", true);
-        addDivElement(elem, event.ShowDate.toLocaleDateString("en-GB", {day: "2-digit"}) + "<br/>" + event.ShowDate.toLocaleDateString("en-GB", { month: "short"}).toLocaleUpperCase("en-GB"), "eventDate", true);
+        // addDivElement(elem, event.ShowDate.toLocaleDateString("en-GB", {day: "2-digit"}) + "<br/>" + event.ShowDate.toLocaleDateString("en-GB", { month: "short"}).toLocaleUpperCase("en-GB"), "eventDate", true);
         addDivElement(elem, event.StartTime?.toLocaleTimeString("en-GB", {hour: "2-digit", minute: "2-digit", hour12: true}) ?? "", "eventStartTime");
         addDivElement(elem, event.DoorTime?.toLocaleTimeString("en-GB", {hour: "numeric", minute: "2-digit", hour12: true}) ?? "", "eventDoorTime");
         addDivElement(elem, event.EndTime?.toLocaleTimeString("en-GB", {hour: "numeric", minute: "2-digit", hour12: true}) ?? "", "eventEndTime");
@@ -172,4 +176,32 @@ function addDivElement(element: HTMLElement, text: string, className: string, is
     }
     divElement.className = className;
     element.append(divElement);
+}
+
+function createShowDateElement(event: EventDetails) : HTMLDivElement
+{
+    let showElement: HTMLDivElement = document.createElement("div");
+    showElement.classList.add("eventDate")
+
+    let monthElement: HTMLDivElement = document.createElement("div");
+    monthElement.innerText = event.ShowDate.toLocaleDateString("en-Gb", {month: "short"}).toLocaleUpperCase();
+    monthElement.classList.add("eventMonth")
+    showElement.append(monthElement);
+
+    let dayElement: HTMLDivElement = document.createElement("div");
+    dayElement.innerText = event.ShowDate.toLocaleDateString("en-Gb", {day: "2-digit"}).toLocaleUpperCase();
+    dayElement.classList.add("eventDay")
+    showElement.append(dayElement);
+
+    let weekdayElement: HTMLDivElement = document.createElement("div");
+    weekdayElement.innerText = event.ShowDate.toLocaleDateString("en-Gb", {weekday: "short"}).toLocaleUpperCase();
+    weekdayElement.classList.add("eventWeekday")
+    showElement.append(weekdayElement);
+
+    let timeElement: HTMLDivElement = document.createElement("div");
+    timeElement.innerText = event.StartTime?.toLocaleTimeString("en-Gb", {hour: "2-digit", minute: "2-digit"}).toLocaleUpperCase() ?? "";
+    timeElement.classList.add("eventTime")
+    showElement.append(timeElement);
+
+    return showElement;
 }
