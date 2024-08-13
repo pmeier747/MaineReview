@@ -128,7 +128,8 @@ function parseTime(timeString: string, baseDate: Date): Date {
 
 function createTable(events: EventDetails[]): void {
     let eventsContainer: HTMLDivElement | null = document.getElementById("eventsContainer") as HTMLDivElement;
-    if (eventsContainer == null) {
+    let templateContainer: HTMLTemplateElement | null = document.getElementById("eventItemTemplate") as HTMLTemplateElement;
+    if (eventsContainer == null || templateContainer == null) {
         console.log("No container");
         return;
     }
@@ -136,8 +137,14 @@ function createTable(events: EventDetails[]): void {
     for (let i: number = 0; i < events.length; i++) {
         let event: EventDetails = events[i];
         if (event.ShowEvent == false) { continue; }
+
+        let copy: Node = templateContainer.content.cloneNode(true);
+        console.log(copy);
+        eventsContainer.append(copy);
         
         let elem: HTMLDivElement = document.createElement("div");
+
+        //document.createElement()
         elem.id = event.ID;
         elem.className = "eventElement"
         elem.classList.add("smallView");
@@ -148,7 +155,7 @@ function createTable(events: EventDetails[]): void {
         addDivElement(elem, event.Title, "eventTitle");
         addDivElement(elem, event.Town, "eventTown");
         addDivElement(elem, event.Location, "eventLocation");
-        addDivElement(elem, event.ShortDescription.replaceAll("\n", "<br/>"), "eventShortDescription", true);
+        addDivElement(elem, event.ShortDescription.replaceAll("\n", "<br//>"), "eventShortDescription", true);
         addDivElement(elem, event.FullDescription.replaceAll("\n", "<br/>"), "eventFullDescription", true);
         // addDivElement(elem, event.ShowDate.toLocaleDateString("en-GB", {day: "2-digit"}) + "<br/>" + event.ShowDate.toLocaleDateString("en-GB", { month: "short"}).toLocaleUpperCase("en-GB"), "eventDate", true);
         addDivElement(elem, event.StartTime?.toLocaleTimeString("en-GB", {hour: "2-digit", minute: "2-digit", hour12: true}) ?? "", "eventStartTime");
@@ -163,7 +170,6 @@ function createTable(events: EventDetails[]): void {
 
         eventsContainer.append(elem);
     }
-    let elem: HTMLDivElement = document.createElement("div");
 }
 
 function addDivElement(element: HTMLElement, text: string, className: string, isHTML: boolean = false): HTMLDivElement {

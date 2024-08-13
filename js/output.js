@@ -111,7 +111,8 @@ function parseTime(timeString, baseDate) {
 }
 function createTable(events) {
     let eventsContainer = document.getElementById("eventsContainer");
-    if (eventsContainer == null) {
+    let templateContainer = document.getElementById("eventItemTemplate");
+    if (eventsContainer == null || templateContainer == null) {
         console.log("No container");
         return;
     }
@@ -120,7 +121,11 @@ function createTable(events) {
         if (event.ShowEvent == false) {
             continue;
         }
+        let copy = templateContainer.content.cloneNode(true);
+        console.log(copy);
+        eventsContainer.append(copy);
         let elem = document.createElement("div");
+        //document.createElement()
         elem.id = event.ID;
         elem.className = "eventElement";
         elem.classList.add("smallView");
@@ -129,7 +134,7 @@ function createTable(events) {
         addDivElement(elem, event.Title, "eventTitle");
         addDivElement(elem, event.Town, "eventTown");
         addDivElement(elem, event.Location, "eventLocation");
-        addDivElement(elem, event.ShortDescription.replaceAll("\n", "<br/>"), "eventShortDescription", true);
+        addDivElement(elem, event.ShortDescription.replaceAll("\n", "<br//>"), "eventShortDescription", true);
         addDivElement(elem, event.FullDescription.replaceAll("\n", "<br/>"), "eventFullDescription", true);
         // addDivElement(elem, event.ShowDate.toLocaleDateString("en-GB", {day: "2-digit"}) + "<br/>" + event.ShowDate.toLocaleDateString("en-GB", { month: "short"}).toLocaleUpperCase("en-GB"), "eventDate", true);
         addDivElement(elem, event.StartTime?.toLocaleTimeString("en-GB", { hour: "2-digit", minute: "2-digit", hour12: true }) ?? "", "eventStartTime");
@@ -142,7 +147,6 @@ function createTable(events) {
         moreInfo.addEventListener("click", changeViewElement);
         eventsContainer.append(elem);
     }
-    let elem = document.createElement("div");
 }
 function addDivElement(element, text, className, isHTML = false) {
     let divElement = document.createElement("div");
