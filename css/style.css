@@ -54,12 +54,14 @@ h1 {
     display: grid;
 
     grid-template-areas:
-        "date   title   ticket"
-        "town loc sdesc"
-        "info info info"
+        "date   title   title   title   ticket"
+        "date   town loc loc ."
+        "date   bdesc   bdesc   bdesc   bdesc"
+        "date info  info  info    info"
     ;
-    grid-template-rows:    1fr 1fr 1fr;
-    grid-template-columns:  1fr 1fr 1fr;
+    
+    grid-template-rows:    auto auto 1fr auto;
+    grid-template-columns: 100px 1fr 1fr 1fr auto;
 }
 
 .eventTitle {
@@ -89,7 +91,7 @@ h1 {
     font-weight: bolder;
     /* padding: 5px; */
     border: 2px dashed black;
-    /* line-height: 100%; */
+    line-height: 27px;
 }
 
 .eventMonth {
@@ -119,6 +121,19 @@ h1 {
     /* display: none; */
 }
 
+.bigView > .eventShortDescription {
+    display: none;
+}
+
+.eventFullDescription {
+    background-color: lightseagreen;
+    grid-area: bdesc;
+}
+
+.smallView > .eventFullDescription {
+    display: none;
+}
+
 .eventTown {
     background-color: yellowgreen;
     grid-area: town;
@@ -127,11 +142,6 @@ h1 {
 .eventLocation {
     background-color: coral;
     grid-area: loc;
-}
-
-.eventFullDescription {
-    /* grid-area: sdesc; */
-    display: none;
 }
 
 .eventStartTime {
