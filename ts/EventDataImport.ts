@@ -144,8 +144,6 @@ function createTable(events: EventDetails[]): void {
 
         elem.append(createShowDateElement(event));
 
-
-
         // addDivElement(elem, event.ID, "eventID");
         addDivElement(elem, event.Title, "eventTitle");
         addDivElement(elem, event.Town, "eventTown");
@@ -158,15 +156,17 @@ function createTable(events: EventDetails[]): void {
         addDivElement(elem, event.EndTime?.toLocaleTimeString("en-GB", {hour: "numeric", minute: "2-digit", hour12: true}) ?? "", "eventEndTime");
         // addDivElement(elem, event.TicketLink?.toString() ?? "", "eventURL");
         addDivElement(elem, "TICKETS", "eventURL");
-        addDivElement(elem, "More Info", "eventInfo");
+        let moreInfo: HTMLDivElement = addDivElement(elem, "More Info", "eventInfo");
         // addDivElement(elem, "LOGO", "eventLogo");
         
+        moreInfo.addEventListener("click", changeViewElement);
+
         eventsContainer.append(elem);
     }
     let elem: HTMLDivElement = document.createElement("div");
 }
 
-function addDivElement(element: HTMLElement, text: string, className: string, isHTML: boolean = false): void {
+function addDivElement(element: HTMLElement, text: string, className: string, isHTML: boolean = false): HTMLDivElement {
     let divElement: HTMLDivElement = document.createElement("div");
     if (isHTML) {
         divElement.innerHTML = text;
@@ -176,6 +176,8 @@ function addDivElement(element: HTMLElement, text: string, className: string, is
     }
     divElement.className = className;
     element.append(divElement);
+
+    return divElement;
 }
 
 function createShowDateElement(event: EventDetails) : HTMLDivElement
@@ -204,4 +206,17 @@ function createShowDateElement(event: EventDetails) : HTMLDivElement
     showElement.append(timeElement);
 
     return showElement;
+}
+
+function changeViewElement(this: HTMLDivElement, event: MouseEvent) : void {
+    let parentElement: Element | null = this.closest(".eventElement");
+    if (parentElement == null) { return; }
+
+    let isSmallView: boolean = parentElement.classList.contains("smallView")
+    if (isSmallView) {
+        parentElement.classList.replace("smallView", "bigView");
+    }
+    else {
+        parentElement.classList.replace("bigView", "smallView");
+    }
 }

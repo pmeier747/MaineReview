@@ -137,8 +137,9 @@ function createTable(events) {
         addDivElement(elem, event.EndTime?.toLocaleTimeString("en-GB", { hour: "numeric", minute: "2-digit", hour12: true }) ?? "", "eventEndTime");
         // addDivElement(elem, event.TicketLink?.toString() ?? "", "eventURL");
         addDivElement(elem, "TICKETS", "eventURL");
-        addDivElement(elem, "More Info", "eventInfo");
+        let moreInfo = addDivElement(elem, "More Info", "eventInfo");
         // addDivElement(elem, "LOGO", "eventLogo");
+        moreInfo.addEventListener("click", changeViewElement);
         eventsContainer.append(elem);
     }
     let elem = document.createElement("div");
@@ -153,6 +154,7 @@ function addDivElement(element, text, className, isHTML = false) {
     }
     divElement.className = className;
     element.append(divElement);
+    return divElement;
 }
 function createShowDateElement(event) {
     let showElement = document.createElement("div");
@@ -174,4 +176,17 @@ function createShowDateElement(event) {
     timeElement.classList.add("eventTime");
     showElement.append(timeElement);
     return showElement;
+}
+function changeViewElement(event) {
+    let parentElement = this.closest(".eventElement");
+    if (parentElement == null) {
+        return;
+    }
+    let isSmallView = parentElement.classList.contains("smallView");
+    if (isSmallView) {
+        parentElement.classList.replace("smallView", "bigView");
+    }
+    else {
+        parentElement.classList.replace("bigView", "smallView");
+    }
 }
