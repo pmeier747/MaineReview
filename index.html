@@ -18,24 +18,29 @@
 </body>
 
 <template id="eventItemTemplate">
-    <div id="1a9bf9d3-6778-4346-a920-88a33eb79911" class="eventElement smallView">
-        <div class="eventDate">
-            <div class="eventMonth">{{{Month}}}</div>
-            <div class="eventDay">{{{Day}}}</div>
-            <div class="eventWeekday">{{{Weekday}}}</div>
-            <div class="eventTime">{{{StartTime}}}</div>
+    <div class="eventItem">
+        <div>
+            <div class="eventDateContainer">
+                <div class="eventDateMonth">{{{Month}}}</div>
+                <div class="eventDateDay">{{{Day}}}</div>
+                <div class="eventDateWeekday">{{{Weekday}}}</div>
+                <div class="eventDateTime">{{{StartTime}}}</div>
+            </div>
         </div>
 
-        <div class="eventTitle">{{{Title}}}</div>
-        <div class="eventTown">{{{Town}}}</div>
-        <div class="eventLocation">{{{Location}}}</div>
-        <div class="eventShortDescription">{{{ShortDescription}}}</div>
-        <div class="eventFullDescription">{{{FullDescription}}}</div>
-        <div class="eventStartTime">{{{StartTime}}}</div>
-        <div class="eventDoorTime">{{{DoorTime}}}</div>
-        <div class="eventEndTime">{{{EndTime}}}</div>
-        <div class="eventURL">TICKETS</div>
-        <div class="eventInfo">More Info</div>
+        <div class="eventContent">
+            <div class="eventTitle">{{{Title}}}</div>
+
+            <div>{{{Town}}}</div>
+            <div>{{{Location}}}</div>
+            <div>{{{ShortDescription}}}</div>
+            <!-- <div>{{{FullDescription}}}</div> -->
+            <div>More Info</div>
+        </div>
+
+        <div>
+            <div class="eventTicketContainer">Tickets</div>
+        </div>
     </div>
 </template>
 

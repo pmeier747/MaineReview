@@ -1,170 +1,98 @@
-body,
-h1 {
-    margin: 0;
-    font-family: "DMSans";
-}
-
-h1 {
-    font-size: 50px;
-    width: 100%;
-    text-align: center;
-}
-
 @font-face {
     font-family: "DMSans";
     src: url("./../font/DMSans-VariableFont_opsz\,wght.ttf");
 }
 
-#eventsContainer {
-    background-color: lightcyan;
-    /* display: grid; */
-
-    max-width: 1000px;
-    margin: auto;
+body, h1 {
+    margin: 0;
 }
 
-.eventElement {
-    background-color: white;
-
-    background-position: right top;
-    background-repeat: no-repeat;
-
-    gap: 5px;
-
-    padding: 4px;
-    margin: 10px;
-    box-shadow: 0px 0px 5px black;
-}
-
-.smallView {
-    display: grid;
-
-    grid-template-areas:
-        "date   title   title   title   ticket"
-        "date   town loc loc ."
-        "date   sdesc   sdesc   sdesc   sdesc"
-        "date info  info  info    info"
-    ;
-    
-    grid-template-rows:    auto auto 1fr auto;
-    grid-template-columns: 100px 1fr 1fr 1fr auto;
-}
-
-.bigView {
-    display: grid;
-
-    grid-template-areas:
-        "date   title   title   title   ticket"
-        "date   town loc loc ."
-        "date   bdesc   bdesc   bdesc   bdesc"
-        "date info  info  info    info"
-    ;
-    
-    grid-template-rows:    auto auto 1fr auto;
-    grid-template-columns: 100px 1fr 1fr 1fr auto;
-}
-
-.eventTitle {
-    grid-area: title;
-
-    font-size: 25px;
-    font-weight: bold;
-
-    line-height: 100%;
-
-    border-bottom: 2px solid black;
-}
-
-.eventDate {
-    grid-area: date;
-
-    background-color: white;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+body {
+    font-family: "DMSans";
 
     display: flex;
     flex-direction: column;
+}
 
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: bolder;
-    /* padding: 5px; */
+h1 {
+    font-size: 350%;
+    text-align: center;
+}
+
+#eventsContainer {
+    max-width: 800px;
+    margin: auto;
+}
+
+.eventItem {
+    /* background-color: red; */
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 0px 0px 5px #777777;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.eventDateContainer {
     border: 2px dashed black;
-    line-height: 27px;
+    text-align: center;
 }
 
-.eventMonth {
-    font-size: 26px;
-    letter-spacing: 0px;
+.eventDateContainer > div {
+    font-weight: 800;
+    line-height: 90%;
+    text-wrap: nowrap;
+    padding: 0px 2px;
 }
 
-.eventDay {
-    font-size: 34px;
+.eventDateMonth {
+    font-size: 175%;
 }
 
-.eventWeekday {
-    font-size: 24px;
-    letter-spacing: 0px;
+.eventDateDay {
+    font-size: 200%;
 }
 
-.eventTime {
-    font-size: 20px;
+.eventDateWeekday {
+    font-size: 175%;
+}
+
+div.eventDateTime {
+    font-size: 125%;
     background-color: black;
-    width: 100%;
     color: white;
+    padding: 3px 2px;
 }
 
-.eventShortDescription {
-    background-color: lightseagreen;
-    grid-area: sdesc;
-    /* display: none; */
+.eventTitle {
+    padding: 0px 5px;
+    line-height: 100%;
+    font-weight: 800;
+    font-size: 200%;
+    border-bottom: 5px solid black;
+    border-right: 5px solid black;
 }
 
-.bigView > .eventShortDescription {
-    display: none;
+.eventTicketContainer {
+    background-color: black;
+    color: white;
+
+    font-size: 125%;
+    font-weight: 800;
+    line-height: 90%;
+    text-transform: uppercase;
+    text-align: center;
+    border-right: 5px solid black;
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
 }
 
-.eventFullDescription {
-    background-color: lightseagreen;
-    grid-area: bdesc;
+.eventTicketContainer:hover {
+    background-color: white;
+    color: black;
 }
 
-.smallView > .eventFullDescription {
-    display: none;
-}
-
-.eventTown {
-    background-color: yellowgreen;
-    grid-area: town;
-}
-
-.eventLocation {
-    background-color: coral;
-    grid-area: loc;
-}
-
-.eventStartTime {
-    background-color: cornflowerblue;
-    grid-area: time;
-    display: none;
-}
-
-.eventDoorTime {
-    display: none;
-}
-
-.eventEndTime {
-    display: none;
-}
-
-.eventURL {
-    grid-area: ticket;
-    background-color: yellow;
-    font-weight: 900;
-}
-
-.eventInfo {
-    background-color: darkolivegreen;
-    grid-area: info;
+.eventContent {
+    flex: 1 1 auto;
 }
