@@ -20,23 +20,20 @@
 <template id="eventItemTemplate">
     <div id="1a9bf9d3-6778-4346-a920-88a33eb79911" class="eventElement smallView">
         <div class="eventDate">
-            <div class="eventMonth">JUN</div>
-            <div class="eventDay">02</div>
-            <div class="eventWeekday">SUN</div>
-            <div class="eventTime">19:00</div>
+            <div class="eventMonth">{{{Month}}}</div>
+            <div class="eventDay">{{{Day}}}</div>
+            <div class="eventWeekday">{{{Weekday}}}</div>
+            <div class="eventTime">{{{StartTime}}}</div>
         </div>
 
-        <div class="eventTitle">Sunday Night Improv</div>
-        <div class="eventTown">Belfast</div>
-        <div class="eventLocation">Laverys</div>
-        <div class="eventShortDescription">Sunday Night Improv Comedy feat. Purgatory</div>
-        <div class="eventFullDescription">
-            "Sunday night improv features the best and brightest of Belfast's comedy improvisers and actors creating comedy sketches from audience prompts. The scenes have never been seen before and are never repeated meaning each show is unique.
-            <br><br>Ensemble: Purgatory<br>Ensemble: Damn Lovely"
-        </div>
-        <div class="eventStartTime">07:00 pm</div>
-        <div class="eventDoorTime">6:45 pm</div>
-        <div class="eventEndTime">8:30 pm</div>
+        <div class="eventTitle">{{{Title}}}</div>
+        <div class="eventTown">{{{Town}}}</div>
+        <div class="eventLocation">{{{Location}}}</div>
+        <div class="eventShortDescription">{{{ShortDescription}}}</div>
+        <div class="eventFullDescription">{{{FullDescription}}}</div>
+        <div class="eventStartTime">{{{StartTime}}}</div>
+        <div class="eventDoorTime">{{{DoorTime}}}</div>
+        <div class="eventEndTime">{{{EndTime}}}</div>
         <div class="eventURL">TICKETS</div>
         <div class="eventInfo">More Info</div>
     </div>

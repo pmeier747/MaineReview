@@ -13,6 +13,11 @@ class EventDetails {
     EndTime = null;
     TicketLink = null;
 }
+class EventProperties {
+    Key = "";
+    Value = "";
+    IsHTML_Component = false;
+}
 document.addEventListener("DOMContentLoaded", InitPage);
 function InitPage() {
     let excelLocationCSV = new URL("https://docs.google.com/spreadsheets/d/e/2PACX-1vRBjp_krL1yLMOpXHTfLsBMqD85ivI_aguisYMGJAk4ctP2fn2bSHobbjbZ3TEi2qs7BaxwaHuIQnEG/pub?output=csv");
@@ -122,30 +127,52 @@ function createTable(events) {
             continue;
         }
         let copy = templateContainer.content.cloneNode(true);
-        console.log(copy);
+        let eventProperies = [
+            { IsHTML_Component: false, Key: "{{{ID}}}", Value: event.ID },
+            { IsHTML_Component: false, Key: "{{{Title}}}", Value: event.Title },
+            { IsHTML_Component: false, Key: "{{{Town}}}", Value: event.Town },
+            { IsHTML_Component: false, Key: "{{{Location}}}", Value: event.Location },
+            { IsHTML_Component: true, Key: "{{{ShortDescription}}}", Value: event.ShortDescription.replaceAll("\n", "<br//>") },
+            { IsHTML_Component: true, Key: "{{{FullDescription}}}", Value: event.FullDescription.replaceAll("\n", "<br//>") },
+            { IsHTML_Component: false, Key: "{{{StartTime}}}", Value: event.StartTime?.toLocaleTimeString("en-GB", { hour: "2-digit", minute: "2-digit", hour12: true }) ?? "" },
+            { IsHTML_Component: false, Key: "{{{DoorTime}}}", Value: event.DoorTime?.toLocaleTimeString("en-GB", { hour: "2-digit", minute: "2-digit", hour12: true }) ?? "" },
+            { IsHTML_Component: false, Key: "{{{EndTime}}}", Value: event.EndTime?.toLocaleTimeString("en-GB", { hour: "2-digit", minute: "2-digit", hour12: true }) ?? "" },
+            { IsHTML_Component: false, Key: "{{{Month}}}", Value: event.ShowDate.toLocaleDateString("en-Gb", { month: "short" }).toLocaleUpperCase() },
+            { IsHTML_Component: false, Key: "{{{Day}}}", Value: event.ShowDate.toLocaleDateString("en-Gb", { day: "2-digit" }).toLocaleUpperCase() },
+            { IsHTML_Component: false, Key: "{{{Weekday}}}", Value: event.ShowDate.toLocaleDateString("en-Gb", { weekday: "short" }).toLocaleUpperCase() },
+        ];
+        setupTemplate(copy, eventProperies);
         eventsContainer.append(copy);
-        let elem = document.createElement("div");
-        //document.createElement()
-        elem.id = event.ID;
-        elem.className = "eventElement";
-        elem.classList.add("smallView");
-        elem.append(createShowDateElement(event));
-        // addDivElement(elem, event.ID, "eventID");
-        addDivElement(elem, event.Title, "eventTitle");
-        addDivElement(elem, event.Town, "eventTown");
-        addDivElement(elem, event.Location, "eventLocation");
-        addDivElement(elem, event.ShortDescription.replaceAll("\n", "<br//>"), "eventShortDescription", true);
-        addDivElement(elem, event.FullDescription.replaceAll("\n", "<br/>"), "eventFullDescription", true);
-        // addDivElement(elem, event.ShowDate.toLocaleDateString("en-GB", {day: "2-digit"}) + "<br/>" + event.ShowDate.toLocaleDateString("en-GB", { month: "short"}).toLocaleUpperCase("en-GB"), "eventDate", true);
-        addDivElement(elem, event.StartTime?.toLocaleTimeString("en-GB", { hour: "2-digit", minute: "2-digit", hour12: true }) ?? "", "eventStartTime");
-        addDivElement(elem, event.DoorTime?.toLocaleTimeString("en-GB", { hour: "numeric", minute: "2-digit", hour12: true }) ?? "", "eventDoorTime");
-        addDivElement(elem, event.EndTime?.toLocaleTimeString("en-GB", { hour: "numeric", minute: "2-digit", hour12: true }) ?? "", "eventEndTime");
-        // addDivElement(elem, event.TicketLink?.toString() ?? "", "eventURL");
-        addDivElement(elem, "TICKETS", "eventURL");
-        let moreInfo = addDivElement(elem, "More Info", "eventInfo");
-        // addDivElement(elem, "LOGO", "eventLogo");
-        moreInfo.addEventListener("click", changeViewElement);
-        eventsContainer.append(elem);
+        // let moreInfo: HTMLDivElement = addDivElement(elem, "More Info", "eventInfo");
+        // moreInfo.addEventListener("click", changeViewElement);
+        // eventsContainer.append(elem);
+    }
+}
+function setupTemplate(node, eventProperies) {
+    for (let i = 0; i < node.childNodes.length; i++) {
+        let textNode = node.childNodes[i];
+        setupTemplate(textNode, eventProperies);
+        if (textNode.nodeType != Node.TEXT_NODE) {
+            continue;
+        }
+        if (textNode.nodeValue == null) {
+            continue;
+        }
+        for (let j = 0; j < eventProperies.length; j++) {
+            if (textNode.nodeValue.indexOf(eventProperies[j].Key) == -1) {
+                continue;
+            }
+            if (eventProperies[j].IsHTML_Component) {
+                let newElement = document.createElement("div");
+                newElement.innerHTML = eventProperies[j].Value;
+                if (textNode.parentElement != null) {
+                    textNode.parentElement.innerHTML = eventProperies[j].Value;
+                }
+            }
+            else {
+                textNode.nodeValue = textNode.nodeValue?.replace(eventProperies[j].Key, eventProperies[j].Value);
+            }
+        }
     }
 }
 function addDivElement(element, text, className, isHTML = false) {
