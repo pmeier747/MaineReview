@@ -104,6 +104,20 @@ div.eventDateTime {
     cursor: pointer;
 }
 
+.eventTicketLink {
+    background-color: black;
+    color: white;
+
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.eventTicketLink:hover {
+    background-color: rgb(53, 53, 53);
+    cursor: pointer;
+}
+
 .eventContent {
     flex: 1 1 auto;
 }

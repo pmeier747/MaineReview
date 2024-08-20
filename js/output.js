@@ -141,14 +141,16 @@ function createTable(events) {
             { IsHTML_Component: false, Key: "{{{Day}}}", Value: event.ShowDate.toLocaleDateString("en-Gb", { day: "2-digit" }).toLocaleUpperCase() },
             { IsHTML_Component: false, Key: "{{{Weekday}}}", Value: event.ShowDate.toLocaleDateString("en-Gb", { weekday: "short" }).toLocaleUpperCase() },
         ];
-        setupTemplate(copy, eventProperies);
+        setupTemplateValues(copy, eventProperies);
+        setupTemplateInfoButton(copy);
+        setupTemplateTicketLink(copy, event.TicketLink?.href ?? "");
         eventsContainer.append(copy);
     }
 }
-function setupTemplate(node, eventProperies) {
+function setupTemplateValues(node, eventProperies) {
     for (let i = 0; i < node.childNodes.length; i++) {
         let textNode = node.childNodes[i];
-        setupTemplate(textNode, eventProperies);
+        setupTemplateValues(textNode, eventProperies);
         if (textNode.nodeType != Node.TEXT_NODE) {
             continue;
         }
@@ -172,49 +174,46 @@ function setupTemplate(node, eventProperies) {
         }
     }
 }
-function addDivElement(element, text, className, isHTML = false) {
-    let divElement = document.createElement("div");
-    if (isHTML) {
-        divElement.innerHTML = text;
+function setupTemplateInfoButton(node) {
+    for (let i = 0; i < node.childNodes.length; i++) {
+        let elementNode = node.childNodes[i];
+        setupTemplateInfoButton(elementNode);
+        if (elementNode.nodeType != Node.ELEMENT_NODE) {
+            continue;
+        }
+        let element = elementNode;
+        if (!element.classList.contains("eventToggleInformation")) {
+            continue;
+        }
+        element.addEventListener("click", changeViewElement);
     }
-    else {
-        divElement.textContent = text;
-    }
-    divElement.className = className;
-    element.append(divElement);
-    return divElement;
 }
-function createShowDateElement(event) {
-    let showElement = document.createElement("div");
-    showElement.classList.add("eventDate");
-    let monthElement = document.createElement("div");
-    monthElement.innerText = event.ShowDate.toLocaleDateString("en-Gb", { month: "short" }).toLocaleUpperCase();
-    monthElement.classList.add("eventMonth");
-    showElement.append(monthElement);
-    let dayElement = document.createElement("div");
-    dayElement.innerText = event.ShowDate.toLocaleDateString("en-Gb", { day: "2-digit" }).toLocaleUpperCase();
-    dayElement.classList.add("eventDay");
-    showElement.append(dayElement);
-    let weekdayElement = document.createElement("div");
-    weekdayElement.innerText = event.ShowDate.toLocaleDateString("en-Gb", { weekday: "short" }).toLocaleUpperCase();
-    weekdayElement.classList.add("eventWeekday");
-    showElement.append(weekdayElement);
-    let timeElement = document.createElement("div");
-    timeElement.innerText = event.StartTime?.toLocaleTimeString("en-Gb", { hour: "2-digit", minute: "2-digit" }).toLocaleUpperCase() ?? "";
-    timeElement.classList.add("eventTime");
-    showElement.append(timeElement);
-    return showElement;
+function setupTemplateTicketLink(node, url) {
+    for (let i = 0; i < node.childNodes.length; i++) {
+        let elementNode = node.childNodes[i];
+        setupTemplateTicketLink(elementNode, url);
+        if (elementNode.nodeType != Node.ELEMENT_NODE) {
+            continue;
+        }
+        let element = elementNode;
+        if (!element.classList.contains("eventTicketLink")) {
+            continue;
+        }
+        element.href = url;
+    }
 }
 function changeViewElement(event) {
-    let parentElement = this.closest(".eventElement");
+    let parentElement = this.closest(".eventItem");
     if (parentElement == null) {
         return;
     }
-    let isSmallView = parentElement.classList.contains("smallView");
+    let isSmallView = parentElement.classList.contains("eventShort");
     if (isSmallView) {
-        parentElement.classList.replace("smallView", "bigView");
+        parentElement.classList.replace("eventShort", "eventFull");
+        this.innerText = "▲▲▲ Less Information ▲▲▲";
     }
     else {
-        parentElement.classList.replace("bigView", "smallView");
+        parentElement.classList.replace("eventFull", "eventShort");
+        this.innerText = "▼▼▼ More Information ▼▼▼";
     }
 }

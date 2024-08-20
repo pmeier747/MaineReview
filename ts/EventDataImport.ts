@@ -161,16 +161,18 @@ function createTable(events: EventDetails[]): void {
             { IsHTML_Component: false, Key: "{{{Weekday}}}", Value: event.ShowDate.toLocaleDateString("en-Gb", {weekday: "short"}).toLocaleUpperCase() },
         ];
 
-        setupTemplate(copy, eventProperies);
+        setupTemplateValues(copy, eventProperies);
+        setupTemplateInfoButton(copy);
+        setupTemplateTicketLink(copy, event.TicketLink?.href ?? "")
 
         eventsContainer.append(copy);
     }
 }
 
-function setupTemplate(node: Node, eventProperies: EventProperties[]): void {
+function setupTemplateValues(node: Node, eventProperies: EventProperties[]): void {
     for (let i: number = 0; i < node.childNodes.length; i++) {
         let textNode: Node = node.childNodes[i];
-        setupTemplate(textNode, eventProperies);
+        setupTemplateValues(textNode, eventProperies);
 
         if (textNode.nodeType != Node.TEXT_NODE) { continue; }
         if (textNode.nodeValue == null) { continue; }
@@ -192,57 +194,43 @@ function setupTemplate(node: Node, eventProperies: EventProperties[]): void {
     }
 }
 
-function addDivElement(element: HTMLElement, text: string, className: string, isHTML: boolean = false): HTMLDivElement {
-    let divElement: HTMLDivElement = document.createElement("div");
-    if (isHTML) {
-        divElement.innerHTML = text;
-    }
-    else {
-        divElement.textContent = text;
-    }
-    divElement.className = className;
-    element.append(divElement);
+function setupTemplateInfoButton(node: Node): void {
+    for (let i: number = 0; i < node.childNodes.length; i++) {
+        let elementNode: Node = node.childNodes[i];
+        setupTemplateInfoButton(elementNode);
 
-    return divElement;
+        if (elementNode.nodeType != Node.ELEMENT_NODE) { continue; }
+        let element: HTMLElement = elementNode as HTMLElement;
+        if (!element.classList.contains("eventToggleInformation")) { continue; }
+
+        element.addEventListener("click", changeViewElement);
+    }
 }
 
-function createShowDateElement(event: EventDetails) : HTMLDivElement
-{
-    let showElement: HTMLDivElement = document.createElement("div");
-    showElement.classList.add("eventDate")
+function setupTemplateTicketLink(node: Node, url: string): void {
+    for (let i: number = 0; i < node.childNodes.length; i++) {
+        let elementNode: Node = node.childNodes[i];
+        setupTemplateTicketLink(elementNode, url);
 
-    let monthElement: HTMLDivElement = document.createElement("div");
-    monthElement.innerText = event.ShowDate.toLocaleDateString("en-Gb", {month: "short"}).toLocaleUpperCase();
-    monthElement.classList.add("eventMonth")
-    showElement.append(monthElement);
+        if (elementNode.nodeType != Node.ELEMENT_NODE) { continue; }
+        let element: HTMLAnchorElement = elementNode as HTMLAnchorElement;
+        if (!element.classList.contains("eventTicketLink")) { continue; }
 
-    let dayElement: HTMLDivElement = document.createElement("div");
-    dayElement.innerText = event.ShowDate.toLocaleDateString("en-Gb", {day: "2-digit"}).toLocaleUpperCase();
-    dayElement.classList.add("eventDay")
-    showElement.append(dayElement);
-
-    let weekdayElement: HTMLDivElement = document.createElement("div");
-    weekdayElement.innerText = event.ShowDate.toLocaleDateString("en-Gb", {weekday: "short"}).toLocaleUpperCase();
-    weekdayElement.classList.add("eventWeekday")
-    showElement.append(weekdayElement);
-
-    let timeElement: HTMLDivElement = document.createElement("div");
-    timeElement.innerText = event.StartTime?.toLocaleTimeString("en-Gb", {hour: "2-digit", minute: "2-digit"}).toLocaleUpperCase() ?? "";
-    timeElement.classList.add("eventTime")
-    showElement.append(timeElement);
-
-    return showElement;
+        element.href = url;
+    }
 }
 
-function changeViewElement(this: HTMLDivElement, event: MouseEvent) : void {
-    let parentElement: Element | null = this.closest(".eventElement");
+function changeViewElement(this: HTMLElement, event: MouseEvent) : void {
+    let parentElement: Element | null = this.closest(".eventItem");
     if (parentElement == null) { return; }
 
-    let isSmallView: boolean = parentElement.classList.contains("smallView")
+    let isSmallView: boolean = parentElement.classList.contains("eventShort")
     if (isSmallView) {
-        parentElement.classList.replace("smallView", "bigView");
+        parentElement.classList.replace("eventShort", "eventFull");
+        this.innerText = "▲▲▲ Less Information ▲▲▲";
     }
     else {
-        parentElement.classList.replace("bigView", "smallView");
+        parentElement.classList.replace("eventFull", "eventShort");
+        this.innerText = "▼▼▼ More Information ▼▼▼";
     }
 }
