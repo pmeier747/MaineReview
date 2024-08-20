@@ -3,6 +3,7 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Ireland Improv Events</title>
 
     <link rel="icon" href="data:;base64,iVBORw0KGgo=">
@@ -18,28 +19,55 @@
 </body>
 
 <template id="eventItemTemplate">
-    <div class="eventItem">
-        <div>
-            <div class="eventDateContainer">
-                <div class="eventDateMonth">{{{Month}}}</div>
-                <div class="eventDateDay">{{{Day}}}</div>
-                <div class="eventDateWeekday">{{{Weekday}}}</div>
-                <div class="eventDateTime">{{{StartTime}}}</div>
+    <div class="eventItem eventShort">
+        <div class="eventInfo">
+            <div>
+                <div class="eventDateContainer">
+                    <div class="eventDateMonth">{{{Month}}}</div>
+                    <div class="eventDateDay">{{{Day}}}</div>
+                    <div class="eventDateWeekday">{{{Weekday}}}</div>
+                    <div class="eventDateTime">{{{StartTime}}}</div>
+                </div>
+
+                <div class="eventTicketContainer">
+                    <a href="google" class="eventTicketContainer">Tickets</a>
+                </div>
+
+                <div class="timeDetails">
+                    <div class="timeTag">
+                        <img src="./img/icons/door.svg" />
+                        <span>{{{DoorTime}}}</span>
+                    </div>
+
+                    <div class="timeTag">
+                        <img src="./img/icons/duration.svg" />
+                        <span>{{{EndTime}}}</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="eventContent">
+                <div class="eventTitle">{{{Title}}}</div>
+
+                <div class="eventTags">
+                    <div class="eventTag">
+                        <img src="./img/icons/town.svg" />
+                        <span>{{{Town}}}</span>
+                    </div>
+
+                    <div class="eventTag">
+                        <img src="./img/icons/pin.svg" />
+                        <span>{{{Location}}}</span>
+                    </div>
+                </div>
+
+                <div class="eventShortDesc">{{{ShortDescription}}}</div>
+                <div class="eventFullDesc">{{{FullDescription}}}</div>
             </div>
         </div>
 
-        <div class="eventContent">
-            <div class="eventTitle">{{{Title}}}</div>
-
-            <div>{{{Town}}}</div>
-            <div>{{{Location}}}</div>
-            <div>{{{ShortDescription}}}</div>
-            <!-- <div>{{{FullDescription}}}</div> -->
-            <div>More Info</div>
-        </div>
-
-        <div>
-            <div class="eventTicketContainer">Tickets</div>
+        <div class="eventToggleInformation">
+            ▼▼▼ More Information ▼▼▼
         </div>
     </div>
 </template>
