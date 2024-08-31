@@ -19,6 +19,8 @@ class EventProperties {
     public IsHTML_Component: boolean = false;
 }
 
+let events: Map<string, EventDetails> = new Map();
+
 document.addEventListener("DOMContentLoaded", InitPage);
 
 function InitPage(): void {
@@ -112,7 +114,17 @@ function DataLoaded(this: XMLHttpRequest, e: ProgressEvent<EventTarget>) {
         allEvent.push(eventItem);
     }
 
+    allEvent = allEvent
+        .filter((a) => { return a.ShowEvent; })
+        .filter((a) => { return a.ShowDate > new Date(); })
+        .sort((a, b) => { return a.ShowDate.valueOf() - b.ShowDate.valueOf();});
+
     createTable(allEvent);
+    setupLocationDropdown(allEvent);
+
+    for (let i = 0; i < allEvent.length; i++) {
+        events.set(allEvent[i].ID, allEvent[i]);
+    }
 }
 
 function parseDate(dateString: string): Date {
@@ -142,7 +154,6 @@ function createTable(events: EventDetails[]): void {
 
     for (let i: number = 0; i < events.length; i++) {
         let event: EventDetails = events[i];
-        if (event.ShowEvent == false) { continue; }
 
         let copy: Node = templateContainer.content.cloneNode(true);
 
@@ -163,9 +174,45 @@ function createTable(events: EventDetails[]): void {
 
         setupTemplateValues(copy, eventProperies);
         setupTemplateInfoButton(copy);
-        setupTemplateTicketLink(copy, event.TicketLink?.href ?? "")
+        setupTemplateTicketLink(copy, event.TicketLink?.href ?? "");
+        setupTemplateID(copy, event.ID);
 
         eventsContainer.append(copy);
+    }
+}
+
+function setupLocationDropdown(events: EventDetails[]): void {
+    let element : HTMLElement | null = document.getElementById("eventLocationSelector");
+    if (element == null) { return; }
+
+    let dropdownElement : HTMLSelectElement = element as HTMLSelectElement;
+    let allTowns: Set<string> = new Set(events.map((a) => a.Town).sort());
+    allTowns.forEach(
+        (town: string) => {
+            let option: HTMLOptionElement = document.createElement("option");
+            option.text = town;
+            option.value = town;
+            dropdownElement.options.add(option);
+        }
+    );
+
+    dropdownElement.addEventListener("change", onLocationSelected)
+}
+
+function onLocationSelected(this: HTMLSelectElement, ev: Event): void {
+    let eventItems: HTMLCollectionOf<Element> = document.getElementsByClassName("eventItem");
+
+    for (let i = 0; i < eventItems.length; i++) {
+        let event: EventDetails | undefined = events.get(eventItems[i].id);
+        if (event == undefined) { continue; }
+
+        let isVisible: boolean = event.Town == this.value || this.value == "";
+        if (isVisible) {
+            eventItems[i].classList.remove("eventHidden");
+        }
+        else {
+            eventItems[i].classList.add("eventHidden");
+        }
     }
 }
 
@@ -191,6 +238,14 @@ function setupTemplateValues(node: Node, eventProperies: EventProperties[]): voi
                 textNode.nodeValue = textNode.nodeValue?.replace(eventProperies[j].Key, eventProperies[j].Value);
             }
         }
+    }
+}
+
+function setupTemplateID(node: Node, id: string) {
+    for (let i = 0; i < node.childNodes.length; i++) {
+        if (node.childNodes[i].nodeType != Node.ELEMENT_NODE) { continue; }
+        
+        (node.childNodes[i] as HTMLElement).id = id;
     }
 }
 

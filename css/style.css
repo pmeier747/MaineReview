@@ -16,9 +16,28 @@ h1 {
     text-align: center;
 }
 
-#eventsContainer {
+.eventBody {
     max-width: 800px;
     margin: auto;
+}
+
+.eventItem.eventHidden {
+    display: none;
+    visibility: hidden;
+}
+
+.eventLocationSection {
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+
+    display: flex;
+    flex: 0 1;
+}
+
+#eventLocationSelector {
+    width: 100%;
+    margin-left: 10px;
 }
 
 .eventItem {

@@ -18,6 +18,7 @@ class EventProperties {
     Value = "";
     IsHTML_Component = false;
 }
+let events = new Map();
 document.addEventListener("DOMContentLoaded", InitPage);
 function InitPage() {
     let excelLocationCSV = new URL("https://docs.google.com/spreadsheets/d/e/2PACX-1vRBjp_krL1yLMOpXHTfLsBMqD85ivI_aguisYMGJAk4ctP2fn2bSHobbjbZ3TEi2qs7BaxwaHuIQnEG/pub?output=csv");
@@ -99,7 +100,15 @@ function DataLoaded(e) {
         }
         allEvent.push(eventItem);
     }
+    allEvent = allEvent
+        .filter((a) => { return a.ShowEvent; })
+        .filter((a) => { return a.ShowDate > new Date(); })
+        .sort((a, b) => { return a.ShowDate.valueOf() - b.ShowDate.valueOf(); });
     createTable(allEvent);
+    setupLocationDropdown(allEvent);
+    for (let i = 0; i < allEvent.length; i++) {
+        events.set(allEvent[i].ID, allEvent[i]);
+    }
 }
 function parseDate(dateString) {
     let splitDates = dateString.split("/");
@@ -123,9 +132,6 @@ function createTable(events) {
     }
     for (let i = 0; i < events.length; i++) {
         let event = events[i];
-        if (event.ShowEvent == false) {
-            continue;
-        }
         let copy = templateContainer.content.cloneNode(true);
         let eventProperies = [
             { IsHTML_Component: false, Key: "{{{ID}}}", Value: event.ID },
@@ -144,7 +150,39 @@ function createTable(events) {
         setupTemplateValues(copy, eventProperies);
         setupTemplateInfoButton(copy);
         setupTemplateTicketLink(copy, event.TicketLink?.href ?? "");
+        setupTemplateID(copy, event.ID);
         eventsContainer.append(copy);
+    }
+}
+function setupLocationDropdown(events) {
+    let element = document.getElementById("eventLocationSelector");
+    if (element == null) {
+        return;
+    }
+    let dropdownElement = element;
+    let allTowns = new Set(events.map((a) => a.Town).sort());
+    allTowns.forEach((town) => {
+        let option = document.createElement("option");
+        option.text = town;
+        option.value = town;
+        dropdownElement.options.add(option);
+    });
+    dropdownElement.addEventListener("change", onLocationSelected);
+}
+function onLocationSelected(ev) {
+    let eventItems = document.getElementsByClassName("eventItem");
+    for (let i = 0; i < eventItems.length; i++) {
+        let event = events.get(eventItems[i].id);
+        if (event == undefined) {
+            continue;
+        }
+        let isVisible = event.Town == this.value || this.value == "";
+        if (isVisible) {
+            eventItems[i].classList.remove("eventHidden");
+        }
+        else {
+            eventItems[i].classList.add("eventHidden");
+        }
     }
 }
 function setupTemplateValues(node, eventProperies) {
@@ -172,6 +210,14 @@ function setupTemplateValues(node, eventProperies) {
                 textNode.nodeValue = textNode.nodeValue?.replace(eventProperies[j].Key, eventProperies[j].Value);
             }
         }
+    }
+}
+function setupTemplateID(node, id) {
+    for (let i = 0; i < node.childNodes.length; i++) {
+        if (node.childNodes[i].nodeType != Node.ELEMENT_NODE) {
+            continue;
+        }
+        node.childNodes[i].id = id;
     }
 }
 function setupTemplateInfoButton(node) {
