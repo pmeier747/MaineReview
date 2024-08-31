@@ -116,7 +116,7 @@ function DataLoaded(this: XMLHttpRequest, e: ProgressEvent<EventTarget>) {
 
     allEvent = allEvent
         .filter((a) => { return a.ShowEvent; })
-        .filter((a) => { return a.ShowDate > new Date(); })
+        .filter((a) => { return a.ShowDate.valueOf() > Date.now() - 24 * 60 * 60 * 1000; })
         .sort((a, b) => { return a.ShowDate.valueOf() - b.ShowDate.valueOf();});
 
     createTable(allEvent);
