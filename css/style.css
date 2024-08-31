@@ -12,7 +12,7 @@ body {
 }
 
 h1 {
-    font-size: 350%;
+    font-size: 300%;
     text-align: center;
 }
 
@@ -27,6 +27,9 @@ h1 {
 }
 
 .eventLocationSection {
+    position: sticky;
+    top: 0px;
+
     background-color: black;
     color: white;
     padding: 5px 10px;
