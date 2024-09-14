@@ -35,64 +35,80 @@ function InitPage(): void {
     eventDataClient.send();
 }
 
-function DataLoaded(this: XMLHttpRequest, e: ProgressEvent<EventTarget>) {
-    let fileContent: string = this.responseText;
-    let firstNewLine: number = fileContent.indexOf("\r\n");
-    let header: string = fileContent.substring(0, firstNewLine);
+function ParseCsvFile(text: string): string[][] {
+    let inQuotes: boolean = false;
+    let textLines: string[][] = [];
+    textLines.push([]);
+    let lineCount: number = 1;
 
-    let headerItems: string[] = header.split(",");
+    let itemStartIndex = 0;
 
-    let body: string = fileContent.substring(firstNewLine + 2);
-    let bodyItems: string[] = body.split("\r\n");
+    for (let i: number = 0; i < text.length; i++) {
+        let char: string = text[i];
+        let nextChar: string | undefined = text[i + 1]
 
-    let formattedBodyItems: string[][] = [];
-    for (let i: number = 0; i < bodyItems.length; i++) {
-        let individualItems: string[] = bodyItems[i].split(",");
-        let finalItems: string[] = [];
-        let itemToAdd: string = "";
-        let inSubString: boolean = false;
-        for (let j = 0; j < individualItems.length; j++) {
-            let currentItem: string = individualItems[j];
-            if (!inSubString) {
-                itemToAdd = currentItem;
-            }
-            else {
-                itemToAdd += currentItem;
-                if (currentItem.charAt(currentItem.length - 1) == "\"") {
-                    inSubString = false;
-                }
-                else {
-                    continue;
-                }
-            }
-
-            if (currentItem.charAt(0) == "\"") {
-                inSubString = true;
-                continue;
-            }
-
-            finalItems.push(itemToAdd);
-            itemToAdd = "";
-            inSubString = false;
+        if (char == '"' && nextChar == '"') {
+            i++;
         }
-        formattedBodyItems.push(finalItems);
+        else if (char == ',' && !inQuotes) {
+            textLines[textLines.length - 1].push(text.substring(itemStartIndex, i));
+            itemStartIndex = i+1;
+        }
+        else if (char == '"') {
+            inQuotes = !inQuotes;
+        }
+        else if(char == '\r' && nextChar == '\n' && !inQuotes) {
+            lineCount++;
+            textLines[textLines.length - 1].push(text.substring(itemStartIndex, i));
+            textLines.push([]);
+            itemStartIndex = i+1;
+            i++;
+        }
+        else if((char == '\r' || char == '\n') && !inQuotes) {
+            lineCount++;
+            textLines[textLines.length - 1].push(text.substring(itemStartIndex, i));
+            textLines.push([]);
+            itemStartIndex = i+1;
+        }
     }
 
-    let showEventIndex: number = headerItems.indexOf("Show Event");
-    let titleIndex: number = headerItems.indexOf("Title");
-    let shortDescriptionIndex: number = headerItems.indexOf("Short Description");
-    let fullDescriptionIndex: number = headerItems.indexOf("Full Description");
-    let townIndex: number = headerItems.indexOf("Town");
-    let locationIndex: number = headerItems.indexOf("Location");
-    let dateIndex: number = headerItems.indexOf("Date");
-    let doorTimeIndex: number = headerItems.indexOf("Door Time");
-    let startTimeIndex: number = headerItems.indexOf("Start Time");
-    let endTimeIndex: number = headerItems.indexOf("End Time");
-    let ticketLinkIndex: number = headerItems.indexOf("Ticket Link");
+    textLines[textLines.length - 1].push(text.substring(itemStartIndex));
+
+    for (let i: number = 0; i < textLines.length; i++) {
+        for (let j: number = 0; j < textLines[i].length; j++) {
+            let item: string = textLines[i][j].trim();
+            let hasLineFeed: boolean = item.indexOf("\r") != -1;
+            let hadNewLine: boolean = item.indexOf("\n") != -1;
+
+            if (hadNewLine || hadNewLine) {
+                item = item.substring(1, item.length - 1);
+            }
+            textLines[i][j] = item.replaceAll('""', '"');
+        }
+    }
+
+    return textLines;
+}
+
+function DataLoaded(this: XMLHttpRequest, e: ProgressEvent<EventTarget>) {
+    let fileContent: string = this.responseText;
+    let parsedContent: string[][] = ParseCsvFile(fileContent);
+
+    let showEventIndex: number = parsedContent[0].indexOf("Show Event");
+    let titleIndex: number = parsedContent[0].indexOf("Title");
+    let shortDescriptionIndex: number = parsedContent[0].indexOf("Short Description");
+    let fullDescriptionIndex: number = parsedContent[0].indexOf("Full Description");
+    let townIndex: number = parsedContent[0].indexOf("Town");
+    let locationIndex: number = parsedContent[0].indexOf("Location");
+    let dateIndex: number = parsedContent[0].indexOf("Date");
+    let doorTimeIndex: number = parsedContent[0].indexOf("Door Time");
+    let startTimeIndex: number = parsedContent[0].indexOf("Start Time");
+    let endTimeIndex: number = parsedContent[0].indexOf("End Time");
+    let ticketLinkIndex: number = parsedContent[0].indexOf("Ticket Link");
 
     let allEvent: EventDetails[] = []
-    for (let i: number = 0; i < formattedBodyItems.length; i++) {
-        let dataItem: string[] = formattedBodyItems[i];
+    for (let i: number = 1; i < parsedContent.length; i++) {
+        let dataItem: string[] = parsedContent[i];
         let eventItem: EventDetails = new EventDetails();
         eventItem.ShowEvent = dataItem[showEventIndex] == "TRUE";
         eventItem.Title = dataItem[titleIndex];
