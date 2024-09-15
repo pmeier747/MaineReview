@@ -57,10 +57,11 @@ h1 {
 }
 
 .eventToggleInformation {
-    padding: 3px;
+    padding: 1px;
     background-color: black;
     color: white;
     text-align: center;
+    font-size: 14px;
 }
 
 .eventToggleInformation:hover {
@@ -83,16 +84,16 @@ h1 {
 
 .eventDateMonth {
     margin: 2px 4px 0px 4px;
-    font-size: 175%;
+    font-size: 150%;
 }
 
 .eventDateDay {
-    font-size: 200%;
+    font-size: 175%;
 }
 
 .eventDateWeekday {
     margin: 0px 4px 2px 4px;
-    font-size: 175%;
+    font-size: 150%;
 }
 
 div.eventDateTime {
@@ -160,8 +161,16 @@ div.tagHidden {
     align-items: center;
     background-color: lightgray;
 
+    font-size: 14px;
+
     padding: 3px 5px;
-    margin: 4px 8px;
+    margin: 4px 6px 0px 6px;
+}
+
+.eventTag > img {
+    width: 18px;
+    height: 18px;
+    padding-right: 2px;
 }
 
 .timeDetails {

@@ -12,6 +12,8 @@ class EventDetails {
     StartTime = null;
     EndTime = null;
     TicketLink = null;
+    IsAccessible = false;
+    Category = "";
     isValid() {
         if (this.ShowEvent == false) {
             return false;
@@ -23,6 +25,29 @@ class EventDetails {
             return false;
         }
         return true;
+    }
+    getDurationString() {
+        if (this.StartTime == null || isNaN(this.StartTime.valueOf())) {
+            return "";
+        }
+        if (this.EndTime == null || isNaN(this.EndTime.valueOf())) {
+            return "";
+        }
+        let duration = this.EndTime.valueOf() - this.StartTime.valueOf();
+        if (duration <= 0) {
+            return "";
+        }
+        let hours = Math.floor(duration / (1000 * 60 * 60));
+        let minutes = (duration / (1000 * 60)) % 60;
+        if (hours == 0) {
+            return `${minutes}m`;
+        }
+        else if (minutes != 0) {
+            return `${hours}h${minutes}m`;
+        }
+        else {
+            return `${hours}h`;
+        }
     }
 }
 class EventProperties {
@@ -106,6 +131,8 @@ function DataLoaded(e) {
     let startTimeIndex = parsedContent[0].indexOf("Start Time");
     let endTimeIndex = parsedContent[0].indexOf("End Time");
     let ticketLinkIndex = parsedContent[0].indexOf("Ticket Link");
+    let accessibleIndex = parsedContent[0].indexOf("Venue Accessible?");
+    let categoryIndex = parsedContent[0].indexOf("Event Category");
     let allEvent = [];
     for (let i = 1; i < parsedContent.length; i++) {
         let dataItem = parsedContent[i];
@@ -126,6 +153,8 @@ function DataLoaded(e) {
         catch {
             eventItem.TicketLink = null;
         }
+        eventItem.IsAccessible = dataItem[accessibleIndex]?.toUpperCase() == "YES";
+        eventItem.Category = dataItem[categoryIndex] ?? "";
         allEvent.push(eventItem);
     }
     allEvent = allEvent
@@ -174,13 +203,17 @@ function createTable(events) {
             { IsHTML_Component: true, Key: "{{{FullDescription}}}", Value: event.FullDescription.trim() != "" ? event.FullDescription.replaceAll("\n", "<br//>") : event.ShortDescription.replaceAll("\n", "<br//>") },
             { IsHTML_Component: false, Key: "{{{StartTime}}}", Value: event.StartTime?.toLocaleTimeString("en-GB", { hour: "2-digit", minute: "2-digit", hour12: false }) ?? "" },
             { IsHTML_Component: false, Key: "{{{DoorTime}}}", Value: event.DoorTime?.toLocaleTimeString("en-GB", { hour: "2-digit", minute: "2-digit", hour12: false }) ?? "" },
-            { IsHTML_Component: false, Key: "{{{EndTime}}}", Value: event.EndTime?.toLocaleTimeString("en-GB", { hour: "2-digit", minute: "2-digit", hour12: false }) ?? "" },
+            { IsHTML_Component: false, Key: "{{{EndTime}}}", Value: event.getDurationString() },
             { IsHTML_Component: false, Key: "{{{Month}}}", Value: event.ShowDate?.toLocaleDateString("en-Gb", { month: "short" }).toLocaleUpperCase() ?? "" },
             { IsHTML_Component: false, Key: "{{{Day}}}", Value: event.ShowDate?.toLocaleDateString("en-Gb", { day: "2-digit" }).toLocaleUpperCase() ?? "" },
             { IsHTML_Component: false, Key: "{{{Weekday}}}", Value: event.ShowDate?.toLocaleDateString("en-Gb", { weekday: "short" }).toLocaleUpperCase() ?? "" },
             { IsHTML_Component: false, Key: "{{{eventTicketLinkOption}}}", Value: event.TicketLink == null ? "eventNoLink" : "eventLink" },
             { IsHTML_Component: false, Key: "{{{doorTagVisible}}}", Value: (event.DoorTime == null || isNaN(event.DoorTime.valueOf())) ? "tagHidden" : "tagVisible" },
-            { IsHTML_Component: false, Key: "{{{durationTagVisible}}}", Value: (event.EndTime == null || isNaN(event.EndTime.valueOf())) ? "tagHidden" : "tagVisible" },
+            { IsHTML_Component: false, Key: "{{{durationTagVisible}}}", Value: (event.getDurationString().trim() == "") ? "tagHidden" : "tagVisible" },
+            { IsHTML_Component: false, Key: "{{{locationTagVisible}}}", Value: event.Location.trim() == "" ? "tagHidden" : "tagVisible" },
+            { IsHTML_Component: false, Key: "{{{categoryTagVisible}}}", Value: event.Category.trim() == "" ? "tagHidden" : "tagVisible" },
+            { IsHTML_Component: false, Key: "{{{accessibleTagVisible}}}", Value: !event.IsAccessible ? "tagHidden" : "tagVisible" },
+            { IsHTML_Component: false, Key: "{{{Category}}}", Value: event.Category },
         ];
         setupTemplateValues(copy, eventProperies);
         setupTemplateInfoButton(copy);
