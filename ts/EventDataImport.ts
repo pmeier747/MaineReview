@@ -60,23 +60,23 @@ function ParseCsvFile(text: string): string[][] {
         }
         else if (char == ',' && !inQuotes) {
             textLines[textLines.length - 1].push(text.substring(itemStartIndex, i));
-            itemStartIndex = i+1;
+            itemStartIndex = i + 1;
         }
         else if (char == '"') {
             inQuotes = !inQuotes;
         }
-        else if(char == '\r' && nextChar == '\n' && !inQuotes) {
+        else if (char == '\r' && nextChar == '\n' && !inQuotes) {
             lineCount++;
             textLines[textLines.length - 1].push(text.substring(itemStartIndex, i));
             textLines.push([]);
-            itemStartIndex = i+1;
+            itemStartIndex = i + 1;
             i++;
         }
-        else if((char == '\r' || char == '\n') && !inQuotes) {
+        else if ((char == '\r' || char == '\n') && !inQuotes) {
             lineCount++;
             textLines[textLines.length - 1].push(text.substring(itemStartIndex, i));
             textLines.push([]);
-            itemStartIndex = i+1;
+            itemStartIndex = i + 1;
         }
     }
 
@@ -89,6 +89,9 @@ function ParseCsvFile(text: string): string[][] {
             let hadNewLine: boolean = item.indexOf("\n") != -1;
 
             if (hadNewLine || hasLineFeed) {
+                item = item.substring(1, item.length - 1);
+            }
+            else if (item[0] == "\"" && item[item.length - 1] == "\"") {
                 item = item.substring(1, item.length - 1);
             }
             textLines[i][j] = item.replaceAll('""', '"');
@@ -141,7 +144,7 @@ function DataLoaded(this: XMLHttpRequest, e: ProgressEvent<EventTarget>) {
     allEvent = allEvent
         .filter((a) => { return a.isValid(); })
         // .filter((a) => { return a.ShowDate.valueOf() > Date.now() - 24 * 60 * 60 * 1000; })
-        .sort((a, b) => { return a.ShowDate!.valueOf() - b.ShowDate!.valueOf();});
+        .sort((a, b) => { return a.ShowDate!.valueOf() - b.ShowDate!.valueOf(); });
 
     createTable(allEvent);
     setupLocationDropdown(allEvent);
@@ -189,13 +192,16 @@ function createTable(events: EventDetails[]): void {
             { IsHTML_Component: false, Key: "{{{Town}}}", Value: event.Town },
             { IsHTML_Component: false, Key: "{{{Location}}}", Value: event.Location },
             { IsHTML_Component: true, Key: "{{{ShortDescription}}}", Value: event.ShortDescription.replaceAll("\n", "<br//>") },
-            { IsHTML_Component: true, Key: "{{{FullDescription}}}", Value: event.FullDescription.replaceAll("\n", "<br//>") },
-            { IsHTML_Component: false, Key: "{{{StartTime}}}", Value: event.StartTime?.toLocaleTimeString("en-GB", {hour: "2-digit", minute: "2-digit", hour12: false}) ?? "" },
-            { IsHTML_Component: false, Key: "{{{DoorTime}}}", Value: event.DoorTime?.toLocaleTimeString("en-GB", {hour: "2-digit", minute: "2-digit", hour12: false}) ?? "" },
-            { IsHTML_Component: false, Key: "{{{EndTime}}}", Value: event.EndTime?.toLocaleTimeString("en-GB", {hour: "2-digit", minute: "2-digit", hour12: false}) ?? "" },
-            { IsHTML_Component: false, Key: "{{{Month}}}", Value: event.ShowDate?.toLocaleDateString("en-Gb", {month: "short"}).toLocaleUpperCase() ?? "" },
-            { IsHTML_Component: false, Key: "{{{Day}}}", Value: event.ShowDate?.toLocaleDateString("en-Gb", {day: "2-digit"}).toLocaleUpperCase() ?? "" },
-            { IsHTML_Component: false, Key: "{{{Weekday}}}", Value: event.ShowDate?.toLocaleDateString("en-Gb", {weekday: "short"}).toLocaleUpperCase() ?? "" },
+            { IsHTML_Component: true, Key: "{{{FullDescription}}}", Value: event.FullDescription.trim() != "" ? event.FullDescription.replaceAll("\n", "<br//>") : event.ShortDescription.replaceAll("\n", "<br//>") },
+            { IsHTML_Component: false, Key: "{{{StartTime}}}", Value: event.StartTime?.toLocaleTimeString("en-GB", { hour: "2-digit", minute: "2-digit", hour12: false }) ?? "" },
+            { IsHTML_Component: false, Key: "{{{DoorTime}}}", Value: event.DoorTime?.toLocaleTimeString("en-GB", { hour: "2-digit", minute: "2-digit", hour12: false }) ?? "" },
+            { IsHTML_Component: false, Key: "{{{EndTime}}}", Value: event.EndTime?.toLocaleTimeString("en-GB", { hour: "2-digit", minute: "2-digit", hour12: false }) ?? "" },
+            { IsHTML_Component: false, Key: "{{{Month}}}", Value: event.ShowDate?.toLocaleDateString("en-Gb", { month: "short" }).toLocaleUpperCase() ?? "" },
+            { IsHTML_Component: false, Key: "{{{Day}}}", Value: event.ShowDate?.toLocaleDateString("en-Gb", { day: "2-digit" }).toLocaleUpperCase() ?? "" },
+            { IsHTML_Component: false, Key: "{{{Weekday}}}", Value: event.ShowDate?.toLocaleDateString("en-Gb", { weekday: "short" }).toLocaleUpperCase() ?? "" },
+            { IsHTML_Component: false, Key: "{{{eventTicketLinkOption}}}", Value: event.TicketLink == null ? "eventNoLink" : "eventLink"},
+            { IsHTML_Component: false, Key: "{{{doorTagVisible}}}", Value: (event.DoorTime == null || isNaN(event.DoorTime.valueOf())) ? "tagHidden" : "tagVisible" },
+            { IsHTML_Component: false, Key: "{{{durationTagVisible}}}", Value: (event.EndTime == null || isNaN(event.EndTime.valueOf())) ? "tagHidden" : "tagVisible" },
         ];
 
         setupTemplateValues(copy, eventProperies);
@@ -208,12 +214,12 @@ function createTable(events: EventDetails[]): void {
 }
 
 function setupLocationDropdown(events: EventDetails[]): void {
-    let element : HTMLElement | null = document.getElementById("eventLocationSelector");
+    let element: HTMLElement | null = document.getElementById("eventLocationSelector");
     if (element == null) { return; }
 
-    let dropdownElement : HTMLSelectElement = element as HTMLSelectElement;
+    let dropdownElement: HTMLSelectElement = element as HTMLSelectElement;
     let allTowns: Set<string> = new Set(
-        events.map((a) => a.Town.trim()).sort((a,b) => a.toLocaleLowerCase().localeCompare(b))
+        events.map((a) => a.Town.trim()).sort((a, b) => a.toLocaleLowerCase().localeCompare(b))
     );
     allTowns.forEach(
         (town: string) => {
@@ -249,22 +255,33 @@ function setupTemplateValues(node: Node, eventProperies: EventProperties[]): voi
         let textNode: Node = node.childNodes[i];
         setupTemplateValues(textNode, eventProperies);
 
-        if (textNode.nodeType != Node.TEXT_NODE) { continue; }
-        if (textNode.nodeValue == null) { continue; }
-        
-        for (let j: number = 0; j < eventProperies.length; j++) {
-            if (textNode.nodeValue.indexOf(eventProperies[j].Key) == -1) { continue;}
-            
-            if (eventProperies[j].IsHTML_Component) {
-                let newElement: HTMLDivElement = document.createElement("div");
-                newElement.innerHTML = eventProperies[j].Value;
-                if (textNode.parentElement != null) {
-                    textNode.parentElement.innerHTML = eventProperies[j].Value;
+        if (textNode.nodeType == Node.TEXT_NODE) {
+            if (textNode.nodeValue == null) { continue; }
+
+            for (let j: number = 0; j < eventProperies.length; j++) {
+                if (textNode.nodeValue.indexOf(eventProperies[j].Key) == -1) { continue; }
+
+                if (eventProperies[j].IsHTML_Component) {
+                    let newElement: HTMLDivElement = document.createElement("div");
+                    newElement.innerHTML = eventProperies[j].Value;
+                    if (textNode.parentElement != null) {
+                        textNode.parentElement.innerHTML = eventProperies[j].Value;
+                    }
+                }
+                else {
+                    textNode.nodeValue = textNode.nodeValue?.replace(eventProperies[j].Key, eventProperies[j].Value);
                 }
             }
-            else {
-                textNode.nodeValue = textNode.nodeValue?.replace(eventProperies[j].Key, eventProperies[j].Value);
+        }
+        else if (textNode.nodeType == Node.ELEMENT_NODE) {
+            let node: HTMLElement = textNode as HTMLElement;
+
+            for (let j: number = 0; j < eventProperies.length; j++) {
+                if (!node.classList.contains(eventProperies[j].Key)) { continue; }
+
+                node.classList.replace(eventProperies[j].Key, eventProperies[j].Value);
             }
+            node.classList.contains
         }
     }
 }
@@ -272,7 +289,7 @@ function setupTemplateValues(node: Node, eventProperies: EventProperties[]): voi
 function setupTemplateID(node: Node, id: string) {
     for (let i = 0; i < node.childNodes.length; i++) {
         if (node.childNodes[i].nodeType != Node.ELEMENT_NODE) { continue; }
-        
+
         (node.childNodes[i] as HTMLElement).id = id;
     }
 }
@@ -303,7 +320,7 @@ function setupTemplateTicketLink(node: Node, url: string): void {
     }
 }
 
-function changeViewElement(this: HTMLElement, event: MouseEvent) : void {
+function changeViewElement(this: HTMLElement, event: MouseEvent): void {
     let parentElement: Element | null = this.closest(".eventItem");
     if (parentElement == null) { return; }
 

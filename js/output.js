@@ -84,6 +84,9 @@ function ParseCsvFile(text) {
             if (hadNewLine || hasLineFeed) {
                 item = item.substring(1, item.length - 1);
             }
+            else if (item[0] == "\"" && item[item.length - 1] == "\"") {
+                item = item.substring(1, item.length - 1);
+            }
             textLines[i][j] = item.replaceAll('""', '"');
         }
     }
@@ -168,13 +171,16 @@ function createTable(events) {
             { IsHTML_Component: false, Key: "{{{Town}}}", Value: event.Town },
             { IsHTML_Component: false, Key: "{{{Location}}}", Value: event.Location },
             { IsHTML_Component: true, Key: "{{{ShortDescription}}}", Value: event.ShortDescription.replaceAll("\n", "<br//>") },
-            { IsHTML_Component: true, Key: "{{{FullDescription}}}", Value: event.FullDescription.replaceAll("\n", "<br//>") },
+            { IsHTML_Component: true, Key: "{{{FullDescription}}}", Value: event.FullDescription.trim() != "" ? event.FullDescription.replaceAll("\n", "<br//>") : event.ShortDescription.replaceAll("\n", "<br//>") },
             { IsHTML_Component: false, Key: "{{{StartTime}}}", Value: event.StartTime?.toLocaleTimeString("en-GB", { hour: "2-digit", minute: "2-digit", hour12: false }) ?? "" },
             { IsHTML_Component: false, Key: "{{{DoorTime}}}", Value: event.DoorTime?.toLocaleTimeString("en-GB", { hour: "2-digit", minute: "2-digit", hour12: false }) ?? "" },
             { IsHTML_Component: false, Key: "{{{EndTime}}}", Value: event.EndTime?.toLocaleTimeString("en-GB", { hour: "2-digit", minute: "2-digit", hour12: false }) ?? "" },
             { IsHTML_Component: false, Key: "{{{Month}}}", Value: event.ShowDate?.toLocaleDateString("en-Gb", { month: "short" }).toLocaleUpperCase() ?? "" },
             { IsHTML_Component: false, Key: "{{{Day}}}", Value: event.ShowDate?.toLocaleDateString("en-Gb", { day: "2-digit" }).toLocaleUpperCase() ?? "" },
             { IsHTML_Component: false, Key: "{{{Weekday}}}", Value: event.ShowDate?.toLocaleDateString("en-Gb", { weekday: "short" }).toLocaleUpperCase() ?? "" },
+            { IsHTML_Component: false, Key: "{{{eventTicketLinkOption}}}", Value: event.TicketLink == null ? "eventNoLink" : "eventLink" },
+            { IsHTML_Component: false, Key: "{{{doorTagVisible}}}", Value: (event.DoorTime == null || isNaN(event.DoorTime.valueOf())) ? "tagHidden" : "tagVisible" },
+            { IsHTML_Component: false, Key: "{{{durationTagVisible}}}", Value: (event.EndTime == null || isNaN(event.EndTime.valueOf())) ? "tagHidden" : "tagVisible" },
         ];
         setupTemplateValues(copy, eventProperies);
         setupTemplateInfoButton(copy);
@@ -218,26 +224,35 @@ function setupTemplateValues(node, eventProperies) {
     for (let i = 0; i < node.childNodes.length; i++) {
         let textNode = node.childNodes[i];
         setupTemplateValues(textNode, eventProperies);
-        if (textNode.nodeType != Node.TEXT_NODE) {
-            continue;
-        }
-        if (textNode.nodeValue == null) {
-            continue;
-        }
-        for (let j = 0; j < eventProperies.length; j++) {
-            if (textNode.nodeValue.indexOf(eventProperies[j].Key) == -1) {
+        if (textNode.nodeType == Node.TEXT_NODE) {
+            if (textNode.nodeValue == null) {
                 continue;
             }
-            if (eventProperies[j].IsHTML_Component) {
-                let newElement = document.createElement("div");
-                newElement.innerHTML = eventProperies[j].Value;
-                if (textNode.parentElement != null) {
-                    textNode.parentElement.innerHTML = eventProperies[j].Value;
+            for (let j = 0; j < eventProperies.length; j++) {
+                if (textNode.nodeValue.indexOf(eventProperies[j].Key) == -1) {
+                    continue;
+                }
+                if (eventProperies[j].IsHTML_Component) {
+                    let newElement = document.createElement("div");
+                    newElement.innerHTML = eventProperies[j].Value;
+                    if (textNode.parentElement != null) {
+                        textNode.parentElement.innerHTML = eventProperies[j].Value;
+                    }
+                }
+                else {
+                    textNode.nodeValue = textNode.nodeValue?.replace(eventProperies[j].Key, eventProperies[j].Value);
                 }
             }
-            else {
-                textNode.nodeValue = textNode.nodeValue?.replace(eventProperies[j].Key, eventProperies[j].Value);
+        }
+        else if (textNode.nodeType == Node.ELEMENT_NODE) {
+            let node = textNode;
+            for (let j = 0; j < eventProperies.length; j++) {
+                if (!node.classList.contains(eventProperies[j].Key)) {
+                    continue;
+                }
+                node.classList.replace(eventProperies[j].Key, eventProperies[j].Value);
             }
+            node.classList.contains;
         }
     }
 }

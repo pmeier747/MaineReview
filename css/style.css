@@ -82,6 +82,7 @@ h1 {
 }
 
 .eventDateMonth {
+    margin: 2px 4px 0px 4px;
     font-size: 175%;
 }
 
@@ -90,6 +91,7 @@ h1 {
 }
 
 .eventDateWeekday {
+    margin: 0px 4px 2px 4px;
     font-size: 175%;
 }
 
@@ -127,7 +129,6 @@ div.eventDateTime {
 }
 
 .eventTicketLink {
-    background-color: black;
     color: white;
 
     font-weight: 800;
@@ -135,9 +136,8 @@ div.eventDateTime {
     text-align: center;
 }
 
-.eventTicketLink:hover {
-    background-color: rgb(53, 53, 53);
-    cursor: pointer;
+.eventNoLink {
+    display: none;
 }
 
 .eventContent {
@@ -148,6 +148,10 @@ div.eventDateTime {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+}
+
+div.tagHidden {
+    display: none;
 }
 
 .eventTag {
