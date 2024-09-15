@@ -51,7 +51,7 @@ h1 {
 }
 
 .eventInfo {
-    padding: 10px;
+    padding: 5px;
     display: flex;
     flex-direction: row;
 }
