@@ -7,11 +7,23 @@ class EventDetails {
     FullDescription = "";
     Town = "";
     Location = "";
-    ShowDate = new Date();
+    ShowDate = null;
     DoorTime = null;
     StartTime = null;
     EndTime = null;
     TicketLink = null;
+    isValid() {
+        if (this.ShowEvent == false) {
+            return false;
+        }
+        if (this.ShowDate == null || isNaN(this.ShowDate.valueOf())) {
+            return false;
+        }
+        if (this.StartTime == null || isNaN(this.StartTime.valueOf())) {
+            return false;
+        }
+        return true;
+    }
 }
 class EventProperties {
     Key = "";
@@ -21,8 +33,8 @@ class EventProperties {
 let events = new Map();
 document.addEventListener("DOMContentLoaded", InitPage);
 function InitPage() {
-    let excelLocationCSV = new URL("https://docs.google.com/spreadsheets/d/e/2PACX-1vRBjp_krL1yLMOpXHTfLsBMqD85ivI_aguisYMGJAk4ctP2fn2bSHobbjbZ3TEi2qs7BaxwaHuIQnEG/pub?output=csv");
-    let localFile = new URL("/data/TestData.csv", window.origin);
+    let excelLocationCSV = new URL("https://docs.google.com/spreadsheets/d/e/2PACX-1vTwMMh_Gao8oLZ89EPf6pAA2ftTJa4uqeDAHTeAQyfTbbo9gHyDVsoN5JUDh6-P_hzLsxPJnvLR0hmT/pub?gid=899861774&single=true&output=csv");
+    let localFile = new URL("/data/Ireland Improv Events - Form Responses.csv", window.origin);
     let fileURL = window.origin.indexOf("localhost") == -1 ? excelLocationCSV : localFile;
     let eventDataClient = new XMLHttpRequest();
     eventDataClient.onerror = function (e) { console.log(this, e, "Error"); };
@@ -69,7 +81,7 @@ function ParseCsvFile(text) {
             let item = textLines[i][j].trim();
             let hasLineFeed = item.indexOf("\r") != -1;
             let hadNewLine = item.indexOf("\n") != -1;
-            if (hadNewLine || hadNewLine) {
+            if (hadNewLine || hasLineFeed) {
                 item = item.substring(1, item.length - 1);
             }
             textLines[i][j] = item.replaceAll('""', '"');
@@ -80,13 +92,13 @@ function ParseCsvFile(text) {
 function DataLoaded(e) {
     let fileContent = this.responseText;
     let parsedContent = ParseCsvFile(fileContent);
-    let showEventIndex = parsedContent[0].indexOf("Show Event");
-    let titleIndex = parsedContent[0].indexOf("Title");
+    let showEventIndex = parsedContent[0].indexOf("Display Event");
+    let titleIndex = parsedContent[0].indexOf("Title of the Event");
     let shortDescriptionIndex = parsedContent[0].indexOf("Short Description");
-    let fullDescriptionIndex = parsedContent[0].indexOf("Full Description");
-    let townIndex = parsedContent[0].indexOf("Town");
-    let locationIndex = parsedContent[0].indexOf("Location");
-    let dateIndex = parsedContent[0].indexOf("Date");
+    let fullDescriptionIndex = parsedContent[0].indexOf("Long Description");
+    let townIndex = parsedContent[0].indexOf("Location (City/Town)");
+    let locationIndex = parsedContent[0].indexOf("Location (Venue)");
+    let dateIndex = parsedContent[0].indexOf("Event Date");
     let doorTimeIndex = parsedContent[0].indexOf("Door Time");
     let startTimeIndex = parsedContent[0].indexOf("Start Time");
     let endTimeIndex = parsedContent[0].indexOf("End Time");
@@ -95,16 +107,16 @@ function DataLoaded(e) {
     for (let i = 1; i < parsedContent.length; i++) {
         let dataItem = parsedContent[i];
         let eventItem = new EventDetails();
-        eventItem.ShowEvent = dataItem[showEventIndex] == "TRUE";
-        eventItem.Title = dataItem[titleIndex];
-        eventItem.ShortDescription = dataItem[shortDescriptionIndex];
-        eventItem.FullDescription = dataItem[fullDescriptionIndex];
-        eventItem.Town = dataItem[townIndex];
-        eventItem.Location = dataItem[locationIndex];
+        eventItem.ShowEvent = dataItem[showEventIndex]?.toUpperCase() == "TRUE";
+        eventItem.Title = dataItem[titleIndex] ?? "";
+        eventItem.ShortDescription = dataItem[shortDescriptionIndex] ?? "";
+        eventItem.FullDescription = dataItem[fullDescriptionIndex] ?? "";
+        eventItem.Town = dataItem[townIndex] ?? "";
+        eventItem.Location = dataItem[locationIndex] ?? "";
         eventItem.ShowDate = parseDate(dataItem[dateIndex]);
-        eventItem.DoorTime = parseTime(dataItem[doorTimeIndex], eventItem.ShowDate);
-        eventItem.StartTime = parseTime(dataItem[startTimeIndex], eventItem.ShowDate);
-        eventItem.EndTime = parseTime(dataItem[endTimeIndex], eventItem.ShowDate);
+        eventItem.DoorTime = parseTime(dataItem[doorTimeIndex], eventItem.ShowDate ?? new Date());
+        eventItem.StartTime = parseTime(dataItem[startTimeIndex], eventItem.ShowDate ?? new Date());
+        eventItem.EndTime = parseTime(dataItem[endTimeIndex], eventItem.ShowDate ?? new Date());
         try {
             eventItem.TicketLink = new URL(dataItem[ticketLinkIndex]);
         }
@@ -114,8 +126,8 @@ function DataLoaded(e) {
         allEvent.push(eventItem);
     }
     allEvent = allEvent
-        .filter((a) => { return a.ShowEvent; })
-        .filter((a) => { return a.ShowDate.valueOf() > Date.now() - 24 * 60 * 60 * 1000; })
+        .filter((a) => { return a.isValid(); })
+        // .filter((a) => { return a.ShowDate.valueOf() > Date.now() - 24 * 60 * 60 * 1000; })
         .sort((a, b) => { return a.ShowDate.valueOf() - b.ShowDate.valueOf(); });
     createTable(allEvent);
     setupLocationDropdown(allEvent);
@@ -124,16 +136,20 @@ function DataLoaded(e) {
     }
 }
 function parseDate(dateString) {
-    let splitDates = dateString.split("/");
-    let day = parseInt(splitDates[0]);
-    let month = parseInt(splitDates[1]);
+    let splitDates = (dateString ?? "").split("/");
+    let day = parseInt(splitDates[1]);
+    let month = parseInt(splitDates[0]);
     let year = parseInt(splitDates[2]);
     return new Date(Date.UTC(year, month - 1, day));
 }
 function parseTime(timeString, baseDate) {
-    let splitTimes = timeString.split(":");
+    let splitTimes = (timeString ?? "").split(":");
     let hour = parseInt(splitTimes[0]);
     let minute = parseInt(splitTimes[1]);
+    let isPM = (splitTimes[2] ?? "").toLocaleUpperCase().endsWith("PM");
+    if (isPM) {
+        hour += 12;
+    }
     return new Date(baseDate.getFullYear(), baseDate.getMonth(), baseDate.getDay(), hour, minute);
 }
 function createTable(events) {
@@ -156,9 +172,9 @@ function createTable(events) {
             { IsHTML_Component: false, Key: "{{{StartTime}}}", Value: event.StartTime?.toLocaleTimeString("en-GB", { hour: "2-digit", minute: "2-digit", hour12: false }) ?? "" },
             { IsHTML_Component: false, Key: "{{{DoorTime}}}", Value: event.DoorTime?.toLocaleTimeString("en-GB", { hour: "2-digit", minute: "2-digit", hour12: false }) ?? "" },
             { IsHTML_Component: false, Key: "{{{EndTime}}}", Value: event.EndTime?.toLocaleTimeString("en-GB", { hour: "2-digit", minute: "2-digit", hour12: false }) ?? "" },
-            { IsHTML_Component: false, Key: "{{{Month}}}", Value: event.ShowDate.toLocaleDateString("en-Gb", { month: "short" }).toLocaleUpperCase() },
-            { IsHTML_Component: false, Key: "{{{Day}}}", Value: event.ShowDate.toLocaleDateString("en-Gb", { day: "2-digit" }).toLocaleUpperCase() },
-            { IsHTML_Component: false, Key: "{{{Weekday}}}", Value: event.ShowDate.toLocaleDateString("en-Gb", { weekday: "short" }).toLocaleUpperCase() },
+            { IsHTML_Component: false, Key: "{{{Month}}}", Value: event.ShowDate?.toLocaleDateString("en-Gb", { month: "short" }).toLocaleUpperCase() ?? "" },
+            { IsHTML_Component: false, Key: "{{{Day}}}", Value: event.ShowDate?.toLocaleDateString("en-Gb", { day: "2-digit" }).toLocaleUpperCase() ?? "" },
+            { IsHTML_Component: false, Key: "{{{Weekday}}}", Value: event.ShowDate?.toLocaleDateString("en-Gb", { weekday: "short" }).toLocaleUpperCase() ?? "" },
         ];
         setupTemplateValues(copy, eventProperies);
         setupTemplateInfoButton(copy);
@@ -173,7 +189,7 @@ function setupLocationDropdown(events) {
         return;
     }
     let dropdownElement = element;
-    let allTowns = new Set(events.map((a) => a.Town).sort());
+    let allTowns = new Set(events.map((a) => a.Town.trim()).sort((a, b) => a.toLocaleLowerCase().localeCompare(b)));
     allTowns.forEach((town) => {
         let option = document.createElement("option");
         option.text = town;
