@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", InitPage);
 function InitPage() {
     let excelLocationCSV = new URL("https://docs.google.com/spreadsheets/d/e/2PACX-1vTwMMh_Gao8oLZ89EPf6pAA2ftTJa4uqeDAHTeAQyfTbbo9gHyDVsoN5JUDh6-P_hzLsxPJnvLR0hmT/pub?gid=899861774&single=true&output=csv");
     let localFile = new URL("/data/Ireland Improv Events - Form Responses.csv", window.origin);
-    let fileURL = window.origin.indexOf("localhost") == -1 ? excelLocationCSV : localFile;
+    let fileURL = window.origin.indexOf("localhost") != -1 ? excelLocationCSV : localFile;
     let eventDataClient = new XMLHttpRequest();
     eventDataClient.onerror = function (e) { console.log(this, e, "Error"); };
     eventDataClient.onloadend = DataLoaded;
@@ -159,7 +159,7 @@ function DataLoaded(e) {
     }
     allEvent = allEvent
         .filter((a) => { return a.isValid(); })
-        // .filter((a) => { return a.ShowDate.valueOf() > Date.now() - 24 * 60 * 60 * 1000; })
+        .filter((a) => { return a.ShowDate.valueOf() > Date.now() - (8 * 60 * 60 * 1000); })
         .sort((a, b) => { return a.ShowDate.valueOf() - b.ShowDate.valueOf(); });
     createTable(allEvent);
     setupLocationDropdown(allEvent);
@@ -188,7 +188,6 @@ function createTable(events) {
     let eventsContainer = document.getElementById("eventsContainer");
     let templateContainer = document.getElementById("eventItemTemplate");
     if (eventsContainer == null || templateContainer == null) {
-        console.log("No container");
         return;
     }
     for (let i = 0; i < events.length; i++) {
