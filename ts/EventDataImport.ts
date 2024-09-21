@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", InitPage);
 function InitPage(): void {
     let excelLocationCSV: URL = new URL("https://docs.google.com/spreadsheets/d/e/2PACX-1vTwMMh_Gao8oLZ89EPf6pAA2ftTJa4uqeDAHTeAQyfTbbo9gHyDVsoN5JUDh6-P_hzLsxPJnvLR0hmT/pub?gid=899861774&single=true&output=csv");
     let localFile: URL = new URL("/data/Ireland Improv Events - Form Responses.csv", window.origin);
-    let fileURL: URL = window.origin.indexOf("localhost") != -1 ? excelLocationCSV : localFile;
+    let fileURL: URL = window.origin.indexOf("localhost") == -1 ? excelLocationCSV : localFile;
 
     let eventDataClient: XMLHttpRequest = new XMLHttpRequest();
     eventDataClient.onerror = function (this: XMLHttpRequest, e: ProgressEvent<EventTarget>) { console.log(this, e, "Error"); }
