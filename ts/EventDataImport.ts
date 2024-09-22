@@ -50,7 +50,15 @@ class EventProperties {
     public IsHTML_Component: boolean = false;
 }
 
+class EventFilters {
+    public TownLocation: string | null = null;
+    public EventType: string | null = null;
+    public IsAccessible: boolean = false;
+}
+
 let events: Map<string, EventDetails> = new Map();
+
+let eventFilters: EventFilters = new EventFilters();
 
 document.addEventListener("DOMContentLoaded", InitPage);
 
@@ -175,6 +183,7 @@ function DataLoaded(this: XMLHttpRequest, e: ProgressEvent<EventTarget>) {
 
     createTable(allEvent);
     setupLocationDropdown(allEvent);
+    setupFilterElement(allEvent);
 
     for (let i = 0; i < allEvent.length; i++) {
         events.set(allEvent[i].ID, allEvent[i]);
@@ -264,20 +273,8 @@ function setupLocationDropdown(events: EventDetails[]): void {
 }
 
 function onLocationSelected(this: HTMLSelectElement, ev: Event): void {
-    let eventItems: HTMLCollectionOf<Element> = document.getElementsByClassName("eventItem");
-
-    for (let i = 0; i < eventItems.length; i++) {
-        let event: EventDetails | undefined = events.get(eventItems[i].id);
-        if (event == undefined) { continue; }
-
-        let isVisible: boolean = event.Town == this.value || this.value == "";
-        if (isVisible) {
-            eventItems[i].classList.remove("eventHidden");
-        }
-        else {
-            eventItems[i].classList.add("eventHidden");
-        }
-    }
+    eventFilters.TownLocation = this.value;
+    filterChanged();
 }
 
 function setupTemplateValues(node: Node, eventProperies: EventProperties[]): void {
@@ -362,5 +359,82 @@ function changeViewElement(this: HTMLElement, event: MouseEvent): void {
     else {
         parentElement.classList.replace("eventFull", "eventShort");
         this.innerText = "▼▼▼ More Information ▼▼▼";
+    }
+}
+
+function setupFilterElement(events: EventDetails[]) : void {
+    let event: HTMLElement | null = document.getElementById("eventLocationSection");
+    if (event == null) { return; }
+
+    for (let i: number = 0; i < event.children.length; i++) {
+        if (event.children[i].id == "eventSelectorExpand") {
+            (event.children[i] as HTMLDivElement).addEventListener("click", onToggleFilters);
+        }
+        else if (event.children[i].id == "eventTypeSelector") {
+            let selectElement: HTMLSelectElement = (event.children[i] as HTMLSelectElement);
+            
+            let allEventTypes: Set<string> = new Set(
+                events.map((a) => a.Category.trim()).sort((a, b) => a.toLocaleLowerCase().localeCompare(b))
+            );
+            allEventTypes.delete("");
+
+            allEventTypes.forEach(
+                (town: string) => {
+                    let option: HTMLOptionElement = document.createElement("option");
+                    option.text = town;
+                    option.value = town;
+                    selectElement.options.add(option);
+                }
+            );
+            selectElement.addEventListener("change", onEventTypeSelect);
+        }
+        else if ((event.children[i] as HTMLLabelElement).htmlFor == "eventAccessibleSelector") {
+            (event.children[i+1].children[0] as HTMLInputElement).addEventListener("change", onAccessibleToggle);
+        }
+    }
+}
+
+function onToggleFilters(this: HTMLDivElement, event: MouseEvent): void {
+    if (this.parentElement == null) { return; }
+    let showElements: boolean = this.textContent == "+";
+    this.textContent = showElements ? "-" : "+";
+
+    for (let i: number = 0; i < this.parentElement.children.length; i++) {
+        if (showElements) {
+            this.parentElement.children[i].classList.replace("eventSelectorDetailsHidden", "eventSelectorDetailsShown")
+        }
+        else {
+            this.parentElement.children[i].classList.replace("eventSelectorDetailsShown", "eventSelectorDetailsHidden")
+        }
+    }
+}
+
+function onEventTypeSelect(this: HTMLSelectElement, event: Event) : void {
+    eventFilters.EventType = this.value;
+    filterChanged();
+}
+
+function onAccessibleToggle(this: HTMLInputElement, event: Event) : void {
+    eventFilters.IsAccessible = this.checked;
+    filterChanged();
+}
+
+function filterChanged(): void {
+    let eventItems: HTMLCollectionOf<Element> = document.getElementsByClassName("eventItem");
+
+    for (let i = 0; i < eventItems.length; i++) {
+        let event: EventDetails | undefined = events.get(eventItems[i].id);
+        if (event == undefined) { continue; }
+
+        let isTownVisible: boolean = event.Town == eventFilters.TownLocation || (eventFilters.TownLocation ?? "") == "";
+        let isEventVisible: boolean = event.Category == eventFilters.EventType || (eventFilters.EventType ?? "") == "";
+        let isAccessible: boolean = event.IsAccessible == eventFilters.IsAccessible || !eventFilters.IsAccessible;
+
+        if (isTownVisible && isEventVisible && isAccessible) {
+            eventItems[i].classList.remove("eventHidden");
+        }
+        else {
+            eventItems[i].classList.add("eventHidden");
+        }
     }
 }

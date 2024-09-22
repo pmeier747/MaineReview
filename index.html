@@ -15,17 +15,35 @@
 <body onload="InitPage">
     <div class="eventBody">
         <h1>Ireland Improv</h1>
-        <div class="eventLocationSection">
-            <label>Location:</label>
+        <div id="eventLocationSection">
+            <label id="eventLocationSelectorLabel" for="eventLocationSelector">Location:</label>
             <select id="eventLocationSelector">
                 <option value="">All Locations</option>
             </select>
+
+            <div id="eventSelectorExpand">+</div>
+
+            <label for="eventTypeSelector" class="eventSelectorDetailsHidden">Event Type:</label>
+            <select id="eventTypeSelector" class="eventSelectorDetailsHidden">
+                <option value="">All Events</option>
+            </select>
+            <div class="eventSelectorDetailsHidden"></div>
+
+            <label for="eventAccessibleSelector" class="eventSelectorDetailsHidden">Is Accesible:</label>
+            <div class="eventSelectorDetailsHidden">
+                <input id="eventAccessibleSelector" type="checkbox"></input>
+            </div>
+            <div class="eventSelectorDetailsHidden"></div>
         </div>
 
         <div id="eventsContainer"></div>
 
         <div class="footer">
-            Submit your own event using <a href="https://docs.google.com/forms/d/e/1FAIpQLSfRfsnxeTgz9a7Y5uG7rBblQ_23wPvKDWcCVaMyKaLzeScX0w/viewform">this form</a> or contact us at irelandimprov@gmail.com
+            Submit your own event using
+            <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSfRfsnxeTgz9a7Y5uG7rBblQ_23wPvKDWcCVaMyKaLzeScX0w/viewform">this
+                form</a>
+            or contact us at irelandimprov@gmail.com
         </div>
     </div>
 </body>

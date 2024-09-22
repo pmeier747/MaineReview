@@ -55,7 +55,13 @@ class EventProperties {
     Value = "";
     IsHTML_Component = false;
 }
+class EventFilters {
+    TownLocation = null;
+    EventType = null;
+    IsAccessible = false;
+}
 let events = new Map();
+let eventFilters = new EventFilters();
 document.addEventListener("DOMContentLoaded", InitPage);
 function InitPage() {
     let excelLocationCSV = new URL("https://docs.google.com/spreadsheets/d/e/2PACX-1vTwMMh_Gao8oLZ89EPf6pAA2ftTJa4uqeDAHTeAQyfTbbo9gHyDVsoN5JUDh6-P_hzLsxPJnvLR0hmT/pub?gid=899861774&single=true&output=csv");
@@ -163,6 +169,7 @@ function DataLoaded(e) {
         .sort((a, b) => { return a.ShowDate.valueOf() - b.ShowDate.valueOf(); });
     createTable(allEvent);
     setupLocationDropdown(allEvent);
+    setupFilterElement(allEvent);
     for (let i = 0; i < allEvent.length; i++) {
         events.set(allEvent[i].ID, allEvent[i]);
     }
@@ -237,20 +244,8 @@ function setupLocationDropdown(events) {
     dropdownElement.addEventListener("change", onLocationSelected);
 }
 function onLocationSelected(ev) {
-    let eventItems = document.getElementsByClassName("eventItem");
-    for (let i = 0; i < eventItems.length; i++) {
-        let event = events.get(eventItems[i].id);
-        if (event == undefined) {
-            continue;
-        }
-        let isVisible = event.Town == this.value || this.value == "";
-        if (isVisible) {
-            eventItems[i].classList.remove("eventHidden");
-        }
-        else {
-            eventItems[i].classList.add("eventHidden");
-        }
-    }
+    eventFilters.TownLocation = this.value;
+    filterChanged();
 }
 function setupTemplateValues(node, eventProperies) {
     for (let i = 0; i < node.childNodes.length; i++) {
@@ -337,5 +332,72 @@ function changeViewElement(event) {
     else {
         parentElement.classList.replace("eventFull", "eventShort");
         this.innerText = "▼▼▼ More Information ▼▼▼";
+    }
+}
+function setupFilterElement(events) {
+    let event = document.getElementById("eventLocationSection");
+    if (event == null) {
+        return;
+    }
+    for (let i = 0; i < event.children.length; i++) {
+        if (event.children[i].id == "eventSelectorExpand") {
+            event.children[i].addEventListener("click", onToggleFilters);
+        }
+        else if (event.children[i].id == "eventTypeSelector") {
+            let selectElement = event.children[i];
+            let allEventTypes = new Set(events.map((a) => a.Category.trim()).sort((a, b) => a.toLocaleLowerCase().localeCompare(b)));
+            allEventTypes.delete("");
+            allEventTypes.forEach((town) => {
+                let option = document.createElement("option");
+                option.text = town;
+                option.value = town;
+                selectElement.options.add(option);
+            });
+            selectElement.addEventListener("change", onEventTypeSelect);
+        }
+        else if (event.children[i].htmlFor == "eventAccessibleSelector") {
+            event.children[i + 1].children[0].addEventListener("change", onAccessibleToggle);
+        }
+    }
+}
+function onToggleFilters(event) {
+    if (this.parentElement == null) {
+        return;
+    }
+    let showElements = this.textContent == "+";
+    this.textContent = showElements ? "-" : "+";
+    for (let i = 0; i < this.parentElement.children.length; i++) {
+        if (showElements) {
+            this.parentElement.children[i].classList.replace("eventSelectorDetailsHidden", "eventSelectorDetailsShown");
+        }
+        else {
+            this.parentElement.children[i].classList.replace("eventSelectorDetailsShown", "eventSelectorDetailsHidden");
+        }
+    }
+}
+function onEventTypeSelect(event) {
+    eventFilters.EventType = this.value;
+    filterChanged();
+}
+function onAccessibleToggle(event) {
+    eventFilters.IsAccessible = this.checked;
+    filterChanged();
+}
+function filterChanged() {
+    let eventItems = document.getElementsByClassName("eventItem");
+    for (let i = 0; i < eventItems.length; i++) {
+        let event = events.get(eventItems[i].id);
+        if (event == undefined) {
+            continue;
+        }
+        let isTownVisible = event.Town == eventFilters.TownLocation || (eventFilters.TownLocation ?? "") == "";
+        let isEventVisible = event.Category == eventFilters.EventType || (eventFilters.EventType ?? "") == "";
+        let isAccessible = event.IsAccessible == eventFilters.IsAccessible || !eventFilters.IsAccessible;
+        if (isTownVisible && isEventVisible && isAccessible) {
+            eventItems[i].classList.remove("eventHidden");
+        }
+        else {
+            eventItems[i].classList.add("eventHidden");
+        }
     }
 }

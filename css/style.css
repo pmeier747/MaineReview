@@ -26,7 +26,7 @@ h1 {
     visibility: hidden;
 }
 
-.eventLocationSection {
+#eventLocationSection {
     position: sticky;
     top: 0px;
 
@@ -34,8 +34,8 @@ h1 {
     color: white;
     padding: 5px 10px;
 
-    display: flex;
-    flex: 0 1;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
 }
 
 .footer {
@@ -51,9 +51,26 @@ h1 {
     color: white;
 }
 
-#eventLocationSelector {
-    width: 100%;
-    margin-left: 10px;
+#eventSelectorExpand {
+    color: white;
+    text-align: center;
+    padding-left: 10px;
+    font-weight: bolder;
+    font-size: 18px;
+
+    cursor: pointer;
+}
+
+#eventLocationSelectorLabel {
+    min-width: 100px;
+}
+
+.eventSelectorDetailsHidden {
+    display: none;
+}
+
+.eventSelectorDetailsShown {
+    display: block;
 }
 
 .eventItem {
@@ -61,6 +78,11 @@ h1 {
     box-shadow: 0px 0px 5px #777777;
     display: flex;
     flex-direction: column;
+}
+
+#eventLocationSection > select, #eventLocationSection > input {
+    text-align: left;
+    width: 100%;
 }
 
 .eventInfo {
