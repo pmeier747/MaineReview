@@ -165,7 +165,7 @@ function DataLoaded(e) {
     }
     allEvent = allEvent
         .filter((a) => { return a.isValid(); })
-        .filter((a) => { return a.ShowDate.valueOf() > Date.now() - (8 * 60 * 60 * 1000); })
+        .filter((a) => { return a.ShowDate.valueOf() > Date.now() - (24 * 60 * 60 * 1000); })
         .sort((a, b) => { return a.ShowDate.valueOf() - b.ShowDate.valueOf(); });
     createTable(allEvent);
     setupLocationDropdown(allEvent);
