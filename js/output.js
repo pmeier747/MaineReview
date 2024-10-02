@@ -173,6 +173,7 @@ function DataLoaded(e) {
     for (let i = 0; i < allEvent.length; i++) {
         events.set(allEvent[i].ID, allEvent[i]);
     }
+    document.getElementById("eventsLoading")?.classList.add("infoHidden");
 }
 function parseDate(dateString) {
     let splitDates = (dateString ?? "").split("/");
@@ -385,6 +386,7 @@ function onAccessibleToggle(event) {
 }
 function filterChanged() {
     let eventItems = document.getElementsByClassName("eventItem");
+    let isAnEventVisible = false;
     for (let i = 0; i < eventItems.length; i++) {
         let event = events.get(eventItems[i].id);
         if (event == undefined) {
@@ -395,9 +397,16 @@ function filterChanged() {
         let isAccessible = event.IsAccessible == eventFilters.IsAccessible || !eventFilters.IsAccessible;
         if (isTownVisible && isEventVisible && isAccessible) {
             eventItems[i].classList.remove("eventHidden");
+            isAnEventVisible = true;
         }
         else {
             eventItems[i].classList.add("eventHidden");
         }
+    }
+    if (isAnEventVisible) {
+        document.getElementById("eventsNoMatching")?.classList.add("infoHidden");
+    }
+    else {
+        document.getElementById("eventsNoMatching")?.classList.remove("infoHidden");
     }
 }

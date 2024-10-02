@@ -188,6 +188,8 @@ function DataLoaded(this: XMLHttpRequest, e: ProgressEvent<EventTarget>) {
     for (let i = 0; i < allEvent.length; i++) {
         events.set(allEvent[i].ID, allEvent[i]);
     }
+
+    document.getElementById("eventsLoading")?.classList.add("infoHidden");
 }
 
 function parseDate(dateString: string | null): Date | null {
@@ -422,6 +424,7 @@ function onAccessibleToggle(this: HTMLInputElement, event: Event) : void {
 function filterChanged(): void {
     let eventItems: HTMLCollectionOf<Element> = document.getElementsByClassName("eventItem");
 
+    let isAnEventVisible: boolean = false;
     for (let i = 0; i < eventItems.length; i++) {
         let event: EventDetails | undefined = events.get(eventItems[i].id);
         if (event == undefined) { continue; }
@@ -432,9 +435,17 @@ function filterChanged(): void {
 
         if (isTownVisible && isEventVisible && isAccessible) {
             eventItems[i].classList.remove("eventHidden");
+            isAnEventVisible = true;
         }
         else {
             eventItems[i].classList.add("eventHidden");
         }
+    }
+
+    if (isAnEventVisible) {
+        document.getElementById("eventsNoMatching")?.classList.add("infoHidden");
+    }
+    else {
+        document.getElementById("eventsNoMatching")?.classList.remove("infoHidden");
     }
 }

@@ -19,6 +19,14 @@ h1 {
 .eventBody {
     max-width: 800px;
     margin: auto;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+}
+
+#eventsContainer {
+    flex: 1;
 }
 
 .eventItem.eventHidden {
@@ -44,6 +52,9 @@ h1 {
     font-size: 14px;
     padding: 2px 4px;
     text-align: center;
+
+    position: sticky;
+    bottom: 0px;
 }
 
 .footer > a {
@@ -229,5 +240,15 @@ div.tagHidden {
 .eventShort .eventFullDesc,
 .eventShort .timeDetails,
 .eventFull .eventShortDesc {
+    display: none;
+}
+
+.infoShow {
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.infoHidden {
     display: none;
 }
