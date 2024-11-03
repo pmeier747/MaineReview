@@ -235,7 +235,7 @@ div.tagHidden {
 .eventShortDesc, .eventFullDesc {
     margin: 4px 8px;
     font-size: 110%;
-    word-break: break-all;
+    word-break: break-word;
 }
 
 .eventShort .eventFullDesc,
