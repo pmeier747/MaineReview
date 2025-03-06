@@ -1,5 +1,5 @@
 Display Event,Timestamp,Title of the Event,Event Category,Event Date,Door Time,Start Time,End Time,Location (City/Town),Location (Venue),Venue Accessible?,Short Description,Long Description,Ticket Link
-true,9/14/2024 15:47:56,"ImprovFest Ireland Show 2 - Casino Improv, Fabled, Bingewatch",,11/13/2024,8:25:00 PM,8:30:00 PM,10:00:00 PM,Dublin,The Teacher's Lounge,,Show abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz 2 of Improv Fest Ireland featuring ...,"Casino Improv (UK)
+FALSE,9/14/2024 15:47:56,"ImprovFest Ireland Show 2 - Casino Improv, Fabled, Bingewatch",,11/13/2024,8:25:00 PM,8:30:00 PM,10:00:00 PM,Dublin,The Teacher's Lounge,,Show 2 of Improv Fest Ireland featuring ...,"Casino Improv (UK)
 Presents: The Invocation
 
 An improvised play of comedy and horror.
@@ -19,19 +19,1584 @@ Gather 'round, weary travellers. Sit thine bottoms and open thy ears to a story 
 Fabled is an entirely improvised fantasy adventure tale featuring a hilarious cast of improvisers with live musical accompaniment.
 
 Grab a stool at the Fabled Tavern and join us on our quest. Maybe bring a friend— after all, it's dangerous to go alone!
-abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz
+
 
 Bingewatch (USA)
 This show show is all about what you love and why you love it! Where the TV multiverse comes to you. Bingewatch takes two of the shows you're binge watching, and mixes them together to give you something wholly new yet delightfully familiar. Chock full of your favorite binge worthy goodness, Bingewatch, it's your favorite TV from an alternate reality. Watch what you love!",https://fienta.com/2024shows
-true,9/14/2024 15:50:53,wtewr,,,,,,,,,,,
-true,9/14/2024 15:51:29,new test,,,,,,,,,,,
-true,9/14/2024 15:55:42,sdfgsdf,,,,,,,sdfg,,,,
-true,9/14/2024 15:58:15,checkbox test,,10/3/2024,,,,52625,634,,5yhdrgfhd,dfghdfg,
-true,9/15/2024 11:57:18,Rachel test,Show,9/27/2024,7:45:00 PM,8:00:00 PM,9:00:00 AM,Galway,Steves Bar,Yes, An event,A lovely improv event,https://www.makevenues.co.uk/news/all-venue-news/venue-accessibility-checklist
-true,9/15/2024 12:03:41,RSC Test 2,Variety Night,9/25/2024,,8:00:00 PM,,Belfast,Laverys,Yes,Sunday night improv,,
-true,9/15/2024 12:09:33,Test 3,Class,9/25/2024,3:00:00 PM,3:30:00 PM,5:00:00 PM,Dublin,,No,A class,,
-true,9/15/2024 12:14:43,Test 4,Workshop,9/30/2024,,4:00:00 PM,,Derry,,No,An amazing workshop,,
-true,9/15/2024 12:31:11,Event title,Show,9/5/2024,6:45:00 PM,7:00:00 PM,9:00:00 PM,Belfast,,Yes,Musical improv spectacular,,
-true,9/15/2024 12:40:57,No Gmail Account,Class,10/12/2024,12:00:00 PM,1:00:00 PM,2:00:00 PM,Unknown,Also Unknown,No,Testing an account without Gmail,,
-true,9/15/2024 13:32:23,New Test Event,Class,9/27/2024,,11:00:00 PM,,Online,,No,"Dunno, short description here",,
-true,9/15/2024 13:33:16,djdghj,Variety Night,10/6/2024,,10:22:00 PM,,dfg,,Yes,fhgjfgh,,
+FALSE,9/15/2024 11:57:18,Rachel test,Show,9/27/2024,7:45:00 PM,8:00:00 PM,9:00:00 AM,Galway,Steves Bar,Yes, An event,A lovely improv event,https://www.makevenues.co.uk/news/all-venue-news/venue-accessibility-checklist
+FALSE,9/15/2024 12:03:41,RSC Test 2,Variety Night,9/25/2024,,8:00:00 PM,,Belfast,Laverys,Yes,Sunday night improv,,
+FALSE,9/15/2024 12:09:33,Test 3,Class,9/25/2024,3:00:00 PM,3:30:00 PM,5:00:00 PM,Dublin,,No,A class,,
+FALSE,9/15/2024 12:14:43,Test 4,Workshop,9/30/2024,,4:00:00 PM,,Derry,,No,An amazing workshop,,
+FALSE,9/15/2024 12:31:11,Event title,Show,9/5/2024,6:45:00 PM,7:00:00 PM,9:00:00 PM,Belfast,,Yes,Musical improv spectacular,,
+FALSE,9/15/2024 12:40:57,No Gmail Account,Class,10/12/2024,12:00:00 PM,1:00:00 PM,2:00:00 PM,Unknown,Also Unknown,No,Testing an account without Gmail,,
+FALSE,9/15/2024 13:32:23,New Test Event,Class,9/27/2024,,11:00:00 PM,,Online,,No,"Dunno, short description here",,
+FALSE,9/15/2024 13:33:16,djdghj,Variety Night,10/6/2024,,10:22:00 PM,,dfg,,Yes,fhgjfgh,,
+TRUE,9/18/2024 22:58:34,Sunday Night Improv,Show,9/22/2024,6:30:00 PM,7:00:00 PM,8:30:00 PM,Belfast,Lavery's,No,Sunday Night Improv Comedy feat. Possessive Robot,"This week we're in Lavery's Back Bar with:
+
+Ensemble: Possessive Robot
+Ensemble: Turnstyle
+Trio: SIsters of Eden
+
+..........
+
+Sunday night improv features the best and brightest of Belfast's comedy improvisers and actors, creating comedy sketches from audience prompts. The scenes have never been seen before, and are never repeated, meaning each show is unique.",https://www.eventbrite.co.uk/e/sunday-night-improv-tickets-1021640302647
+TRUE,9/18/2024 23:00:12,Improv Comedy for Beginners,Class,9/26/2024,5:45:00 PM,6:00:00 PM,8:30:00 PM,Belfast,Ballynafeigh Community Development Association,No,Learn to create and perform comedy theatre on the spot. 6 Thursdays from 26th September - 31st October,"Learn the basics of Improvisation in a fun and supportive environment.
+
+This class is for those who are new to acting, stage performance, or comedy, or those that just want to try to build in creativity and confidence in to their personal or professional lives.
+
+Improvisation is the art of confidently creating performance sketches without a script. Improvisation skills are a must for anyone who is interested in becoming a more versatile stage performer, or in giving live performance a go for the first time. They're also a great aid to the everyday skills that we use in our personal and professional lives, whether we need confidence in social interactions, clarity in our motivations and goals, or a creative edge at work.
+
+We cover a wide variety of concepts in Level 1 including:
+
+- The essence of comedic acting
+- Comedic scene structures
+- Performing for an audience
+- Creating improvised stories
+- Trust, authenticity, and collaboration
+- Confident decision making
+
+The class runs for 6 consecutive weeks, from 26th September - 31st October (6 - 8.30pm).",https://www.eventbrite.co.uk/e/improv-comedy-for-beginners-tickets-991121921347
+TRUE,9/18/2024 23:02:07,Turnstyle Improv in the Black Box!,Show,9/24/2024,7:45:00 PM,8:00:00 PM,9:30:00 PM,Belfast,The Black Box,Yes,Turnstyle presents two improv shows and some improv jam games in one night!,"Turnstyle Improv will feature two teams performing one-off completely improvised shows based on audience suggestions that will never be seen again!
+
+And there will be some classic short improv games (like on Whose Line Is It Anyway?). Participation totally optional!
+
+A show for those who love improv and for those who have never seen it and want to know what it's all about!
+
+Instagram: @turnstylebelfast for more",https://www.eventbrite.co.uk/e/turnstyle-improv-in-the-black-box-tickets-989059823557
+TRUE,9/18/2024 23:10:10,You: The Improvised Musical,Show,9/20/2024,8:30:00 PM,8:45:00 PM,9:35:00 PM,Dublin,Smock Alley Theatre,No,Ever fantasized about your life breaking into song and dance?,"Ever fantasized about your life breaking into song and dance?
+
+Well, hold onto your top hat, because for one magical night, it's showtime! Experience a fully improvised Broadway-style musical where music, lyrics, and narrative collide.
+
+Bring along someone deserving of their own musical spotlight and prepare to spill the tea on why they're the star of the show. So grab your jazz hands, warm up those vocal cords, and prepare for a night of musical magic that'll have you humming all the way home!",https://www.fringefest.com/festival/whats-on/you-the-improvised-musical
+TRUE,9/21/2024 17:29:11,Sunday Night Improv,Show,9/29/2024,6:45:00 PM,7:00:00 PM,8:30:00 PM,Belfast,Lavery's,No,Sunday Night Improv Comedy feat. Ghost Stories,"This week we're in Lavery's Back Bar with:
+
+Trio: Ghost Stories
+Duo: Deerstalkers
+
+..........
+
+GHOST STORIES: Captain Laragub and his fishermen explore the tale of a visiting spirit with unfinished business. A chilling one-act comedy.
+
+......................................................
+
+Sunday night improv features the best and brightest of Belfast's comedy improvisers and actors, creating comedy sketches from audience prompts. The scenes have never been seen before, and are never repeated, meaning each show is unique.",https://www.eventbrite.co.uk/e/sunday-night-improv-tickets-1024090571467
+TRUE,9/21/2024 17:34:25,Comedy with Laughter Lines,Show,9/25/2024,8:15:00 PM,8:30:00 PM,10:39:00 PM,Dublin,The Duke Pub,No,"One of the top comedy shows in Dublin, in the best Pub in the city centre. A hilarious night out and a free pint of Murphy’s or Heineken!","A FREE pint and a great night of entertainment!
+
+All for €10 plus booking fee €1.40
+
+One of the top comedy shows in town as rated by our audiences and not one of them is our Granny!
+
+See you Wednesday night :)
+
+The free drink must be availed of before the show starts.
+
+What the reviews say.......
+
+""The performers were unbelievably talented and quick"". ""Great set delivered by some very, very talented comedians/actors"". TripAdvisor
+
+These guys were so on point! Don’t know how they react so quickly with such fantastic humour. Prepare to have your jaw stretched!
+
+Every Wednesday in the Duke at 8.30 pm The players create quick witted sketches, scenes and songs from whatever suggestions are thrown at them by the audience to create a show that's fast, feelgood and always unpredictably funny. There's a referee on hand to steer the entertainment, call any fouls. All in the best Pub in Dublin!",https://www.eventbrite.ie/e/monthly-comedy-with-laughter-lines-a-free-pint-murphys-or-heineken-tickets-171116402767
+TRUE,10/2/2024 16:55:04,The X Files,Show,10/14/2024,6:45:00 PM,7:00:00 PM,8:30:00 PM,Belfast,Lavery's,Yes,A musical comedy based on popular 90s TV show - The X-Files,"FBI agents Fox Mulder and Dana Scully investigate some strange goings in a rural community. Is there a monster loose or is there a government conspiracy at play? Mulder and Scully will get to the bottom of it.
+
+This is a musical show, with all songs improvised on the spot, with musical accompaniment.",https://www.eventbrite.co.uk/e/the-x-files-the-musical-comedy-tickets-1034961998197?aff=ebdssbdestsearch&_gl=1*144hsl5*_up*MQ..*_ga*MjQwMzMxMzgzLjE3Mjc4ODQ0NTU.*_ga_TQVES5V6SH*MTcyNzg4NDQ1NS4xLjAuMTcyNzg4NDQ1NS4wLjAuMA..
+TRUE,10/2/2024 16:57:13,Turnstyle,Show,10/29/2024,7:45:00 PM,8:00:00 PM,9:30:00 PM,Belfast,The Black Box,Yes,Turnstyle presents two improv shows and some improv jam games in one night!,"Turnstyle Improv will feature two teams performing one-off completely improvised shows based on audience suggestions that will never be seen again!
+
+And there will be some classic short improv games (like on Whose Line Is It Anyway?). Participation totally optional!
+
+A show for those who love improv and for those who have never seen it and want to know what it's all about!
+
+Instagram: @turnstylebelfast for more",https://www.eventbrite.co.uk/e/turnstyle-improv-in-the-black-box-tickets-993628859667?aff=ebdssbdestsearch&_gl=1*16925v6*_up*MQ..*_ga*MjQwMzMxMzgzLjE3Mjc4ODQ0NTU.*_ga_TQVES5V6SH*MTcyNzg4NDQ1NS4xLjAuMTcyNzg4NDQ1NS4wLjAuMA..
+TRUE,10/2/2024 16:58:47,Improv Comedy for Beginners,Class,11/6/2024,,6:00:00 PM,8:30:00 PM,Belfast,Ballynafeigh Community Development Association,No,Learn the basics of Improvisation in a fun and supportive environment.,"This class is for those who are new to acting, stage performance, or comedy, or those that just want to try to build in creativity and confidence in to their personal or professional lives.
+
+Improvisation is the art of confidently creating performance sketches without a script. Improvisation skills are a must for anyone who is interested in becoming a more versatile stage performer, or in giving live performance a go for the first time. They're also a great aid to the everyday skills that we use in our personal and professional lives, whether we need confidence in social interactions, clarity in our motivations and goals, or a creative edge at work.
+
+We cover a wide variety of concepts in Level 1 including:
+
+The essence of comedic acting
+Comedic scene structures
+Performing for an audience
+Creating improvised stories
+Trust, authenticity, and collaboration
+Confident decision making
+The class runs for 6 consecutive weeks, from 6th November - 11th December (6 - 8.30pm).",https://www.eventbrite.co.uk/e/improv-comedy-for-beginners-tickets-1028027446767?aff=ebdssbdestsearch&_gl=1*129ugmc*_up*MQ..*_ga*MjQwMzMxMzgzLjE3Mjc4ODQ0NTU.*_ga_TQVES5V6SH*MTcyNzg4NDQ1NS4xLjAuMTcyNzg4NDQ1NS4wLjAuMA..
+TRUE,10/2/2024 17:07:52,MOB Comedy,Show,10/10/2024,7:45:00 PM,8:00:00 PM,10:30:00 PM,Dublin,Wigwam,No,Alternative Comedy from Dublin's top up-and-coming comedians! ,Alternative Comedy from Dublin's top up-and-coming comedians! One ticket gets you into the whole night. Come with friends or show up solo and make new ones! Featuring Women are Scary.,https://www.eventbrite.ie/e/comedy-at-wigwam-tickets-1031236886287
+TRUE,10/2/2024 19:52:21,The Playground: Weekly Improv Drop-In Event,Class,10/7/2024,6:45:00 PM,7:00:00 PM,9:00:00 PM,Dublin,Teachers Club,No,Come join us at The Playground with our weekly drop-in improv workshop!,"Come join us at The Playground with our weekly drop-in improv workshop!
+
+Running on Monday evenings, this is a chance to experience improv among like minded people. No experience necessary and all levels are welcome!
+
+Each week we will have a different theme with exercises and activities to allow us improve our improv skills. Whether you are interested in developing the skills for your professional or personal life, or you are someone who currently performs or would like to perform on stage, then there is something for everyone.
+
+The long-term objective of The Playground is to create a place for people to develop and create projects and shows, providing regular opportunities for those who wish to perform in shows.
+
+Facilitated by two very experienced improvisers, Neil Curran and Quinton O'Reilly, join us for some play! We also have guest teachers join us too.",https://www.meetup.com/improv-comedy-dublin/events/303490443/
+TRUE,10/2/2024 19:52:21,The Playground: Weekly Improv Drop-In Event,Class,10/14/2024,6:45:00 PM,7:00:00 PM,9:00:00 PM,Dublin,Teachers Club,No,Come join us at The Playground with our weekly drop-in improv workshop!,"Come join us at The Playground with our weekly drop-in improv workshop!
+
+Running on Monday evenings, this is a chance to experience improv among like minded people. No experience necessary and all levels are welcome!
+
+Each week we will have a different theme with exercises and activities to allow us improve our improv skills. Whether you are interested in developing the skills for your professional or personal life, or you are someone who currently performs or would like to perform on stage, then there is something for everyone.
+
+The long-term objective of The Playground is to create a place for people to develop and create projects and shows, providing regular opportunities for those who wish to perform in shows.
+
+Facilitated by two very experienced improvisers, Neil Curran and Quinton O'Reilly, join us for some play! We also have guest teachers join us too.",https://www.meetup.com/improv-comedy-dublin/events/303626573
+TRUE,10/2/2024 19:52:21,The Playground: Weekly Improv Drop-In Event,Class,10/21/2024,6:45:00 PM,7:00:00 PM,9:00:00 PM,Dublin,Teachers Club,No,Come join us at The Playground with our weekly drop-in improv workshop!,"Come join us at The Playground with our weekly drop-in improv workshop!
+
+Running on Monday evenings, this is a chance to experience improv among like minded people. No experience necessary and all levels are welcome!
+
+Each week we will have a different theme with exercises and activities to allow us improve our improv skills. Whether you are interested in developing the skills for your professional or personal life, or you are someone who currently performs or would like to perform on stage, then there is something for everyone.
+
+The long-term objective of The Playground is to create a place for people to develop and create projects and shows, providing regular opportunities for those who wish to perform in shows.
+
+Facilitated by two very experienced improvisers, Neil Curran and Quinton O'Reilly, join us for some play! We also have guest teachers join us too.",https://www.meetup.com/improv-comedy-dublin/events/303773571
+TRUE,10/2/2024 19:56:39,MATE Comedy Variety Hour,Variety Night,10/31/2024,7:45:00 PM,8:00:00 PM,10:30:00 PM,Dublin,Wigwam,No,"MATE, Dublin's favourite comedy variety hour presents a show hosted by Kate Moylan and Mikey Fleming, two best friends who don't like each other very much.","MATE, Dublin's favourite comedy variety hour presents a show hosted by Kate Moylan and Mikey Fleming, two best friends who don't like each other very much.
+
+Check out some of Dublin's top comedians riffing on this month:
+
+'DATING HORROR STORIES'",https://www.eventbrite.ie/e/mate-comedy-variety-hour-tickets-1010365920667
+TRUE,10/2/2024 20:01:41,Improv Level 1,Class,11/12/2024,7:00:00 PM,7:00:00 PM,10:00:00 PM,Dublin,Teacher's Club Theatre,No,Improv – Level 1: Six Week Evening Course runs Tuesdays from 12th November,"Improv – Level 1: Six Week Evening Course runs Tuesdays from 12th November
+
+Improvisation is a fun yet powerful way to release your creative potential in a fun and supportive environment! On the course, we explore the basics and fundamentals of improvisation both as a performing and professional skill. The course and workshops are designed to be fun and liberating as we unlock our creativity and conquer any inhibitions or fears we harbour when presenting or communicating through improv.
+
+In our professional and personal lives our need for connectivity, including having outlets outside of home and work, and recharging our personal and professional relationship skills is inherent to who we are. Improv is a great tool to further develop and enhance these skills.
+
+At the end of the course, participants will grasp the fundamentals of improvisation and will be able to apply those new skills to your personal, professional and performing life. From speaking off the cuff, to bringing an edge to your presentations, improv will bring an authentic edge to all aspects of what you do!
+
+Running over 6 Tuesdays evenings (7pm to 10pm) from 12th November 2024, each workshop focuses on a different aspect of improvisation.",https://www.lowerthetone.com/courses/improv-level-1-november-24/
+TRUE,10/6/2024 14:28:17,Shes and Theys for Palestine: Alternative Comedy Night,Variety Night,11/7/2024,7:30:00 PM,8:00:00 PM,10:30:00 PM,Dublin,Bello Bar,No,Alternative comedy night from some of the funniest Shes and Theys of Ireland. All proceeds go to Medical Aid for Palestinians,"After a sold out first show, Pin Drop (Róisín McGuigan & Amy LaGrue) are delighted to invite you to another Shes and Theys Comedy Night.
+
+We have a fantastic line up of improv, sketch, stand-up and musical comedy from some of the funniest Shes and Theys of Ireland.
+
+All proceeds from the night will be donated to Medical Aid for Palestinians, which works in collaboration with Palestinian communities and local partners to answer a wide range of health and social needs, from providing vital medical aid in emergencies, to supporting the development of better health services for the long term.
+
+MAP is a Charitable Company Limited by Guarantee. Registered Number 3038352 England. Charity Registration No. 1045315.This event is not being run directly by Medical Aid for Palestinians. Instead, Pin Drop are running the event and will donate all proceeds to Medical Aid for Palestinians.
+
+Follow @pin_drop_improv for acts announcements!",https://www.eventbrite.ie/e/shes-and-theys-for-palestine-tickets-1038159481957?aff=oddtdtcreator
+FALSE,10/6/2024 17:22:04,Ennis Improv Drop-In,Class,10/15/2024,7:00:00 PM,7:00:00 PM,8:30:00 PM,Ennis,Lucas Bar,Yes,This is an improv drop-in for anyone to come and play no matter what level of experience you possess.,"NOTE: These drop-ins take place every two weeks on Tuesday. They are not quite a class, but there is guidance. It may be worth creating a category for Drop-Ins.
+
+
+
+Thinking about trying improv, but not sure where to start? Our bi-weekly drop-in class is a perfect way to begin your improv journey in a low-risk, supportive environment! Each Tuesday night, this one-hour drop-In Improv Class gives you an opportunity to get stage time with some professional guidance and coaching. Every week, we explore a different facet of performing improv and work on an exercise to practice a skill. Improvisers at ANY level are welcome to join.
+
+The drop-In is your gateway to the exhilarating world of improv. In these sessions, participants are introduced to the fundamental aspects of improvisational theater in a relaxed and supportive environment.
+
+The session structure includes ""Improv Games,"" where everyone can shake off their nerves and ignite their creativity through lively activities. Following that, the ""Scene Workouts"" allow participants to dive deep into roles, exploring narratives and the intricate interplay between characters.
+
+Whether you're a newbie or just looking to sharpen your skills, The drop-In provides a platform to unleash your imaginative prowess and bond with fellow enthusiasts.
+
+What is a drop-in improv class?
+A drop-in class or workshop is an opportunity to get some stage time, practice, and repetitions. For our drop-ins, no improv experience is necessary, meaning the drop-in workshops don’t build off knowledge from previous workshops. The idea is that anyone can drop in any week and get a taste of what improv is like. It’s a great opportunity to see the culture and dynamic of the theater. Plus, you get to meet some members of the theater’s community in a low-pressure environment.
+
+How does it differ from your regular classes?
+Our Basic Improv Skills classes are designed to help you take your first baby steps as an improviser by introducing you to the skills you’ll need to be a successful improviser no matter what path you choose to take. We want your improv journey to be uniquely yours, so the classes can be taken in either order. Our drop-ins are newbie-friendly. But they are not structured toward a specific curriculum. Rather, they are designed to get you onstage doing scenes in a supportive environment. Our coaches generally work on a specific skill each night and craft the workshop toward honing that skill.
+
+What should I wear?
+Wear comfortable, stage-appropriate clothes. Meaning something that you would feel comfortable wearing if you had to sit in a chair on an elevated stage, roll on the ground, jump in the air, or crawl like a snake.
+
+What should I say?
+Don’t be afraid to strike up a conversation with the other folks there. It’s okay to be the new person, and the other folks at the drop-in will likely be thrilled that you’re joining them. There’s nothing wrong with telling someone it’s your first time at the drop-in and asking them questions about the format.
+
+What will be expected of me?
+Nothing will probably be expected of you. You’re not going to be forced into doing anything you don’t want to do. You will, however, be encouraged to participate. What that participation entails depends largely on the structure of the drop-in. At ours, we work mostly on two-person scenes. You might want to watch a couple of reps from some of the veterans of the drop-in first before going onstage.
+
+Should I just show up?
+YUP. And try to show up on time in case there is any instruction prior to the workshop starting. Improvisers are welcoming creatures, and whoever is running the drop-in should facilitate an awesome environment for getting your feet wet in improv. For a lot of drop-ins (including ours), you’re more than welcome to “audit” a workshop to get the lay of the land before jumping into the deep end.
+
+Give it a shot. The beauty of a drop-in is that—even if it’s not your scene—you can just choose to not do it again. There’s little to no commitment. You have nothing to lose.",https://www.meetup.com/ennis-improv-meetup-group/events/303647743/?eventOrigin=group_upcoming_events
+FALSE,10/7/2024 13:58:36,Bing Bong Comedy Improv Show,Show,11/21/2024,7:15:00 PM,7:30:00 PM,9:30:00 PM,Dublin,Smock Alley Theatre,Yes,An improv variety show with some of the best groups around.,"A chaotic cavalcade of comedy featuring some of Ireland’s tip top improv groups. Based off of small suggestions together the teams create characters, scenes and stories that have never existed before and will never exist again. Nothing is pre-planned so no one knows what’s going to happen next, including the performers. A very fun and very silly night out at the theatre.",https://smockalley.com/bing-bong-comedy-improv-show/
+TRUE,10/8/2024 9:01:56,Laughter Lines Halloween Spooktacular ,Show,10/30/2024,8:20:00 PM,8:30:00 PM,10:15:00 PM,Dublin,"The Duke Pub, Dublin 2",No,Laughter Lines Annual Halloween Improv Show,"🎃 Here it is folks, our favourite show of the year.🎃
+
+Our Halloween Spooktacular will take place on Wednesday 30th October in @thedukedublin2 
+FREE pre show Pint with your ticket and prizes for best suggestions and costumes on the night! 
+Book early as show will sell out! 👻",https://www.eventbrite.ie/e/laughter-lines-dublin-tickets-1031066356227
+TRUE,10/11/2024 9:52:56,Ghost Stories: Three Tales for Halloween!,Show,10/25/2024,7:30:00 PM,8:00:00 PM,9:30:00 PM,Dublin,The Dot Theatre,No,"GHOST STORIES is an immersive, spontaneous one-act play inspired by the audience. Join us for three unique experiences at the Dot Theatre.","GHOST STORIES is an immersive, spontaneous one-act play inspired by the audience. Join us for three unique experiences at the Dot Theatre.
+
+*About Ghost Stories*
+""Ghost Stories: A Devised Tale of Horror"" has sold out shows in venues across Ireland, and performed at the Scene + Heard festival, Improv Fest Ireland, and as part of Culture Night.
+
+It was recently described as ""stunning theatrical long-form improv"" by The Irish Times.",https://www.eventbrite.ie/e/ghost-stories-three-tales-for-halloween-tickets-1036968820657
+TRUE,10/12/2024 8:40:28,Spirit Guides,Workshop,10/19/2024,10:00:00 AM,10:00:00 AM,4:00:00 PM,Dublin,The LAB (Foley st),Yes,Six Workshops for Spirited Players,"Spirit Guides is a fun-fuelled, games-oriented adventure in spontaneous theatre, improvisation and comedy.
+
+In six workshops, a mix of first-timers, old-timers, dab-handers, and game-raisers will team up in The Spirit of Play and be guided by the intuitions of the Mind, Heart, Body, and Soul.",https://grandstretch.com/spirit-guides
+TRUE,10/12/2024 9:09:30,Bag of Cats Comedy Show,Variety Night,10/26/2024,8:00:00 PM,8:30:00 PM,10:30:00 PM,Dublin,The Pearse Centre,No,"The Bag of Bats Halloween Comedy Show, A spooky charity comedy show featuring improv standup and sketch comedy.","The Bag of Bats Halloween Comedy Show, A spooky charity comedy show featuring improv standup and sketch comedy. Dress up, BYOB and join us at the Pearse Centre on Pearse st. on October 26th",https://eventbooth.ie/etn/the-bag-of-bats-halloween-comedy-show/
+TRUE,10/12/2024 11:21:26,Moth & Butterfly,Variety Night,10/16/2024,7:00:00 PM,7:30:00 PM,7:00:00 PM,Galway,"Rouge, Dominic St",No,A popular storytelling night with improvisation featured.,"Described as ‘Galway’s warmest arts night’, Moth and Butterfly features multiple storytelling styles (folk, personal, improvisational) with professional performers and also audience contribution. The night happens every 2 months and there’s also a full 4 day festival of international acts each Feb, featuring workshops, shows, talks etc. www.mothandbutterflystories.com",https://www.mothandbutterflystories.com
+TRUE,10/12/2024 11:30:26,The Galway Improv Space,Workshop,10/30/2024,6:00:00 PM,6:15:00 PM,8:15:00 PM,Galway,"Commercial Boat Club, Steamers’ Quay",Yes,Galway’s only monthly improv workshop,"Galway’s only monthly improv sessions facilitated by Órla, Beau and Jessamyn, as well as guest teachers. Join the mailing list at thegalwayimprovspace@gmail.com",
+TRUE,10/12/2024 14:52:46,Belfast Improv Sunday night show ,Show,10/13/2024,6:45:00 PM,7:00:00 PM,8:30:00 PM,Belfast ,Laverys,Yes,Sunday Night Improv Comedy feat. Dopamine Disco,"This week we're in Lavery's Back Bar with:
+
+Ensemble: Dopamine Disco
+Duo: Begins
+
+..........
+
+Sunday night improv features the best and brightest of Belfast's comedy improvisers and actors, creating comedy sketches from audience prompts. The scenes have never been seen before, and are never repeated, meaning each show is unique.",https://www.eventbrite.co.uk/e/sunday-night-improv-tickets-1041841294357?utm_experiment=test_share_listing&aff=ebdsshios
+FALSE,10/14/2024 12:27:52,Improv Fest Ireland,Show,11/13/2024,6:45:00 PM,7:00:00 PM,,Dublin,Teachers Club,Yes,4 nights of some of the best in international and national improv groups. ,"Improv Fest Ireland marks its 10th edition with some of the best acts from Ireland and abroad. With a great variety of shows, from improvised musicals, improvised Shakespeare to fantasy adventure, there's something for everyone! Festival runs 13-16 November. ",https://improvfestireland.com/
+FALSE,10/17/2024 23:45:38,MAKE Improv - Short Form Improv Comedy For Performance,Class,10/23/2024,,7:00:00 PM,9:30:00 PM,Belfast,Ballynafeigh Community Development Association,No,Refine your existing short form improv experience and learn how to perform a “Whose Line Is It Anyway?” style show over 5 weeks.,"MAKE Improv - Short Form Workshop
+
+Learn how to put on a “Whose Line Is It Anyway?” style show from two of Belfast’s most experienced short form improv performers, Aaron and Marcus of MAKE Improv.
+
+This weekly class (over 5 weeks) is aimed at performers with some improv experience, helping you refine your skills and apply them specifically to short form improv with a strong focus on performance. You’ll dive into:
+
+• Improv fundamentals and how these apply to short form
+
+• Scenic-based games
+
+• Endowment games
+
+• Expert games
+
+• Skill-based games
+
+• Organising and staging a successful short form show
+
+About the instructors:
+
+Aaron is a founding member of the 6-person group Wonder Frog, which in 2012 was Northern Ireland’s best (and only) short form improv group. Marcus joined Wonder Frog in 2013, and together they regularly performed countless games.
+
+We will also be facilitating a group performance for any students who wish to put their skills into practice (date TBC).
+
+Dates: 5 weeks commencing Wednesday 23rd October to Wednesday 20th November
+
+Time: 7:00pm to 9:30pm
+
+Location: Ballynafeigh Community Development Association
+
+Places limited to 10 participants",https://www.eventbrite.co.uk/e/make-improv-short-form-improv-comedy-for-performance-tickets-1043168764857?aff=ebdssbdestsearch&_gl=1*156aozb*_up*MQ..*_ga*MjkzMDM5ODk5LjE3MjkyMDQ5MzE.*_ga_TQVES5V6SH*MTcyOTIwNDkzMS4xLjAuMTcyOTIwNDkzMS4wLjAuMA..
+TRUE,10/17/2024 23:47:50,Alien: The Musical,Show,10/28/2024,6:45:00 PM,7:00:00 PM,9:00:00 PM,Belfast,Lavery's,Yes,A musical comedy based on Ridley Scott's Alien,"In deep space, the crew of the starship Nostromo is awakened from their cryo-sleep capsules to investigate a distress call from an alien vessel. They decide to board the ship, but what horrors lie within?
+
+This is a musical comedy show, with all songs improvised live.",https://www.eventbrite.co.uk/e/alien-the-musical-tickets-1041820813097?aff=ebdssbdestsearch&_gl=1*1ce1eva*_up*MQ..*_ga*MjkzMDM5ODk5LjE3MjkyMDQ5MzE.*_ga_TQVES5V6SH*MTcyOTIwNDkzMS4xLjAuMTcyOTIwNDkzMS4wLjAuMA..
+TRUE,10/17/2024 23:51:25,Belfast Improv Festival 2024 - Sunday,Show,11/17/2024,6:30:00 PM,7:00:00 PM,9:30:00 PM,Belfast,Black Box,Yes,The opening night of the Belfast Improv Festival 2024,"The Opening Night of the Belfast Improv Festival, featuring 4 amazing International ensembles:
+
+Minnesota Public Rodeo
+Improteatre IMPEERIUM
+Impromptu Shakespeare
+Breakfast of Champions
+
+.................................
+
+This is the first time these groups have performed in Belfast, and each ensemble will be making it up as they go along.",https://www.eventbrite.co.uk/e/belfast-improv-festival-2024-sunday-tickets-1006340580767?aff=odcleoeventsincollection&_gl=1*433v4g*_up*MQ..*_ga*MjEyMDI5MDk1Mi4xNzI5MjA1Mjc1*_ga_TQVES5V6SH*MTcyOTIwNTI3NC4xLjEuMTcyOTIwNTI5Ni4wLjAuMA..
+TRUE,10/17/2024 23:53:59,Belfast Improv Festival 2024 - Monday,Show,11/18/2024,6:30:00 PM,7:00:00 PM,9:00:00 PM,Belfast,Lavery's,Yes,The second night of the Belfast Improv Festival 2024,"The second night of the Belfast Improv Festival, featuring 4 amazing International ensembles:
+
+Bla Bla Land
+Cliffs of Dover
+Paper Scissors
+The Jam
+
+This is the first time these groups have performed in Belfast, and each ensemble will be making it up as they go along.",https://www.eventbrite.co.uk/e/belfast-improv-festival-2024-monday-tickets-1011336513737?aff=odcleoeventsincollection&_gl=1*l37ajy*_up*MQ..*_ga*MjEyMDI5MDk1Mi4xNzI5MjA1Mjc1*_ga_TQVES5V6SH*MTcyOTIwNTI3NC4xLjEuMTcyOTIwNTI5Ni4wLjAuMA..
+TRUE,10/17/2024 23:56:06,Belfast Improv Festival 2024 - Tuesday,Show,11/19/2024,6:30:00 PM,7:00:00 PM,9:30:00 PM,Belfast,Lavery's,Yes,The closing night of the Belfast Improv Festival 2024,"The closing night of the Belfast Improv Festival, featuring 4 amazing International ensembles:
+
+New Weasels
+Behemoth
+Underthings
+The Jam
+
+This is the first time these groups have performed in Belfast, and each ensemble will be making it up as they go along.
+",https://www.eventbrite.co.uk/e/belfast-improv-festival-2024-tuesday-tickets-1011350234777?aff=odcleoeventsincollection&_gl=1*srwhc9*_up*MQ..*_ga*MjEyMDI5MDk1Mi4xNzI5MjA1Mjc1*_ga_TQVES5V6SH*MTcyOTIwNTI3NC4xLjEuMTcyOTIwNTI5Ni4wLjAuMA..
+TRUE,10/18/2024 0:01:55,Sunday Night Improv,Show,10/20/2024,6:45:00 PM,7:00:00 PM,8:30:00 PM,Belfast,Lavery's,Yes,Sunday Night Improv Comedy feat. Purgatory,"This week we're in Lavery's Back Bar with:
+
+Ensemble: Purgatory
+Ensemble: Turnstyle
+
+Sunday night improv features the best and brightest of Belfast's comedy improvisers and actors, creating comedy sketches from audience prompts. The scenes have never been seen before, and are never repeated, meaning each show is unique.",https://www.eventbrite.co.uk/e/sunday-night-improv-tickets-1047828582497?aff=ebdsoporgprofile&_gl=1*ejg7vr*_up*MQ..*_ga*MTg2Njc1NDQ5LjE3MjkyMDUzMDU.*_ga_TQVES5V6SH*MTcyOTIwNTMwNC4xLjAuMTcyOTIwNTMwNC4wLjAuMA..
+TRUE,10/18/2024 0:04:41,Try Improv Workshop,Workshop,10/23/2024,,6:00:00 PM,7:30:00 PM,Belfast,Ballynafeigh Community Development Association,No,A workshop for those looking to give Improv Comedy a go.,"A workshop for anyone looking to give comedic acting and improvisation a go. This will be a gentle introduction, with no previous experience necessary.
+
+Improvisation, or Improv Comedy, is the practice of acting without a script. It relies on truthfulness, comic timing, confidence, and a sense of play - all things that can be taught. In the workshop we'll cover the basics, especially play and confidence building.
+
+Cost: £5
+Start time: 6pm
+Venue: BCDA Top floor.",https://www.eventbrite.co.uk/e/try-improv-workshop-tickets-1044876362327?aff=ebdsoporgprofile&_gl=1*1p360yq*_up*MQ..*_ga*MTg2Njc1NDQ5LjE3MjkyMDUzMDU.*_ga_TQVES5V6SH*MTcyOTIwNTMwNC4xLjAuMTcyOTIwNTMwNC4wLjAuMA..
+TRUE,10/19/2024 12:18:25,MAKE Improv - Short Form Improv Comedy For Performance,Workshop,10/23/2024,,7:00:00 PM,9:30:00 PM,Belfast,Ballynafeigh Community Development Association,No,5 week short form improv workshop,"MAKE Improv - Short Form Workshop
+Learn how to put on a “Whose Line Is It Anyway?” style show from two of Belfast’s most experienced short form improv performers, Aaron and Marcus of MAKE Improv.
+
+This weekly class (over 5 weeks) is aimed at performers with some improv experience, helping you refine your skills and apply them specifically to short form improv with a strong focus on performance. You’ll dive into:
+
+• Improv fundamentals and how these apply to short form
+• Scenic-based games
+• Endowment games
+• Expert games
+• Skill-based games
+• Organising and staging a successful short form show
+
+About the instructors:
+Aaron is a founding member of the 6-person group Wonder Frog, which in 2012 was Northern Ireland’s best (and only) short form improv group. Marcus joined Wonder Frog in 2013, and together they regularly performed countless games.
+
+We will also be facilitating a group performance for any students who wish to put their skills into practice (date TBC).
+
+Dates: 5 weeks commencing Wednesday 23rd October to Wednesday 20th November
+Time: 7:00pm to 9:30pm
+Location: Ballynafeigh Community Development Association
+Places limited to 10 participants",https://www.eventbrite.co.uk/e/make-improv-short-form-improv-comedy-for-performance-tickets-1043168764857
+TRUE,11/3/2024 9:02:47,The Playground: Weekly Improv Drop-In Event,Workshop,11/4/2024,6:45:00 PM,7:00:00 PM,9:00:00 PM,Dublin,Teacher's Club,No,"Come join us at The Playground with our weekly drop-in improv workshop!
+
+Running on Monday evenings, this is a chance to experience improv among like minded people. No experience necessary and all levels are welcome!","Come join us at The Playground with our weekly drop-in improv workshop!
+
+Running on Monday evenings, this is a chance to experience improv among like minded people. No experience necessary and all levels are welcome!
+
+Each week we will have a different theme with exercises and activities to allow us improve our improv skills. Whether you are interested in developing the skills for your professional or personal life, or you are someone who currently performs or would like to perform on stage, then there is something for everyone.
+
+The long-term objective of The Playground is to create a place for people to develop and create projects and shows, providing regular opportunities for those who wish to perform in shows.
+
+Facilitated by two very experienced improvisers, Neil Curran and Quinton O'Reilly, join us for some play! We also have guest teachers join us too.
+
+Important Info
+* Each drop-in session lasts 2 hours and starts at 7pm in the Teachers' Club.
+
+* Each drop-in costs just €12.
+
+* You can also sign up for membership which costs just €30 per calendar month and gets you access to all workshops.
+
+* No experience necessary and all levels welcome.
+
+* Events run on a drop-in basis offering flexibility for those who can't commit to doing a course.
+
+* Payment can be made on arrival.
+
+* After the workshop, many of us stick around for chats in the bar upstairs so do stick around for it.
+
+For more about Neil Curran please visit www.lowerthetone.com
+
+Check us out on Instagram here: https://www.instagram.com/improv_playground/",https://www.meetup.com/improv-comedy-dublin/events/304064112/
+TRUE,11/3/2024 9:02:47,The Playground: Weekly Improv Drop-In Event,Workshop,11/18/2024,6:45:00 PM,7:00:00 PM,9:00:00 PM,Dublin,Teacher's Club,No,"Come join us at The Playground with our weekly drop-in improv workshop!
+
+Running on Monday evenings, this is a chance to experience improv among like minded people. No experience necessary and all levels are welcome!","Come join us at The Playground with our weekly drop-in improv workshop!
+
+Running on Monday evenings, this is a chance to experience improv among like minded people. No experience necessary and all levels are welcome!
+
+Each week we will have a different theme with exercises and activities to allow us improve our improv skills. Whether you are interested in developing the skills for your professional or personal life, or you are someone who currently performs or would like to perform on stage, then there is something for everyone.
+
+The long-term objective of The Playground is to create a place for people to develop and create projects and shows, providing regular opportunities for those who wish to perform in shows.
+
+Facilitated by two very experienced improvisers, Neil Curran and Quinton O'Reilly, join us for some play! We also have guest teachers join us too.
+
+Important Info
+* Each drop-in session lasts 2 hours and starts at 7pm in the Teachers' Club.
+
+* Each drop-in costs just €12.
+
+* You can also sign up for membership which costs just €30 per calendar month and gets you access to all workshops.
+
+* No experience necessary and all levels welcome.
+
+* Events run on a drop-in basis offering flexibility for those who can't commit to doing a course.
+
+* Payment can be made on arrival.
+
+* After the workshop, many of us stick around for chats in the bar upstairs so do stick around for it.
+
+For more about Neil Curran please visit www.lowerthetone.com
+
+Check us out on Instagram here: https://www.instagram.com/improv_playground/",https://www.meetup.com/improv-comedy-dublin/events/304064282/
+TRUE,11/3/2024 9:02:47,The Playground: Weekly Improv Drop-In Event,Workshop,11/25/2024,6:45:00 PM,7:00:00 PM,9:00:00 PM,Dublin,Teacher's Club,No,"Come join us at The Playground with our weekly drop-in improv workshop!
+
+Running on Monday evenings, this is a chance to experience improv among like minded people. No experience necessary and all levels are welcome!","Come join us at The Playground with our weekly drop-in improv workshop!
+
+Running on Monday evenings, this is a chance to experience improv among like minded people. No experience necessary and all levels are welcome!
+
+Each week we will have a different theme with exercises and activities to allow us improve our improv skills. Whether you are interested in developing the skills for your professional or personal life, or you are someone who currently performs or would like to perform on stage, then there is something for everyone.
+
+The long-term objective of The Playground is to create a place for people to develop and create projects and shows, providing regular opportunities for those who wish to perform in shows.
+
+Facilitated by two very experienced improvisers, Neil Curran and Quinton O'Reilly, join us for some play! We also have guest teachers join us too.
+
+Important Info
+* Each drop-in session lasts 2 hours and starts at 7pm in the Teachers' Club.
+
+* Each drop-in costs just €12.
+
+* You can also sign up for membership which costs just €30 per calendar month and gets you access to all workshops.
+
+* No experience necessary and all levels welcome.
+
+* Events run on a drop-in basis offering flexibility for those who can't commit to doing a course.
+
+* Payment can be made on arrival.
+
+* After the workshop, many of us stick around for chats in the bar upstairs so do stick around for it.
+
+For more about Neil Curran please visit www.lowerthetone.com
+
+Check us out on Instagram here: https://www.instagram.com/improv_playground/",https://www.meetup.com/improv-comedy-dublin/events/304064449/
+TRUE,11/3/2024 9:02:47,The Playground: Weekly Improv Drop-In Event,Workshop,12/2/2024,6:45:00 PM,7:00:00 PM,9:00:00 PM,Dublin,Teacher's Club,No,"Come join us at The Playground with our weekly drop-in improv workshop!
+
+Running on Monday evenings, this is a chance to experience improv among like minded people. No experience necessary and all levels are welcome!","Come join us at The Playground with our weekly drop-in improv workshop!
+
+Running on Monday evenings, this is a chance to experience improv among like minded people. No experience necessary and all levels are welcome!
+
+Each week we will have a different theme with exercises and activities to allow us improve our improv skills. Whether you are interested in developing the skills for your professional or personal life, or you are someone who currently performs or would like to perform on stage, then there is something for everyone.
+
+The long-term objective of The Playground is to create a place for people to develop and create projects and shows, providing regular opportunities for those who wish to perform in shows.
+
+Facilitated by two very experienced improvisers, Neil Curran and Quinton O'Reilly, join us for some play! We also have guest teachers join us too.
+
+Important Info
+* Each drop-in session lasts 2 hours and starts at 7pm in the Teachers' Club.
+
+* Each drop-in costs just €12.
+
+* You can also sign up for membership which costs just €30 per calendar month and gets you access to all workshops.
+
+* No experience necessary and all levels welcome.
+
+* Events run on a drop-in basis offering flexibility for those who can't commit to doing a course.
+
+* Payment can be made on arrival.
+
+* After the workshop, many of us stick around for chats in the bar upstairs so do stick around for it.
+
+For more about Neil Curran please visit www.lowerthetone.com
+
+Check us out on Instagram here: https://www.instagram.com/improv_playground/",https://www.meetup.com/improv-comedy-dublin/events/304064454/
+TRUE,11/3/2024 9:02:47,The Playground: Weekly Improv Drop-In Event,Workshop,12/9/2024,6:45:00 PM,7:00:00 PM,9:00:00 PM,Dublin,Teacher's Club,No,"Come join us at The Playground with our weekly drop-in improv workshop!
+
+Running on Monday evenings, this is a chance to experience improv among like minded people. No experience necessary and all levels are welcome!","Come join us at The Playground with our weekly drop-in improv workshop!
+
+Running on Monday evenings, this is a chance to experience improv among like minded people. No experience necessary and all levels are welcome!
+
+Each week we will have a different theme with exercises and activities to allow us improve our improv skills. Whether you are interested in developing the skills for your professional or personal life, or you are someone who currently performs or would like to perform on stage, then there is something for everyone.
+
+The long-term objective of The Playground is to create a place for people to develop and create projects and shows, providing regular opportunities for those who wish to perform in shows.
+
+Facilitated by two very experienced improvisers, Neil Curran and Quinton O'Reilly, join us for some play! We also have guest teachers join us too.
+
+Important Info
+* Each drop-in session lasts 2 hours and starts at 7pm in the Teachers' Club.
+
+* Each drop-in costs just €12.
+
+* You can also sign up for membership which costs just €30 per calendar month and gets you access to all workshops.
+
+* No experience necessary and all levels welcome.
+
+* Events run on a drop-in basis offering flexibility for those who can't commit to doing a course.
+
+* Payment can be made on arrival.
+
+* After the workshop, many of us stick around for chats in the bar upstairs so do stick around for it.
+
+For more about Neil Curran please visit www.lowerthetone.com
+
+Check us out on Instagram here: https://www.instagram.com/improv_playground/",https://www.meetup.com/improv-comedy-dublin/events/304064456/
+TRUE,11/3/2024 9:02:47,The Playground: Weekly Improv Drop-In Event,Workshop,12/16/2024,6:45:00 PM,7:00:00 PM,9:00:00 PM,Dublin,Teacher's Club,No,"Come join us at The Playground with our weekly drop-in improv workshop!
+
+Running on Monday evenings, this is a chance to experience improv among like minded people. No experience necessary and all levels are welcome!","Come join us at The Playground with our weekly drop-in improv workshop!
+
+Running on Monday evenings, this is a chance to experience improv among like minded people. No experience necessary and all levels are welcome!
+
+Each week we will have a different theme with exercises and activities to allow us improve our improv skills. Whether you are interested in developing the skills for your professional or personal life, or you are someone who currently performs or would like to perform on stage, then there is something for everyone.
+
+The long-term objective of The Playground is to create a place for people to develop and create projects and shows, providing regular opportunities for those who wish to perform in shows.
+
+Facilitated by two very experienced improvisers, Neil Curran and Quinton O'Reilly, join us for some play! We also have guest teachers join us too.
+
+Important Info
+* Each drop-in session lasts 2 hours and starts at 7pm in the Teachers' Club.
+
+* Each drop-in costs just €12.
+
+* You can also sign up for membership which costs just €30 per calendar month and gets you access to all workshops.
+
+* No experience necessary and all levels welcome.
+
+* Events run on a drop-in basis offering flexibility for those who can't commit to doing a course.
+
+* Payment can be made on arrival.
+
+* After the workshop, many of us stick around for chats in the bar upstairs so do stick around for it.
+
+For more about Neil Curran please visit www.lowerthetone.com
+
+Check us out on Instagram here: https://www.instagram.com/improv_playground/",https://www.meetup.com/improv-comedy-dublin/events/304064467/
+TRUE,11/4/2024 13:33:57,MOB Comedy,Show,11/7/2024,7:45:00 PM,8:00:00 PM,10:00:00 PM,Dublin,Wigwam,No,LIVE COMEDY featuring Dublin's Top Comedians and Improvisers. Different show every Thursday night.,"Alternative Comedy from Dublin's top up-and-coming comedians! One ticket gets you into the whole night. Come with friends or show up solo and make new ones! Doors at 745.
+
+8PM- BUFF JESUS// SNEAK PREVIEW
+
+MOB incredible house teams present THE HAROLD and THE IMPROVISED MOVIE.
+
+9PM- THE INSTAGRAM SHOW
+
+An all-star team of MOB performers come together to create improvised comedy inspired by an audience member's Instagram page.",https://www.eventbrite.com/e/comedy-at-wigwam-tickets-1067273566969?aff=ebdssbdestsearch&keep_tld=1
+TRUE,11/4/2024 20:21:48,TheatreSports™️,Show,11/17/2024,6:00:00 PM,6:15:00 PM,7:45:00 PM,Dublin,The Pearse Centre,No,There’s no “i” in TheatreSports™ — a spontaneous theatre competition fuelled by Team Spirit!,"Theatre entertains and educates an audience. Sports will ignite a crowd. TheatreSports™ combines forces to generate ‘heat’ in your seats, as the competition fires up—spurring teams to take risks and raise their game in each round of challenges, making ""Absolute Scenes!"" out of audience suggestions.
+
+Grand Stretch® is proud to bring this world-renowned impro theatre format to Irish audiences as Ireland's leading member of the International TheatreSports™ Institute.
+
+We’ve just created a page detailing The Game Plan and A History of TheatreSports™, complete with a heap of Dave Hussey’s pictures from our Grand Fest show, in July.",https://grandstretch.com/book-now/ola/services/theatresports-1
+TRUE,11/10/2024 13:27:11,"TURNSTYLE: A Night of Stand Up, Sketch & Improv",Variety Night,11/15/2024,7:30:00 PM,8:00:00 PM,10:30:00 PM,Belfast,The Sunflower,No,"At Turnstyle you'll see new and experienced performers try fun, silly ideas that you may never see again!","This month we are back in Sunflower Public House. Doors open at 7:30pm; Show starts at 8pm. Line-up TBA. Keep an eye on our instgram for more info.
+
+@turnstylebelfast",https://www.eventbrite.co.uk/e/turnstyle-a-night-of-stand-up-sketch-improv-tickets-1056575157739?aff=ebdssbdestsearch&_gl=1*61j18w*_up*MQ..*_ga*MTkzOTQ4MjkxNi4xNzMxMjQ1MDkw*_ga_TQVES5V6SH*MTczMTI0NTA4OS4xLjAuMTczMTI0NTA4OS4wLjAuMA..
+TRUE,11/10/2024 13:29:10,Turnstyle Improv,Show,11/26/2024,7:45:00 PM,8:00:00 PM,9:30:00 PM,Belfast,The Black Box,Yes,Turnstyle presents two improv shows and some improv jam games in one night!,"Turnstyle Improv will feature two teams performing one-off completely improvised shows based on audience suggestions that will never be seen again!
+
+And there will be some classic short improv games (like on Whose Line Is It Anyway?). Participation totally optional!
+
+A show for those who love improv and for those who have never seen it and want to know what it's all about!
+
+Instagram: @turnstylebelfast for more",https://www.eventbrite.co.uk/e/turnstyle-improv-in-the-black-box-tickets-993639531587?aff=ebdssbdestsearch&_gl=1*18cneu*_up*MQ..*_ga*MTkzOTQ4MjkxNi4xNzMxMjQ1MDkw*_ga_TQVES5V6SH*MTczMTI0NTA4OS4xLjAuMTczMTI0NTA4OS4wLjAuMA..
+TRUE,11/10/2024 13:32:35,MOB COMEDY at Wigwam,Show,11/14/2024,,8:00:00 PM,10:30:00 PM,Dublin,Wigwam,No,LIVE COMEDY featuring Dublin's Top Comedians and Improvisers. Different show every Thursday night.,"Alternative Comedy from Dublin's top up-and-coming comedians! One ticket gets you into the whole night. Come with friends or show up solo and make new ones! Doors at 745.
+
+8PM- FEAR US (PLEASE)
+
+9PM- TURKEY'S REVENGE",https://www.eventbrite.co.uk/e/comedy-at-wigwam-tickets-1074352831239?aff=ebdssbdestsearch&keep_tld=1
+TRUE,11/10/2024 13:35:34,Dublin Comedy Improv - Sundays at the international,Show,11/17/2024,7:30:00 PM,8:00:00 PM,10:00:00 PM,Dublin,"The International Bar, 23 Wicklow St",No,The hugely popular Dublin Comedy Improv perform Every Sunday 8pm.,"The Dublin Comedy Improv is the longest running Improv troupe in Ireland and second longest in Europe.
+
+They perform every Sunday @8PM (Doors 7:30pm) in the International Bar (the birth place of Irish comedy). The show is made up on the spot based on audience suggestions, it has been described as
+
+“absolutely amazing”
+
+“hilariously funny” (Hot Press). The DCI membership is made up of acclaimed comedians, actors, VO artists, writers and all-round funny people who have been at the forefront of Irish comedy since its inception. Fr Ted, Don’t Feed the Gondolas, Moone Boy, Republic of Telly and Bridget & Eamon are just some of the shows that the DCI have been involved in. They have also toured the world playing all sorts of festivals working with cast members from the Simpsons, Never Mind the Buzzcocks, 8 out of 10 Cats, Would I Lie To You, Mock The Week, The Drew Carey Show, and, of course, Whose Line is it Anyway.
+
+The show never fails to impress and always leaves the audience wanting more. The most original & inspiring comedy show you will ever see!
+
+DOORS 7:30 SHARP.
+
+Please arrive by 7:45pm or you may not get a seat!",https://www.eventbrite.co.uk/e/dublin-comedy-improv-sundays-at-the-international-tickets-699661455247
+TRUE,11/10/2024 13:35:34,Dublin Comedy Improv - Sundays at the international,Show,11/24/2024,7:30:00 PM,8:00:00 PM,10:00:00 PM,Dublin,"The International Bar, 23 Wicklow St",No,The hugely popular Dublin Comedy Improv perform Every Sunday 8pm.,"The Dublin Comedy Improv is the longest running Improv troupe in Ireland and second longest in Europe.
+
+They perform every Sunday @8PM (Doors 7:30pm) in the International Bar (the birth place of Irish comedy). The show is made up on the spot based on audience suggestions, it has been described as
+
+“absolutely amazing”
+
+“hilariously funny” (Hot Press). The DCI membership is made up of acclaimed comedians, actors, VO artists, writers and all-round funny people who have been at the forefront of Irish comedy since its inception. Fr Ted, Don’t Feed the Gondolas, Moone Boy, Republic of Telly and Bridget & Eamon are just some of the shows that the DCI have been involved in. They have also toured the world playing all sorts of festivals working with cast members from the Simpsons, Never Mind the Buzzcocks, 8 out of 10 Cats, Would I Lie To You, Mock The Week, The Drew Carey Show, and, of course, Whose Line is it Anyway.
+
+The show never fails to impress and always leaves the audience wanting more. The most original & inspiring comedy show you will ever see!
+
+DOORS 7:30 SHARP.
+
+Please arrive by 7:45pm or you may not get a seat!",https://www.eventbrite.co.uk/e/dublin-comedy-improv-sundays-at-the-international-tickets-699661465277
+TRUE,11/10/2024 13:35:34,Dublin Comedy Improv - Sundays at the international,Show,12/1/2024,7:30:00 PM,8:00:00 PM,10:00:00 PM,Dublin,"The International Bar, 23 Wicklow St",No,The hugely popular Dublin Comedy Improv perform Every Sunday 8pm.,"The Dublin Comedy Improv is the longest running Improv troupe in Ireland and second longest in Europe.
+
+They perform every Sunday @8PM (Doors 7:30pm) in the International Bar (the birth place of Irish comedy). The show is made up on the spot based on audience suggestions, it has been described as
+
+“absolutely amazing”
+
+“hilariously funny” (Hot Press). The DCI membership is made up of acclaimed comedians, actors, VO artists, writers and all-round funny people who have been at the forefront of Irish comedy since its inception. Fr Ted, Don’t Feed the Gondolas, Moone Boy, Republic of Telly and Bridget & Eamon are just some of the shows that the DCI have been involved in. They have also toured the world playing all sorts of festivals working with cast members from the Simpsons, Never Mind the Buzzcocks, 8 out of 10 Cats, Would I Lie To You, Mock The Week, The Drew Carey Show, and, of course, Whose Line is it Anyway.
+
+The show never fails to impress and always leaves the audience wanting more. The most original & inspiring comedy show you will ever see!
+
+DOORS 7:30 SHARP.
+
+Please arrive by 7:45pm or you may not get a seat!",https://www.eventbrite.co.uk/e/dublin-comedy-improv-sundays-at-the-international-tickets-699661475307
+TRUE,11/10/2024 13:35:34,Dublin Comedy Improv - Sundays at the international,Show,12/8/2024,7:30:00 PM,8:00:00 PM,10:00:00 PM,Dublin,"The International Bar, 23 Wicklow St",No,The hugely popular Dublin Comedy Improv perform Every Sunday 8pm.,"The Dublin Comedy Improv is the longest running Improv troupe in Ireland and second longest in Europe.
+
+They perform every Sunday @8PM (Doors 7:30pm) in the International Bar (the birth place of Irish comedy). The show is made up on the spot based on audience suggestions, it has been described as
+
+“absolutely amazing”
+
+“hilariously funny” (Hot Press). The DCI membership is made up of acclaimed comedians, actors, VO artists, writers and all-round funny people who have been at the forefront of Irish comedy since its inception. Fr Ted, Don’t Feed the Gondolas, Moone Boy, Republic of Telly and Bridget & Eamon are just some of the shows that the DCI have been involved in. They have also toured the world playing all sorts of festivals working with cast members from the Simpsons, Never Mind the Buzzcocks, 8 out of 10 Cats, Would I Lie To You, Mock The Week, The Drew Carey Show, and, of course, Whose Line is it Anyway.
+
+The show never fails to impress and always leaves the audience wanting more. The most original & inspiring comedy show you will ever see!
+
+DOORS 7:30 SHARP.
+
+Please arrive by 7:45pm or you may not get a seat!",https://www.eventbrite.co.uk/e/dublin-comedy-improv-sundays-at-the-international-tickets-699661485337
+TRUE,11/10/2024 13:35:34,Dublin Comedy Improv - Sundays at the international,Show,12/15/2024,7:30:00 PM,8:00:00 PM,10:00:00 PM,Dublin,"The International Bar, 23 Wicklow St",No,The hugely popular Dublin Comedy Improv perform Every Sunday 8pm.,"The Dublin Comedy Improv is the longest running Improv troupe in Ireland and second longest in Europe.
+
+They perform every Sunday @8PM (Doors 7:30pm) in the International Bar (the birth place of Irish comedy). The show is made up on the spot based on audience suggestions, it has been described as
+
+“absolutely amazing”
+
+“hilariously funny” (Hot Press). The DCI membership is made up of acclaimed comedians, actors, VO artists, writers and all-round funny people who have been at the forefront of Irish comedy since its inception. Fr Ted, Don’t Feed the Gondolas, Moone Boy, Republic of Telly and Bridget & Eamon are just some of the shows that the DCI have been involved in. They have also toured the world playing all sorts of festivals working with cast members from the Simpsons, Never Mind the Buzzcocks, 8 out of 10 Cats, Would I Lie To You, Mock The Week, The Drew Carey Show, and, of course, Whose Line is it Anyway.
+
+The show never fails to impress and always leaves the audience wanting more. The most original & inspiring comedy show you will ever see!
+
+DOORS 7:30 SHARP.
+
+Please arrive by 7:45pm or you may not get a seat!",https://www.eventbrite.co.uk/e/dublin-comedy-improv-sundays-at-the-international-tickets-699661495367
+TRUE,11/10/2024 13:37:32,Improv Clubhouse,Show,11/24/2024,,5:30:00 PM,,Dublin,Chaplin's Bar,No,A free monthly improv show for new & established groups. ,"A free monthly improv show for new & established groups.
+Want your group to play at Clubhouse? Sign-ups are currently open.",https://www.instagram.com/improv_clubhouse/
+TRUE,11/10/2024 13:40:44,Sunday Night Improv,Show,11/10/2024,6:45:00 PM,7:00:00 PM,8:30:00 PM,Belfast,Lavery's,No,"This week we're in Lavery's Back Bar with:
+
+Ensemble: The Neighbours
+Ensemble: New Weasels","This week we're in Lavery's Back Bar with:
+
+Ensemble: The Neighbours
+Ensemble: New Weasels
+
+..........
+
+Sunday night improv features the best and brightest of Belfast's comedy improvisers and actors, creating comedy sketches from audience prompts. The scenes have never been seen before, and are never repeated, meaning each show is unique.",https://www.eventbrite.co.uk/e/sunday-night-improv-tickets-1074320594819
+TRUE,11/10/2024 13:41:42,Bing Bong Comedy Improv Show,Show,11/21/2024,7:15:00 PM,7:30:00 PM,9:45:00 PM,Dublin,Smock Alley Theatre,Yes,Bing Bong is back! A very fun and very silly night out at the theatre.,"A chaotic cavalcade of comedy featuring some of Ireland’s tip top improv groups. Based off of small suggestions together the teams create characters, scenes and stories that have never existed before and will never exist again. Nothing is pre-planned so no one knows what’s going to happen next, including the performers. ",https://smockalley.ticketsolve.com/ticketbooth/shows/873649406
+TRUE,11/10/2024 13:42:30,Laughter Lines Dublin,Show,11/27/2024,,8:30:00 PM,10:30:00 PM,Dublin,The Duke Pub,No,"Get ready to laugh your socks off at Laughter Lines Dublin, where top comedians will have you in stitches all night long!",Welcome to Laughter Lines Dublin! Get ready for a night filled with hilarious stand-up comedy at The Duke Pub. Join us for an evening of non-stop laughter and good vibes. Our talented comedians will have you in stitches from start to finish. Don't miss out on this fantastic event - grab your friends and come on down for a night to remember!,https://www.eventbrite.ie/e/laughter-lines-dublin-tickets-1040815857247
+TRUE,11/10/2024 13:49:01,MOB COMEDY at Wigwam,Variety Night,11/21/2024,7:45:00 PM,8:00:00 PM,10:30:00 PM,Dublin,Wigwam,No,LIVE COMEDY featuring Dublin's Top Comedians and Improvisers. Different show every Thursday night.,"Alternative Comedy from Dublin's top up-and-coming comedians! One ticket gets you into the whole night. Come with friends or show up solo and make new ones! Doors at 745.
+
+8PM- FIONN & MICHAEL SKETCH SHOW
+
+9PM- DUNGEONS & NAGGINS",https://www.eventbrite.ie/e/comedy-at-wigwam-tickets-1074375178079
+TRUE,11/10/2024 13:52:07,MOB COMEDY at Wigwam,Variety Night,11/28/2024,7:45:00 PM,8:00:00 PM,10:30:00 PM,Dublin,Wigwam,No,LIVE COMEDY featuring Dublin's Top Comedians and Improvisers. Different show every Thursday night.,"Alternative Comedy from Dublin's top up-and-coming comedians! One ticket gets you into the whole night. Come with friends or show up solo and make new ones! Doors at 745.
+
+8PM- STUDENT SHOW
+
+9PM- CRONIE BROS",https://www.eventbrite.ie/e/comedy-at-wigwam-tickets-1074382740699
+TRUE,11/10/2024 14:04:21,Improv Fest Ireland – Wednesday,Show,11/13/2024,6:30:00 PM,7:00:00 PM,11:30:00 PM,Dublin,Teacher's Club,No,"Improv Fest Ireland marks its 10th edition with some of the best acts from Ireland and abroad. With a great variety of shows, from improvised musicals, improvised Shakespeare to fantasy adventure, there's something for everyone! Festival runs 13-16 November.","Improv Fest Ireland marks its 10th edition with some of the best acts from Ireland and abroad. With a great variety of shows, from improvised musicals, improvised Shakespeare to fantasy adventure, there's something for everyone! Festival runs 13-16 November.
+
+7pm: Turnstyle (NI) / The Wednesday Agency (INT) / Pakke Pakke (ESP/POL)
+8:30pm: Casino Improv (UK) / Fabled (UK) / Bingewatch (US)
+10pm: The Final Cabin in the Farthest Woods (INT)
+
+For more info about the shows and performers please visit www.improvfestireland.com
+",https://fienta.com/2024shows
+TRUE,11/10/2024 14:04:21,Improv Fest Ireland – Thursday,Show,11/14/2024,6:30:00 PM,7:00:00 PM,11:30:00 PM,Dublin,Teacher's Club,No,"Improv Fest Ireland marks its 10th edition with some of the best acts from Ireland and abroad. With a great variety of shows, from improvised musicals, improvised Shakespeare to fantasy adventure, there's something for everyone! Festival runs 13-16 November.","Improv Fest Ireland marks its 10th edition with some of the best acts from Ireland and abroad. With a great variety of shows, from improvised musicals, improvised Shakespeare to fantasy adventure, there's something for everyone! Festival runs 13-16 November.
+
+7pm: Behemoth (US) / The Thursday Supper Club (INT) / The Jess's's's (IRE)
+8:30pm: Neil+1 (IRE) / (Minnesota Public Rodeo (US) / The Experiments (UK)
+10pm: Bum Notes (IRE) / Festival Jam
+
+For more info about the shows and performers please visit www.improvfestireland.com
+",https://fienta.com/2024shows
+TRUE,11/10/2024 14:04:21,Improv Fest Ireland – Friday,Show,11/15/2024,6:30:00 PM,7:00:00 PM,11:30:00 PM,Dublin,Teacher's Club,No,"Improv Fest Ireland marks its 10th edition with some of the best acts from Ireland and abroad. With a great variety of shows, from improvised musicals, improvised Shakespeare to fantasy adventure, there's something for everyone! Festival runs 13-16 November.","Improv Fest Ireland marks its 10th edition with some of the best acts from Ireland and abroad. With a great variety of shows, from improvised musicals, improvised Shakespeare to fantasy adventure, there's something for everyone! Festival runs 13-16 November.
+
+7pm: Jennifer & Emily (UK) / The Friday Happy Hour (INT) / Cliffs of Dover (NLD)
+8:30pm: Improteater IMPEERIUM (EST) / Hustings (IRE) / Impromptu Shakespeare (UK)
+10pm: Breakfast of Champions (UK) / Festival Jam
+
+For more info about the shows and performers please visit www.improvfestireland.com
+",https://fienta.com/2024shows
+TRUE,11/10/2024 14:04:21,Improv Fest Ireland – Saturday,Show,11/16/2024,6:30:00 PM,7:00:00 PM,11:30:00 PM,Dublin,Teacher's Club,No,"Improv Fest Ireland marks its 10th edition with some of the best acts from Ireland and abroad. With a great variety of shows, from improvised musicals, improvised Shakespeare to fantasy adventure, there's something for everyone! Festival runs 13-16 November.","Improv Fest Ireland marks its 10th edition with some of the best acts from Ireland and abroad. With a great variety of shows, from improvised musicals, improvised Shakespeare to fantasy adventure, there's something for everyone! Festival runs 13-16 November.
+
+6:30pm: Underthings (IRE) / Not GCSE Drama (UK) / Tea & Toast (UK)
+8pm: Allegory of the Cave (UK), The Comediasians (UK) / Brand New Musical (UK)
+9:30pm: Legs Eleven (IRE) / The Boys (USA)
+
+For more info about the shows and performers please visit www.improvfestireland.com
+",https://fienta.com/2024shows
+TRUE,11/14/2024 17:29:35,Improv Comedy for Beginners,Class,1/14/2025,,6:00:00 PM,8:30:00 PM,Belfast,Morton Community Centre,No,Learn to create and perform comedy theatre on the spot. 6 Tuesdays from 14th January - 18th February,"Learn the basics of Improvisation in a fun and supportive environment.
+
+This class is for those who are new to acting, stage performance, or comedy, or those that just want to try to build in creativity and confidence in to their personal or professional lives.
+
+Improvisation is the art of confidently creating performance sketches without a script. Improvisation skills are a must for anyone who is interested in becoming a more versatile stage performer, or in giving live performance a go for the first time. They're also a great aid to the everyday skills that we use in our personal and professional lives, whether we need confidence in social interactions, clarity in our motivations and goals, or a creative edge at work.
+
+We cover a wide variety of concepts in Level 1 including:
+
+The essence of comedic acting
+Comedic scene structures
+Performing for an audience
+Creating improvised stories
+Trust, authenticity, and collaboration
+Confident decision making
+The class runs for 6 consecutive weeks, from 14th January - 18th February (6 - 8.30pm).",https://www.eventbrite.ie/e/improv-comedy-for-beginners-tickets-1079329055259?aff=ebdssbdestsearch&keep_tld=1
+TRUE,11/14/2024 21:33:48,The Bag Of Cats Comedy Show,Show,11/22/2024,,8:00:00 PM,10:30:00 PM,Dublin,Chaplins Bar,No,Join us for a night of Improv and Standup in aid of Medecins Sans Frontieres,,https://www.eventbrite.com/e/the-bag-of-cats-comedy-show-tickets-1079628551059?utm-campaign=social&utm-content=attendeeshare&utm-medium=discovery&utm-term=listing&utm-source=cp&aff=ebdsshcopyurl
+TRUE,11/17/2024 2:20:26,Ghost Stories - A Masterclass in Improvised Theatre,Workshop,11/30/2024,,11:00:00 AM,5:00:00 PM,Dublin,Teacher's Club,No,"Do you want more from your Improv?
+
+Join us for a two day intensive masterclass on long-form improvised storytelling.","How do you sustain a story and quality of performance in improvisation? What lies beyond game?
+
+You will learn the techniques and approaches to develop characters, create arresting dilemmas, and set up the foundations for a rewarding story. These workshops will serve as an introduction to the Ghost Stories method.
+
+The class will be led by Dan McCormack, the creator of the Ghost Stories method and the director of the show.
+
+Experience required
+This is an advanced workshop so those signing up should have experience performing to an audience, whether it be theatre or improv.",https://fienta.com/ghost-stories-a-masterclass-in-improvised-theatre?fbclid=PAZXh0bgNhZW0CMTEAAabEZTHOnlWnJIKyGQ_OBCHH6jhYDR3T7faWDYuI2oeqzLNbLCIHuLQxGck_aem__Eu8aYH70xnIzU9UTyCzSw
+TRUE,11/23/2024 16:40:01,Ennis Improv Drop-In,Class,12/3/2024,7:25:00 PM,7:30:00 PM,9:00:00 PM,Ennis,Lucas Bar: 74 Parnell Street,No,This is a low-key opportunity to play for those in the Ennis area.,"Details
+Thinking about trying improv, but not sure where to start? Our bi-weekly drop-in class is a perfect way to begin your improv journey in a low-risk, supportive environment! Each Tuesday night, this one-hour drop-In Improv Class gives you an opportunity to get stage time with some professional guidance and coaching. Every week, we explore a different facet of performing improv and work on an exercise to practice a skill. Improvisers at ANY level are welcome to join.
+
+The drop-In is your gateway to the exhilarating world of improv. In these sessions, participants are introduced to the fundamental aspects of improvisational theater in a relaxed and supportive environment.
+The session structure includes ""Improv Games,"" where everyone can shake off their nerves and ignite their creativity through lively activities. Following that, the ""Scene Workouts"" allow participants to dive deep into roles, exploring narratives and the intricate interplay between characters.
+
+Whether you're a newbie or just looking to sharpen your skills, The drop-In provides a platform to unleash your imaginative prowess and bond with fellow enthusiasts.
+
+What is a drop-in improv class?
+A drop-in class or workshop is an opportunity to get some stage time, practice, and repetitions. For our drop-ins, no improv experience is necessary, meaning the drop-in workshops don’t build off knowledge from previous workshops. The idea is that anyone can drop in any week and get a taste of what improv is like. It’s a great opportunity to see the culture and dynamic of the theater. Plus, you get to meet some members of the theater’s community in a low-pressure environment.
+How does it differ from your regular classes?
+
+Our Basic Improv Skills classes are designed to help you take your first baby steps as an improviser by introducing you to the skills you’ll need to be a successful improviser no matter what path you choose to take. We want your improv journey to be uniquely yours, so the classes can be taken in either order. Our drop-ins are newbie-friendly. But they are not structured toward a specific curriculum. Rather, they are designed to get you onstage doing scenes in a supportive environment. Our coaches generally work on a specific skill each night and craft the workshop toward honing that skill.
+
+What should I wear?
+Wear comfortable, stage-appropriate clothes. Meaning something that you would feel comfortable wearing if you had to sit in a chair on an elevated stage, roll on the ground, jump in the air, or crawl like a snake.
+
+What should I say?
+Don’t be afraid to strike up a conversation with the other folks there. It’s okay to be the new person, and the other folks at the drop-in will likely be thrilled that you’re joining them. There’s nothing wrong with telling someone it’s your first time at the drop-in and asking them questions about the format.
+
+What will be expected of me?
+Nothing will probably be expected of you. You’re not going to be forced into doing anything you don’t want to do. You will, however, be encouraged to participate. What that participation entails depends largely on the structure of the drop-in. At ours, we work mostly on two-person scenes. You might want to watch a couple of reps from some of the veterans of the drop-in first before going onstage.
+
+Should I just show up?
+YUP. And try to show up on time in case there is any instruction prior to the workshop starting. Improvisers are welcoming creatures, and whoever is running the drop-in should facilitate an awesome environment for getting your feet wet in improv. For a lot of drop-ins (including ours), you’re more than welcome to “audit” a workshop to get the lay of the land before jumping into the deep end.
+
+Give it a shot. The beauty of a drop-in is that—even if it’s not your scene—you can just choose to not do it again. There’s little to no commitment. You have nothing to lose.",https://www.meetup.com/ennis-improv-meetup-group/events/304422186/
+TRUE,11/23/2024 16:40:01,Ennis Improv Drop-In,Class,12/17/2024,7:25:00 PM,7:30:00 PM,9:00:00 PM,Ennis,Lucas Bar: 74 Parnell Street,No,This is a low-key opportunity to play for those in the Ennis area.,"Details
+Thinking about trying improv, but not sure where to start? Our bi-weekly drop-in class is a perfect way to begin your improv journey in a low-risk, supportive environment! Each Tuesday night, this one-hour drop-In Improv Class gives you an opportunity to get stage time with some professional guidance and coaching. Every week, we explore a different facet of performing improv and work on an exercise to practice a skill. Improvisers at ANY level are welcome to join.
+
+The drop-In is your gateway to the exhilarating world of improv. In these sessions, participants are introduced to the fundamental aspects of improvisational theater in a relaxed and supportive environment.
+The session structure includes ""Improv Games,"" where everyone can shake off their nerves and ignite their creativity through lively activities. Following that, the ""Scene Workouts"" allow participants to dive deep into roles, exploring narratives and the intricate interplay between characters.
+
+Whether you're a newbie or just looking to sharpen your skills, The drop-In provides a platform to unleash your imaginative prowess and bond with fellow enthusiasts.
+
+What is a drop-in improv class?
+A drop-in class or workshop is an opportunity to get some stage time, practice, and repetitions. For our drop-ins, no improv experience is necessary, meaning the drop-in workshops don’t build off knowledge from previous workshops. The idea is that anyone can drop in any week and get a taste of what improv is like. It’s a great opportunity to see the culture and dynamic of the theater. Plus, you get to meet some members of the theater’s community in a low-pressure environment.
+How does it differ from your regular classes?
+
+Our Basic Improv Skills classes are designed to help you take your first baby steps as an improviser by introducing you to the skills you’ll need to be a successful improviser no matter what path you choose to take. We want your improv journey to be uniquely yours, so the classes can be taken in either order. Our drop-ins are newbie-friendly. But they are not structured toward a specific curriculum. Rather, they are designed to get you onstage doing scenes in a supportive environment. Our coaches generally work on a specific skill each night and craft the workshop toward honing that skill.
+
+What should I wear?
+Wear comfortable, stage-appropriate clothes. Meaning something that you would feel comfortable wearing if you had to sit in a chair on an elevated stage, roll on the ground, jump in the air, or crawl like a snake.
+
+What should I say?
+Don’t be afraid to strike up a conversation with the other folks there. It’s okay to be the new person, and the other folks at the drop-in will likely be thrilled that you’re joining them. There’s nothing wrong with telling someone it’s your first time at the drop-in and asking them questions about the format.
+
+What will be expected of me?
+Nothing will probably be expected of you. You’re not going to be forced into doing anything you don’t want to do. You will, however, be encouraged to participate. What that participation entails depends largely on the structure of the drop-in. At ours, we work mostly on two-person scenes. You might want to watch a couple of reps from some of the veterans of the drop-in first before going onstage.
+
+Should I just show up?
+YUP. And try to show up on time in case there is any instruction prior to the workshop starting. Improvisers are welcoming creatures, and whoever is running the drop-in should facilitate an awesome environment for getting your feet wet in improv. For a lot of drop-ins (including ours), you’re more than welcome to “audit” a workshop to get the lay of the land before jumping into the deep end.
+
+Give it a shot. The beauty of a drop-in is that—even if it’s not your scene—you can just choose to not do it again. There’s little to no commitment. You have nothing to lose.",https://www.meetup.com/ennis-improv-meetup-group/events/304422186/
+FALSE,11/23/2024 16:40:01,Ennis Improv Drop-In,Class,1/14/2025,7:25:00 PM,7:30:00 PM,9:00:00 PM,Ennis,Lucas Bar: 74 Parnell Street,No,This is a low-key opportunity to play for those in the Ennis area.,"Details
+Thinking about trying improv, but not sure where to start? Our bi-weekly drop-in class is a perfect way to begin your improv journey in a low-risk, supportive environment! Each Tuesday night, this one-hour drop-In Improv Class gives you an opportunity to get stage time with some professional guidance and coaching. Every week, we explore a different facet of performing improv and work on an exercise to practice a skill. Improvisers at ANY level are welcome to join.
+
+The drop-In is your gateway to the exhilarating world of improv. In these sessions, participants are introduced to the fundamental aspects of improvisational theater in a relaxed and supportive environment.
+The session structure includes ""Improv Games,"" where everyone can shake off their nerves and ignite their creativity through lively activities. Following that, the ""Scene Workouts"" allow participants to dive deep into roles, exploring narratives and the intricate interplay between characters.
+
+Whether you're a newbie or just looking to sharpen your skills, The drop-In provides a platform to unleash your imaginative prowess and bond with fellow enthusiasts.
+
+What is a drop-in improv class?
+A drop-in class or workshop is an opportunity to get some stage time, practice, and repetitions. For our drop-ins, no improv experience is necessary, meaning the drop-in workshops don’t build off knowledge from previous workshops. The idea is that anyone can drop in any week and get a taste of what improv is like. It’s a great opportunity to see the culture and dynamic of the theater. Plus, you get to meet some members of the theater’s community in a low-pressure environment.
+How does it differ from your regular classes?
+
+Our Basic Improv Skills classes are designed to help you take your first baby steps as an improviser by introducing you to the skills you’ll need to be a successful improviser no matter what path you choose to take. We want your improv journey to be uniquely yours, so the classes can be taken in either order. Our drop-ins are newbie-friendly. But they are not structured toward a specific curriculum. Rather, they are designed to get you onstage doing scenes in a supportive environment. Our coaches generally work on a specific skill each night and craft the workshop toward honing that skill.
+
+What should I wear?
+Wear comfortable, stage-appropriate clothes. Meaning something that you would feel comfortable wearing if you had to sit in a chair on an elevated stage, roll on the ground, jump in the air, or crawl like a snake.
+
+What should I say?
+Don’t be afraid to strike up a conversation with the other folks there. It’s okay to be the new person, and the other folks at the drop-in will likely be thrilled that you’re joining them. There’s nothing wrong with telling someone it’s your first time at the drop-in and asking them questions about the format.
+
+What will be expected of me?
+Nothing will probably be expected of you. You’re not going to be forced into doing anything you don’t want to do. You will, however, be encouraged to participate. What that participation entails depends largely on the structure of the drop-in. At ours, we work mostly on two-person scenes. You might want to watch a couple of reps from some of the veterans of the drop-in first before going onstage.
+
+Should I just show up?
+YUP. And try to show up on time in case there is any instruction prior to the workshop starting. Improvisers are welcoming creatures, and whoever is running the drop-in should facilitate an awesome environment for getting your feet wet in improv. For a lot of drop-ins (including ours), you’re more than welcome to “audit” a workshop to get the lay of the land before jumping into the deep end.
+
+Give it a shot. The beauty of a drop-in is that—even if it’s not your scene—you can just choose to not do it again. There’s little to no commitment. You have nothing to lose.",https://www.meetup.com/ennis-improv-meetup-group/events/304422186/
+FALSE,11/23/2024 16:40:01,Ennis Improv Drop-In,Class,1/28/2025,7:25:00 PM,7:30:00 PM,9:00:00 PM,Ennis,Lucas Bar: 74 Parnell Street,No,This is a low-key opportunity to play for those in the Ennis area.,"Details
+Thinking about trying improv, but not sure where to start? Our bi-weekly drop-in class is a perfect way to begin your improv journey in a low-risk, supportive environment! Each Tuesday night, this one-hour drop-In Improv Class gives you an opportunity to get stage time with some professional guidance and coaching. Every week, we explore a different facet of performing improv and work on an exercise to practice a skill. Improvisers at ANY level are welcome to join.
+
+The drop-In is your gateway to the exhilarating world of improv. In these sessions, participants are introduced to the fundamental aspects of improvisational theater in a relaxed and supportive environment.
+The session structure includes ""Improv Games,"" where everyone can shake off their nerves and ignite their creativity through lively activities. Following that, the ""Scene Workouts"" allow participants to dive deep into roles, exploring narratives and the intricate interplay between characters.
+
+Whether you're a newbie or just looking to sharpen your skills, The drop-In provides a platform to unleash your imaginative prowess and bond with fellow enthusiasts.
+
+What is a drop-in improv class?
+A drop-in class or workshop is an opportunity to get some stage time, practice, and repetitions. For our drop-ins, no improv experience is necessary, meaning the drop-in workshops don’t build off knowledge from previous workshops. The idea is that anyone can drop in any week and get a taste of what improv is like. It’s a great opportunity to see the culture and dynamic of the theater. Plus, you get to meet some members of the theater’s community in a low-pressure environment.
+How does it differ from your regular classes?
+
+Our Basic Improv Skills classes are designed to help you take your first baby steps as an improviser by introducing you to the skills you’ll need to be a successful improviser no matter what path you choose to take. We want your improv journey to be uniquely yours, so the classes can be taken in either order. Our drop-ins are newbie-friendly. But they are not structured toward a specific curriculum. Rather, they are designed to get you onstage doing scenes in a supportive environment. Our coaches generally work on a specific skill each night and craft the workshop toward honing that skill.
+
+What should I wear?
+Wear comfortable, stage-appropriate clothes. Meaning something that you would feel comfortable wearing if you had to sit in a chair on an elevated stage, roll on the ground, jump in the air, or crawl like a snake.
+
+What should I say?
+Don’t be afraid to strike up a conversation with the other folks there. It’s okay to be the new person, and the other folks at the drop-in will likely be thrilled that you’re joining them. There’s nothing wrong with telling someone it’s your first time at the drop-in and asking them questions about the format.
+
+What will be expected of me?
+Nothing will probably be expected of you. You’re not going to be forced into doing anything you don’t want to do. You will, however, be encouraged to participate. What that participation entails depends largely on the structure of the drop-in. At ours, we work mostly on two-person scenes. You might want to watch a couple of reps from some of the veterans of the drop-in first before going onstage.
+
+Should I just show up?
+YUP. And try to show up on time in case there is any instruction prior to the workshop starting. Improvisers are welcoming creatures, and whoever is running the drop-in should facilitate an awesome environment for getting your feet wet in improv. For a lot of drop-ins (including ours), you’re more than welcome to “audit” a workshop to get the lay of the land before jumping into the deep end.
+
+Give it a shot. The beauty of a drop-in is that—even if it’s not your scene—you can just choose to not do it again. There’s little to no commitment. You have nothing to lose.",https://www.meetup.com/ennis-improv-meetup-group/events/304422186/
+FALSE,11/23/2024 16:40:01,Ennis Improv Drop-In,Class,2/11/2025,7:25:00 PM,7:30:00 PM,9:00:00 PM,Ennis,Lucas Bar: 74 Parnell Street,No,This is a low-key opportunity to play for those in the Ennis area.,"Details
+Thinking about trying improv, but not sure where to start? Our bi-weekly drop-in class is a perfect way to begin your improv journey in a low-risk, supportive environment! Each Tuesday night, this one-hour drop-In Improv Class gives you an opportunity to get stage time with some professional guidance and coaching. Every week, we explore a different facet of performing improv and work on an exercise to practice a skill. Improvisers at ANY level are welcome to join.
+
+The drop-In is your gateway to the exhilarating world of improv. In these sessions, participants are introduced to the fundamental aspects of improvisational theater in a relaxed and supportive environment.
+The session structure includes ""Improv Games,"" where everyone can shake off their nerves and ignite their creativity through lively activities. Following that, the ""Scene Workouts"" allow participants to dive deep into roles, exploring narratives and the intricate interplay between characters.
+
+Whether you're a newbie or just looking to sharpen your skills, The drop-In provides a platform to unleash your imaginative prowess and bond with fellow enthusiasts.
+
+What is a drop-in improv class?
+A drop-in class or workshop is an opportunity to get some stage time, practice, and repetitions. For our drop-ins, no improv experience is necessary, meaning the drop-in workshops don’t build off knowledge from previous workshops. The idea is that anyone can drop in any week and get a taste of what improv is like. It’s a great opportunity to see the culture and dynamic of the theater. Plus, you get to meet some members of the theater’s community in a low-pressure environment.
+How does it differ from your regular classes?
+
+Our Basic Improv Skills classes are designed to help you take your first baby steps as an improviser by introducing you to the skills you’ll need to be a successful improviser no matter what path you choose to take. We want your improv journey to be uniquely yours, so the classes can be taken in either order. Our drop-ins are newbie-friendly. But they are not structured toward a specific curriculum. Rather, they are designed to get you onstage doing scenes in a supportive environment. Our coaches generally work on a specific skill each night and craft the workshop toward honing that skill.
+
+What should I wear?
+Wear comfortable, stage-appropriate clothes. Meaning something that you would feel comfortable wearing if you had to sit in a chair on an elevated stage, roll on the ground, jump in the air, or crawl like a snake.
+
+What should I say?
+Don’t be afraid to strike up a conversation with the other folks there. It’s okay to be the new person, and the other folks at the drop-in will likely be thrilled that you’re joining them. There’s nothing wrong with telling someone it’s your first time at the drop-in and asking them questions about the format.
+
+What will be expected of me?
+Nothing will probably be expected of you. You’re not going to be forced into doing anything you don’t want to do. You will, however, be encouraged to participate. What that participation entails depends largely on the structure of the drop-in. At ours, we work mostly on two-person scenes. You might want to watch a couple of reps from some of the veterans of the drop-in first before going onstage.
+
+Should I just show up?
+YUP. And try to show up on time in case there is any instruction prior to the workshop starting. Improvisers are welcoming creatures, and whoever is running the drop-in should facilitate an awesome environment for getting your feet wet in improv. For a lot of drop-ins (including ours), you’re more than welcome to “audit” a workshop to get the lay of the land before jumping into the deep end.
+
+Give it a shot. The beauty of a drop-in is that—even if it’s not your scene—you can just choose to not do it again. There’s little to no commitment. You have nothing to lose.",https://www.meetup.com/ennis-improv-meetup-group/events/304422186/
+TRUE,11/25/2024 0:30:04,The Bag of Cats X-Mas Comedy Show,Show,12/7/2024,,8:00:00 PM,10:30:00 PM,Dublin,"Dublin Ink, D08 RR82",No,Get ready for a night of hilarious comedy at The Bag of Cats X-Mas Comedy Show - it's gonna be a purrfectly funny Christmas celebration!,"The Bag of Cats X-Mas Comedy Show
+
+Come join us for a night of laughter and holiday cheer at Dublin Ink! Get ready to be entertained by some of the funniest comedians in town as they bring you a mix of hilarious jokes and festive humor. This in-person event is the perfect way to kick off the holiday season with friends and family. Don't miss out on this special X-Mas comedy show - it's guaranteed to be a night full of laughs and good vibes! BYOB",https://www.eventbrite.com/e/the-bag-of-cats-x-mas-comedy-show-tickets-1091062400009?aff=erelexpmlt
+TRUE,11/26/2024 19:01:36,Sunday Night Improv,Show,12/1/2024,6:45:00 PM,7:00:00 PM,8:30:00 PM,Belfast,Laverys ,Yes,Sunday Night Improv Comedy feat. Musical Improv,"This week we're in Lavery's Back Bar with:
+
+Ensemble: Musical w/special guests
+Ensemble: Level 2 Graduation
+Duo: Rum DMC
+
+..........
+
+Sunday night improv features the best and brightest of Belfast's comedy improvisers and actors, creating comedy sketches from audience prompts. The scenes have never been seen before, and are never repeated, meaning each show is unique.
+
+Doors at 6.45pm
+
+Show starts at 7pm",https://www.eventbrite.co.uk/e/sunday-night-improv-tickets-1091149761309?aff=ebdsoporgprofile
+TRUE,11/26/2024 19:04:22,A Christmas Carol - The Musical Comedy,Show,12/15/2024,6:30:00 PM,7:00:00 PM,9:00:00 PM,Belfast,Laverys,Yes,A full-length musical comedy based on Charles Dickens's A Christmas Carol,"A Christmas Carol follows the cantankerous miser Ebeneezer Scrooge as he is visited by the ghosts of Christmas Past, Present, and Future, and forced to re-examine key moments in his life. How did he become so miserable? Is there hope for him to change?
+
+The cast at Belfast Improv take one of the most popular Christmas stories and add a comedic spin to it. All songs will be improvised in the moment, with musical accompaniment throughout the show.
+
+At the beginning of the show we'll ask for an extra element to be included. Perhaps the story takes place in a theme park, or we play it as a Science Fiction film. Who knows? We won't until it starts.
+
+..................................
+
+
+
+Doors at 6.30pm
+
+Show starts at 7pm and ends at 9pm, with a 15 minute intermission.",https://www.eventbrite.co.uk/e/a-christmas-carol-the-musical-comedy-tickets-1095227538049?aff=ebdsoporgprofile
+TRUE,11/26/2024 19:07:09,It's A Wonderful Life - The Musical Comedy,Show,12/16/2024,6:30:00 PM,7:00:00 PM,9:00:00 PM,Belfast,Laverys,Yes,A full-length musical comedy based on Frank Capra's 'It's A Wonderful Life',"George Bailey has given up on personal dreams in order to be of service to his community. When a series of misfortunes force him to reevaluate his life choices, a mysterious stranger intervenes to show him what life would be like had he not existed.
+
+The cast at Belfast Improv take one of the most popular Christmas stories and add a comedic spin to it. All songs will be improvised in the moment, with musical accompaniment throughout the show.
+
+At the beginning of the show we'll ask for an extra element to be included. Perhaps the story takes place in Belfast, or we play it as a Film Noir. Who knows? We won't until it starts.
+
+..................................
+
+
+
+Doors at 6.30pm
+
+Show starts at 7pm and ends at 9pm, with a 15 minute intermission.",https://www.eventbrite.co.uk/e/its-a-wonderful-life-the-musical-comedy-tickets-1095252683259?aff=ebdsoporgprofile
+TRUE,11/26/2024 19:10:37,Auto-Correbt and Friends,Show,12/13/2024,7:45:00 PM,8:00:00 PM,10:00:00 PM,Dublin,The Pearse Centre,No,An long form improvised comedy show full of fun and laughter. Plus it's BYOB!,"Auto-Correbt return with their chaotic comedy show where no one knows what's going to happen next. They've invited some of their improv friends to perform mini-shows with them in a fast-paced comedy spectacular.
+
+Doors: 7:45pm
+Show: 8:00pm
+BYOB!",https://www.eventbrite.co.uk/e/auto-correbt-and-friends-tickets-1083042562459?aff=ebdssbdestsearch&keep_tld=1
+TRUE,11/30/2024 1:09:43,The Playground Yuleabaloo Improv Variety Night ,Variety Night,12/6/2024,,7:30:00 PM,,Dublin,The Teacher's Club,No,Join us for yet another Christmas themed Yuleabaloo Improv Variety Night," Join us for yet another Christmas themed Yuleabaloo Improv Variety Night, featuring a selection of acts from within the collective of Dublin's improv Playground!
+
+We have 7 great acts on the night, including the debut of Playground's first directed, curated improv show.
+
+Following the improv, we will have our Christmas party! Christmas themed attire is encouraged but not mandatory.
+
+The Present
+Stars: Amrish, Brooke, Yoshii, Ciaran, Aileen, Jess
+Dir: Quinton O'Reilly
+
+Jingleverse
+Stars: Brandon, Daniel, James, Lisa, Ronan, Kathy, Diana, Emma.
+
+An Untitled Christmas
+Stars: Niamh, Christina, Eoin
+
+Naughty but Nice
+Stars: Aaron, Pádraig, Matt, Kristin, Sean, Samantha, Michaela, Tatjana
+
+Turkey & Ham
+Stars: Sorcha and Annie
+
+Christmas with Arron and Andrei
+Stars: Andrei and Arron
+
+Sounds like fun
+Stars: Alessandro & guests
+
+Ding Dong Drama
+Stars: Riza, Aliyah, Paolo, Katie, Ben",https://fienta.com/yule24
+TRUE,12/3/2024 19:45:04,A Club Valentine Carol!,Variety Night,12/5/2024,,8:00:00 PM,10:30:00 PM,Dublin,Wigwam,No,"Alt-Comedy's, bad-boy, sweeties: CLUB VALENTINE present a live CHRISTMAS SPECIAL with their big-deal, comedy pals","Alt-Comedy's, bad-boy, sweeties: CLUB VALENTINE present a live CHRISTMAS SPECIAL with their big-deal, comedy pals
+
+FEATURING:
+CLUB VALENTINE
+TONY CANTWELL
+SAROLA RODGER
+KATE MOYLAN
+& MORE!!
+
+
+
+Ho ho ho! It's that time of year again! Club Valentine is back with a Christmas Special for the ages, and this time our friends at @mobtheatredublin have given us the gift of collaboration!
+
+
+
+Join us on December 5th in Wigwam as that wicked old miser, Robbie, tries to produce a Christmas show without any comedy at all! But I know a few Eoin Potts shaped ghosts who might pop in and show him the error of his ways - AND A BUNCH OF TERRIFIC ACTS!
+
+
+
+So don't be a humbug! Join us, and our wonderful guests, at Wigwam on December 5th for a classic Club Valentine variety experience, with a Christmassy twist!",https://www.eventbrite.ie/e/a-club-valentine-carol-tickets-1088992368489
+TRUE,12/3/2024 19:51:06,MOB LEVEL 1: Improv Basics,Class,1/13/2025,,7:00:00 PM,9:00:00 PM,Dublin,Wigwam,No,"Learn the Improv fundamentals in a comfortable, fun, supportive environment.","Learn the Improv fundamentals in a comfortable, fun, supportive environment. If want to do comedy professionally OR if you want to have the craic and meet other creative folks; Improv builds personal confidence and will challenge you creatively in the most enjoyable way possible. Whether you've taken Improv previously OR if you're trying Improv for the first time, we promise you'll leave this course with lasting confidence, new connections, and a clearer understanding of COMEDY. 
+
+ CLASS DATES: 
+January 13, 20, 27
+February 10, 17, 24
+March 3, 10th
+* No Class 5/2 for Bank Holiday
+
+COURSE INSTRUCTOR:  Stephen Bradley 
+
+Stephen Bradley has been performing and teaching improv for nearly a decade. Hailing from Celbridge, County Kildare, he is a graduate of the Drama Education Program at Griffith College and an alumnus of iO West in Los Angeles where he studied Long-form Improv with students of Del Close. In Dublin, he has improvised with several groups including, Not the Eyes, Boston's Improv Asylum, Mr. MeCoCos and is the Managing Director of MOB Theatre Dublin which he co-founded in 2018. Stephen has also appeared at the Vodafone Comedy Festival, Dublin Improv Festival, Slapdash Improv Festival, at the Fallout Theatre (US), The Hideout Theatre (US) and the Edinburgh Fringe Festival. In addition, to live comedy, Stephen also teaches Screenwriting and Sketch Comedy Writing through MOB Theatre Dublin.",https://ohbeur.com/products/improv-basics-january-2025
+TRUE,12/3/2024 19:52:55,MOB LEVEL 2: Improv Intermediate,Class,1/8/2025,,7:00:00 PM,9:00:00 PM,Dublin,Wigwam,No,"Focus on the ""game of the scene"" and what makes great improv scenes tick in our second level. Suitable for students who have taken Intro to Improv with MOB or students with some Improv Training, seeking a refresher course that is more advanced than Improv: Basics.","Focus on the ""game of the scene"" and what makes great improv scenes tick in our second level. Suitable for students who have taken Intro to Improv with MOB or students with some Improv Training, seeking a refresher course that is more advanced than Improv: Basics. Over the course, students will be taught to identify the “game” of the scene, exploring/mining the scene, supporting the “game” using patterns and will be introduced to second beats as we start to learn about “the Harold”. All students shall receive a MOB Student Card which will grant them free admission to Thursday-Night MOB shows at Wigwam for the duration of the course. Discover and practice what makes great long-form Improv scenes in a fun and supportive environment. 
+
+Prerequisite: MOB LEVEL 1 or equivalent elsewhere. Questions? Email mobtheatredublin@gmail.com
+
+CLASS DATES:
+January: 8th, 15th, 22nd, 29th
+February: 5th, 12th, 19th, 26th
+
+COURSE INSTRUCTOR:  Stephen Bradley 
+
+Stephen Bradley has been performing and teaching improv for nearly a decade. Hailing from Celbridge, County Kildare, he is a graduate of the Drama Education Program at Griffith College and an alumnus of iO West in Los Angeles where he studied Long-form Improv with students of Del Close. In Dublin, he has improvised with several groups including, Not the Eyes, Boston's Improv Asylum, Mr. MeCoCos and is the Managing Director of MOB Theatre Dublin which he co-founded in 2018. Stephen has also appeared at the Vodafone Comedy Festival, Dublin Improv Festival, Slapdash Improv Festival, at the Fallout Theatre (US), The Hideout Theatre (US) and the Edinburgh Fringe Festival. In addition, to live comedy, Stephen also teaches Screenwriting and Sketch Comedy Writing through MOB Theatre Dublin.",https://ohbeur.com/products/improv-intermediate-level-ii-january-2025
+TRUE,12/3/2024 19:55:04,IMPROV TASTER: One-day workshop,Class,1/11/2025,,1:00:00 PM,4:00:00 PM,Dublin,The Back Page,No,"Whether you're brand new to Improv or looking for an Improv-refresher, this 3hr improv workshop is the perfect relaxed and fun introduction to what we do at MOB.","Whether you're brand new to Improv or looking for an Improv-refresher, this 3hr improv workshop is the perfect relaxed and fun introduction to what we do at MOB. See how we approach things with an afternoon of improv exercises and games, suitable for ALL LEVELS of experience. This one-day taster workshop is ideal for anyone curious about improv comedy.
+
+COURSE INSTRUCTOR:  Stephen Bradley & Niall Johnson
+
+Stephen Bradley has been performing and teaching improv for nearly a decade. Hailing from Celbridge, County Kildare, he is a graduate of the Drama Education Program at Griffith College and an alumnus of iO West in Los Angeles where he studied Long-form Improv with students of Del Close. In Dublin, he has improvised with several groups including, Not the Eyes, Boston's Improv Asylum, Mr. MeCoCos and is the Managing Director of MOB Theatre Dublin which he co-founded in 2018. Stephen has also appeared at the Vodafone Comedy Festival, Dublin Improv Festival, Slapdash Improv Festival, at the Fallout Theatre (US), The Hideout Theatre (US) and the Edinburgh Fringe Festival. In addition, to live comedy, Stephen also teaches Screenwriting and Sketch Comedy Writing through MOB Theatre Dublin.
+
+Space is limited. Must be 18+.",https://ohbeur.com/products/improv-taster-11th-january
+TRUE,12/3/2024 20:03:46,Stoke Improv - Level 2,Class,1/14/2025,,7:00:00 PM,,Dublin,"The Digital Hub, Thomas St.",Yes,"
+We will build on the fundamentals established in L1 with particular focus on improv forms; The Armando, The Montage and building strong two person scenes. ","We will build on the fundamentals established in L1 with particular focus on improv forms; The Armando, The Montage and building strong two person scenes. 
+
+Starts Tuesday January 14th (runs for 8 weeks w/showcase included on March 4th)",https://www.stokeimprov.com/shop/write-your-own-solo-show
+TRUE,12/3/2024 20:05:02,Stoke Improv - Level 3,Class,1/8/2025,,7:00:00 PM,,Dublin,"The Digital Hub, Thomas St.",Yes,"We will build on the fundamentals established in L2; solid scene work, navigating the world of the show and group scenes.","We will build on the fundamentals established in L2; solid scene work, navigating the world of the show and group scenes.
+
+We will also work one thematic improv, further developing group mind and furthering the group’s capacity for play!
+
+Starts: Wednesday 8th January (runs every Wednesday for 8 weeks w/showcase on the 26th Feb) ",https://www.stokeimprov.com/shop/be-cosy-and-mediate
+TRUE,12/3/2024 20:07:53,No Compromises' - Dublin Workshop,Workshop,1/18/2025,,11:00:00 AM,5:00:00 PM,Dublin,Teacher's Club,No,In this one / two day workshop performers will learn how to fight the fear and find the fun.,"This is a two-day workshop. Participants can sign up for one or both days, and should have completed a Level 1 class or have equivalent stage experience.
+
+.................................
+
+These workshops comprise the fundamentals of Paul Mone's Improv methodology - how to think and act without fear, and play with all of our heart.
+
+Saturday 11 - 6: No Compromises
+Sunday 11 - 5: Keeping Up Appearances
+
+Formats: Twoprov, French Braid, Montage, Monoscene
+Skills: Mutli-character scenes, edits, monologues, pacing, physicality, variety & dynamism
+
+Paul Mone is the founder and Creative Director of Belfast Improv. You may have seen him perform at Gather or Improv Fest, or taken an online class with him. Paul loves characters, and is extremely wary of narratives - especially those that we impose on ourselves as perfomers.
+...............................................................
+
+No Compromises
+
+Do you have Improv Imposter Syndrome?
+
+Good news! You're not alone!
+Bad news! We all hide it so well that we never end up getting past it.
+
+The No Compromises workshop gives you a framework of thinking about improv that will allow you to dispel the voices that tell you you're not enough. By the end of the workshop you'll find yourself making bolder decisions, creating more interesting characters, and feeling a lot better about yourself as a performer!
+
+This workshop is for you if you're afraid of 'breaking' a scene or generally not being good enough. You're good enough - I promise.
+
+..............................................................
+
+Keeping Up Appearances
+
+You're a few minutes into your scene, you've made some bold choices, and you're having fun - for now. Your brain is about to remind you that you don't know where the scene is going and then you'll descend into panic and judgment.
+
+In this workshop, we're going to practice 'keeping up appearances' - finding out what makes our characters tick do that we can keep going for longer.
+
+This workshop is for you if you've ever worried mid-scene about where it's going, or you're in a scene that you're not enjoying and want to make it more fun for yourself.",https://www.eventbrite.co.uk/e/no-compromises-dublin-workshop-tickets-1088799672129
+TRUE,12/3/2024 20:10:49,Lower The Tone - Improv Level 1,Class,1/21/2025,,7:00:00 PM,10:00:00 PM,Dublin,Teacher's Club,No,"Improvisation is a fun yet powerful way to release your creative potential in a fun and supportive environment! On the course, we explore the basics and fundamentals of improvisation both as a performing and professional skill.","Improvisation is a fun yet powerful way to release your creative potential in a fun and supportive environment! On the course, we explore the basics and fundamentals of improvisation both as a performing and professional skill. The course and workshops are designed to be fun and liberating as we unlock our creativity and conquer any inhibitions or fears we harbour when presenting or communicating through improv.
+
+In the modern hybrid working environment with more face to face interactions, our need for connectivity, having outlets outside of home and work, and recharging our personal and professional relationship skills becomes important again. Improv is a great tool to further develop and enhance these skills.
+
+At the end of the course, participants will grasp the fundamentals of improvisation and will be able to apply those new skills to your personal, professional and performing life. From speaking off the cuff, to bringing an edge to your presentations, improv will bring an authentic edge to all aspects of what you do!
+
+Course Content:
+- Principles of Improv
+- Collaborating off the cuff & building trust with others
+- Conquering self-imposed barriers to success
+- Speaking authentically
+- Inspiring and engaging a room
+- Status – Presence
+- Building Confidence on (and off) stage
+- Confidence speak off the script
+- Developing Scene Work
+
+Running over 6 Tuesdays evenings (7pm to 10pm) from 21st January, each workshop focuses on a different aspect of improvisation.",https://www.lowerthetone.com/courses/improv-level-1-january-2025/
+TRUE,12/3/2024 20:12:33,Introduction to Comedy Improvisation,Class,1/15/2025,,8:00:00 PM,9:30:00 PM,Belfast,Crescent Art Centre,No,"Designed for complete beginners, Introduction to Comedy Improvisation is the perfect way to take your first steps into improv, build your confidence, and have fun.","Designed for complete beginners, Introduction to Comedy Improvisation is the perfect way to take your first steps into improv, build your confidence, and have fun.
+
+Popularised by shows like Whose Line is it Anyway and taught all over the world, improvisation is used in films, on stage and as tool to help people improve their communication and teambuilding skills.
+
+Through a range of exercises and game in a relaxed supportive atmosphere you will learn to listen deeply, respond to the moment, and engage in true teamwork all while having fun.
+
+Introduction to Comedy Improvisation is for people of all levels of experience and ability with an emphasis on teamwork, participation getting on your feet and enjoying yourself.  
+
+ 
+
+About the Tutor
+
+Frazer Robb is an improviser and standup comedian whose work has been featured on Radio Ulster, BBC Northern Ireland and stages throughout the UK and Ireland.
+
+Frazer trained in improvisation at the world famous Second City and IO theatres and was a founding member of comedy improvisation group Wonder Frog. Frazer has taught improvisation for those interested in performance as well as a tool for communication with GPs, psychiatrists, and business people.",https://crescentarts.org/courses/introduction-to-comedy-improvisation
+TRUE,12/3/2024 20:15:30,Dublin Comedy Improv - Sundays at the international,Show,12/22/2024,7:30:00 PM,8:00:00 PM,,Dublin,International Bar,No,The hugely popular Dublin Comedy Improv perform Every Sunday 8pm.,"The Dublin Comedy Improv is the longest running Improv troupe in Ireland and second longest in Europe.
+
+They perform every Sunday @8PM (Doors 7:30pm) in the International Bar (the birth place of Irish comedy). The show is made up on the spot based on audience suggestions, it has been described as
+
+“absolutely amazing”
+
+“hilariously funny” (Hot Press). The DCI membership is made up of acclaimed comedians, actors, VO artists, writers and all-round funny people who have been at the forefront of Irish comedy since its inception. Fr Ted, Don’t Feed the Gondolas, Moone Boy, Republic of Telly and Bridget & Eamon are just some of the shows that the DCI have been involved in. They have also toured the world playing all sorts of festivals working with cast members from the Simpsons, Never Mind the Buzzcocks, 8 out of 10 Cats, Would I Lie To You, Mock The Week, The Drew Carey Show, and, of course, Whose Line is it Anyway.
+
+The show never fails to impress and always leaves the audience wanting more. The most original & inspiring comedy show you will ever see!
+
+DOORS 7:30 SHARP.
+
+Please arrive by 7:45pm or you may not get a seat!",https://www.eventbrite.ie/e/dublin-comedy-improv-sundays-at-the-international-tickets-699661505397
+TRUE,12/3/2024 20:15:30,Dublin Comedy Improv - Sundays at the international,Show,12/29/2024,7:30:00 PM,8:00:00 PM,,Dublin,International Bar,No,The hugely popular Dublin Comedy Improv perform Every Sunday 8pm.,"The Dublin Comedy Improv is the longest running Improv troupe in Ireland and second longest in Europe.
+
+They perform every Sunday @8PM (Doors 7:30pm) in the International Bar (the birth place of Irish comedy). The show is made up on the spot based on audience suggestions, it has been described as
+
+“absolutely amazing”
+
+“hilariously funny” (Hot Press). The DCI membership is made up of acclaimed comedians, actors, VO artists, writers and all-round funny people who have been at the forefront of Irish comedy since its inception. Fr Ted, Don’t Feed the Gondolas, Moone Boy, Republic of Telly and Bridget & Eamon are just some of the shows that the DCI have been involved in. They have also toured the world playing all sorts of festivals working with cast members from the Simpsons, Never Mind the Buzzcocks, 8 out of 10 Cats, Would I Lie To You, Mock The Week, The Drew Carey Show, and, of course, Whose Line is it Anyway.
+
+The show never fails to impress and always leaves the audience wanting more. The most original & inspiring comedy show you will ever see!
+
+DOORS 7:30 SHARP.
+
+Please arrive by 7:45pm or you may not get a seat!",https://www.eventbrite.ie/e/dublin-comedy-improv-sundays-at-the-international-tickets-699661515427
+TRUE,12/3/2024 20:15:30,Dublin Comedy Improv - Sundays at the international,Show,1/5/2025,7:30:00 PM,8:00:00 PM,,Dublin,International Bar,No,The hugely popular Dublin Comedy Improv perform Every Sunday 8pm.,"The Dublin Comedy Improv is the longest running Improv troupe in Ireland and second longest in Europe.
+
+They perform every Sunday @8PM (Doors 7:30pm) in the International Bar (the birth place of Irish comedy). The show is made up on the spot based on audience suggestions, it has been described as
+
+“absolutely amazing”
+
+“hilariously funny” (Hot Press). The DCI membership is made up of acclaimed comedians, actors, VO artists, writers and all-round funny people who have been at the forefront of Irish comedy since its inception. Fr Ted, Don’t Feed the Gondolas, Moone Boy, Republic of Telly and Bridget & Eamon are just some of the shows that the DCI have been involved in. They have also toured the world playing all sorts of festivals working with cast members from the Simpsons, Never Mind the Buzzcocks, 8 out of 10 Cats, Would I Lie To You, Mock The Week, The Drew Carey Show, and, of course, Whose Line is it Anyway.
+
+The show never fails to impress and always leaves the audience wanting more. The most original & inspiring comedy show you will ever see!
+
+DOORS 7:30 SHARP.
+
+Please arrive by 7:45pm or you may not get a seat!",https://www.eventbrite.ie/e/dublin-comedy-improv-sundays-at-the-international-tickets-1092084276469
+TRUE,12/3/2024 20:15:30,Dublin Comedy Improv - Sundays at the international,Show,1/12/2025,7:30:00 PM,8:00:00 PM,,Dublin,International Bar,No,The hugely popular Dublin Comedy Improv perform Every Sunday 8pm.,"The Dublin Comedy Improv is the longest running Improv troupe in Ireland and second longest in Europe.
+
+They perform every Sunday @8PM (Doors 7:30pm) in the International Bar (the birth place of Irish comedy). The show is made up on the spot based on audience suggestions, it has been described as
+
+“absolutely amazing”
+
+“hilariously funny” (Hot Press). The DCI membership is made up of acclaimed comedians, actors, VO artists, writers and all-round funny people who have been at the forefront of Irish comedy since its inception. Fr Ted, Don’t Feed the Gondolas, Moone Boy, Republic of Telly and Bridget & Eamon are just some of the shows that the DCI have been involved in. They have also toured the world playing all sorts of festivals working with cast members from the Simpsons, Never Mind the Buzzcocks, 8 out of 10 Cats, Would I Lie To You, Mock The Week, The Drew Carey Show, and, of course, Whose Line is it Anyway.
+
+The show never fails to impress and always leaves the audience wanting more. The most original & inspiring comedy show you will ever see!
+
+DOORS 7:30 SHARP.
+
+Please arrive by 7:45pm or you may not get a seat!",https://www.eventbrite.ie/e/dublin-comedy-improv-sundays-at-the-international-tickets-1092084286499
+TRUE,12/3/2024 20:15:30,Dublin Comedy Improv - Sundays at the international,Show,1/19/2025,7:30:00 PM,8:00:00 PM,,Dublin,International Bar,No,The hugely popular Dublin Comedy Improv perform Every Sunday 8pm.,"The Dublin Comedy Improv is the longest running Improv troupe in Ireland and second longest in Europe.
+
+They perform every Sunday @8PM (Doors 7:30pm) in the International Bar (the birth place of Irish comedy). The show is made up on the spot based on audience suggestions, it has been described as
+
+“absolutely amazing”
+
+“hilariously funny” (Hot Press). The DCI membership is made up of acclaimed comedians, actors, VO artists, writers and all-round funny people who have been at the forefront of Irish comedy since its inception. Fr Ted, Don’t Feed the Gondolas, Moone Boy, Republic of Telly and Bridget & Eamon are just some of the shows that the DCI have been involved in. They have also toured the world playing all sorts of festivals working with cast members from the Simpsons, Never Mind the Buzzcocks, 8 out of 10 Cats, Would I Lie To You, Mock The Week, The Drew Carey Show, and, of course, Whose Line is it Anyway.
+
+The show never fails to impress and always leaves the audience wanting more. The most original & inspiring comedy show you will ever see!
+
+DOORS 7:30 SHARP.
+
+Please arrive by 7:45pm or you may not get a seat!",https://www.eventbrite.ie/e/dublin-comedy-improv-sundays-at-the-international-tickets-1092084296529
+TRUE,12/3/2024 20:15:30,Dublin Comedy Improv - Sundays at the international,Show,1/26/2025,7:30:00 PM,8:00:00 PM,,Dublin,International Bar,No,The hugely popular Dublin Comedy Improv perform Every Sunday 8pm.,"The Dublin Comedy Improv is the longest running Improv troupe in Ireland and second longest in Europe.
+
+They perform every Sunday @8PM (Doors 7:30pm) in the International Bar (the birth place of Irish comedy). The show is made up on the spot based on audience suggestions, it has been described as
+
+“absolutely amazing”
+
+“hilariously funny” (Hot Press). The DCI membership is made up of acclaimed comedians, actors, VO artists, writers and all-round funny people who have been at the forefront of Irish comedy since its inception. Fr Ted, Don’t Feed the Gondolas, Moone Boy, Republic of Telly and Bridget & Eamon are just some of the shows that the DCI have been involved in. They have also toured the world playing all sorts of festivals working with cast members from the Simpsons, Never Mind the Buzzcocks, 8 out of 10 Cats, Would I Lie To You, Mock The Week, The Drew Carey Show, and, of course, Whose Line is it Anyway.
+
+The show never fails to impress and always leaves the audience wanting more. The most original & inspiring comedy show you will ever see!
+
+DOORS 7:30 SHARP.
+
+Please arrive by 7:45pm or you may not get a seat!",https://www.eventbrite.ie/e/dublin-comedy-improv-sundays-at-the-international-tickets-1092084306559
+TRUE,12/8/2024 14:57:38,Cool Baby Presents: MyCool Buble's Star Studded Christmas Special,Variety Night,12/18/2024,7:30:00 PM,8:00:00 PM,,Dublin,Bello Bar,No,"Come along and join Cool Baby to celebrate the season with festive variety show, staring some of the hottest names in Dublin Comedy!","Critics are calling it the greatest sequel to an Improv Christmas Special of all time!
+
+We're all grown up now and being joined by the classiest Christmas mentor around. Yep, you guessed it, Cool Baby Presents:
+
+MyCool Bublé’s Star Studded Christmas Special
+
+Come see the man himself alongside Christmas comedy fairytale spinners Sketcherella, musical funny man Oisín Moran, as well as stand up sweetheart Aidan Greene!",https://www.eventbrite.co.uk/e/cool-baby-presents-mycool-bubles-star-studded-christmas-special-tickets-1097153518709?aff=ebdssbdestsearch&keep_tld=1
+TRUE,1/4/2025 13:49:39,Lower The Tone – Level 2 Showcase,Show,1/24/2025,,7:30:00 PM,9:00:00 PM,Dublin,Teachers Club,No,"Join our cast of brave performers who take the stage for their first ever improv showcase. Everything you see will be created before your very eyes, and will never be seen again!","Join our cast of brave performers who take the stage for their first ever improv showcase. Everything you see will be created before your very eyes, and will never be seen again!
+
+Admission is free, registration is necessary.
+
+Performance takes place in the theatre. No late admittance once show starts.",https://fienta.com/improv-level-2-showcase-115440
+TRUE,1/4/2025 14:16:29,Lower The Tone - Improv Level 2,Class,2/4/2025,,7:00:00 PM,9:45:00 PM,Dublin,Teacher's Club Theatre,No,"Now that we have established a foundation with our improv, its time to dive deeper and work toward creating an ensemble piece with rich and engaging scenes. We do this while studying a selection of improv formats.","Now that we have established a foundation with our improv, its time to dive deeper and work toward creating an ensemble piece with rich and engaging scenes. We do this while studying a selection of improv formats.
+
+Learning Outcomes
+• Understand and identify “Position Play” for more engaging scenes (The 4 scene types)
+• Creating strong “Hive Mind” for more great connection on stage
+• Ability to perform in grounded, real scenes for dramatic work
+• Develop deeper characters that can be used for longer scenes and shows
+• Understand and perform a number of improv formats and structures
+ 
+
+Topics covered
+• Position Play
+• Hive Mind
+• Drama and intimacy in improv
+• Point of View / Emotional Point of View
+• Improv formats and structures
+ 
+
+Showcase
+There is an optional Class Showcase on completion of the course.
+
+Course Instructors
+The level 2 course is taught by Debbie Cheevers and Denny McDermott of Underthings and Cloven Improv. ",https://www.lowerthetone.com/courses/l2-feb25/
+TRUE,1/6/2025 19:13:48,Sunday Night Improv,Show,1/12/2025,6:45:00 PM,7:00:00 PM,8:30:00 PM,Belfast,Lavery's Back Bar,No,Sunday Night Improv Comedy feat. The Neighbourhood,"Sunday Night Improv Comedy feat. The Neighbourhood
+
+This week we're in Lavery's Back Bar with:
+
+Ensemble: The Neighbourhood
+Ensemble: BIAS
+..........
+Sunday night improv features the best and brightest of Belfast's comedy improvisers and actors, creating comedy sketches from audience prompts. The scenes have never been seen before, and are never repeated, meaning each show is unique.",https://www.eventbrite.co.uk/e/sunday-night-improv-tickets-1137775911379
+TRUE,1/6/2025 19:15:08,Make Improv - Student Show and Jam,Show,1/13/2025,7:00:00 PM,7:30:00 PM,9:30:00 PM,Belfast,The Black Box,No,Come join us for a night of student improv performances and a fun jam session!,"Come join us for a night of student improv performances and a fun jam session!
+
+This is a ""Whose Line Is It Anyway?"" style short-form improv comedy show. There will be opportunities for the audience to provide suggestions for scenes, or you can simply sit and enjoy the show, no participation required!
+
+Marcus and Aaron spent years performing short-form improv as part of Wonder Frog, and have now formed Make Improv to pass on some of what they have learned.
+
+First half: Students from Make Improv's 5-week short form class will put on a show.
+
+Second half: Marcus and Aaron will facilitate an open jam, where anyone attending can have the opportunity to try a short form game or two.",https://www.eventbrite.co.uk/e/make-improv-student-show-and-jam-tickets-1115758907929
+TRUE,1/11/2025 15:15:11,Turnstyle Improv in the Black Box!,Show,1/21/2025,7:45:00 PM,8:00:00 PM,9:30:00 PM,Belfast,The Black Box,Yes,Turnstyle presents two improv shows and some improv jam games in one night!,"Turnstyle Improv will feature two teams performing one-off completely improvised shows based on audience suggestions that will never be seen again!
+
+And there will be some classic short improv games (like on Whose Line Is It Anyway?). Participation totally optional!
+
+A show for those who love improv and for those who have never seen it and want to know what it's all about!
+
+Instagram: @turnstylebelfast for more",https://www.eventbrite.co.uk/e/turnstyle-improv-in-the-black-box-tickets-1119834137049?aff=ebdssbdestsearch
+TRUE,1/16/2025 2:56:34,Crocodile Paws (Moth & Butterfly Festival),Show,1/31/2025,7:00:00 PM,7:30:00 PM,8:45:00 PM,Galway City,Blue Teapot ,Yes,Crocodile Paws - Acclaimed Finnish Duo,"Part of the Moth & Butterfly International Festival of Storytelling & Improvisation, Crocodile Paws are Kaisa and Sara Kokko-Palmer, Helsinki and acclaimed Improvisers. They are joined for their show by DJ Niceol Blue, and bring grounded complex improvisational stories to the festival",Www.mothandbutterflystories.com
+TRUE,2/2/2025 19:35:39,Improv Comedy for Beginners,Class,2/24/2025,,6:00:00 PM,8:30:00 PM,Belfast,Morton Community Centre,No,Learn to create and perform comedy theatre on the spot. 6 Mondays from 24th February - 31st March,"Learn the basics of Improvisation in a fun and supportive environment.
+
+This class is for those who are new to acting, stage performance, or comedy, or those that just want to try to build in creativity and confidence in to their personal or professional lives.
+
+Improvisation is the art of confidently creating performance sketches without a script. Improvisation skills are a must for anyone who is interested in becoming a more versatile stage performer, or in giving live performance a go for the first time. They're also a great aid to the everyday skills that we use in our personal and professional lives, whether we need confidence in social interactions, clarity in our motivations and goals, or a creative edge at work.
+
+We cover a wide variety of concepts in Level 1 including:
+
+The essence of comedic acting
+Comedic scene structures
+Performing for an audience
+Creating improvised stories
+Trust, authenticity, and collaboration
+Confident decision making
+The class runs for 6 consecutive weeks, from 24th February - 31st March (6 - 8.30pm).",https://www.eventbrite.co.uk/e/improv-comedy-for-beginners-tickets-1144091030069?aff=ebdssbdestsearch
+TRUE,2/2/2025 19:37:49,"MAKE Improv Workshop - ""Expert"" style games and interview",Workshop,2/19/2025,,7:00:00 PM,9:30:00 PM,Belfast,Morton Community Centre,No,Learn some of the skills and games needed to put on a “Whose Line Is It Anyway?” style short-form improv show.,"""Expert"" style games and interview
+
+Some short form games require players to be interviewed as if they were an expert in a suggested topic. This workshop will explore ways to develop these characters, interview techniques, and ways to frame the interviews.
+
+This is part of a series of 6 weekly drop-in workshops (22/01/25 - 26/02/25) on different short form topics, details of each are in each event. You do not need to have attended any of the other workshops to attend any class. The content is aimed at existing performers with some improv experience, so may not be suitable for beginners. Places limited to 8 participants per workshop.
+
+
+
+About the instructors:
+
+Aaron is a founding member of the 6-person group Wonder Frog, which in 2012 was Northern Ireland’s best (and only) short form improv group. Marcus joined Wonder Frog in 2013, and together they regularly performed countless games.",https://www.eventbrite.co.uk/e/make-improv-workshop-expert-style-games-and-interview-tickets-1203541969429?aff=ebdssbdestsearch
+TRUE,2/2/2025 19:39:51,MAKE Improv Workshop - Intro to Short Form Musical Games,Workshop,2/12/2025,,7:00:00 PM,9:30:00 PM,Belfast,Morton Community Centre,No,Learn some of the skills and games needed to put on a “Whose Line Is It Anyway?” style short-form improv show.,"Intro to Short Form Musical Games
+
+In this workshop we will give a brief overview of some of the most popular music games (using a prerecorded backing track for accompaniment) such as hoedown, irish drinking song, and four headed broadway star. This is an awareness-level session aimed at players who haven't attempted these games before.
+
+This is part of a series of 6 weekly drop-in workshops (22/01/25 - 26/02/25) on different short form topics, details of each are in each event. You do not need to have attended any of the other workshops to attend any class. The content is aimed at existing performers with some improv experience, so may not be suitable for beginners. Places limited to 8 participants per workshop.
+
+
+
+About the instructors:
+
+Aaron is a founding member of the 6-person group Wonder Frog, which in 2012 was Northern Ireland’s best (and only) short form improv group. Marcus joined Wonder Frog in 2013, and together they regularly performed countless games.",https://www.eventbrite.co.uk/e/make-improv-workshop-intro-to-short-form-musical-games-tickets-1203535941399?aff=ebdssbdestsearch
+TRUE,2/2/2025 19:41:38,Turnstyle Improv in the Black Box!,Show,2/25/2025,7:45:00 PM,8:00:00 PM,9:45:00 PM,Belfast,The Black Box,Yes,Turnstyle presents two improv shows and some improv jam games in one night!,"Turnstyle Improv will feature two teams performing one-off completely improvised shows based on audience suggestions that will never be seen again!
+
+And there will be some classic short improv games (like on Whose Line Is It Anyway?). Participation totally optional!
+
+A show for those who love improv and for those who have never seen it and want to know what it's all about!
+
+Instagram: @turnstylebelfast for more",https://www.eventbrite.co.uk/e/turnstyle-improv-in-the-black-box-tickets-1119842792939?aff=ebdssbdestsearch
+TRUE,2/2/2025 19:43:25,Sunday Night Improv,Show,2/9/2025,6:45:00 PM,7:00:00 PM,8:30:00 PM,Belfast,Laverys,Yes,Sunday Night Improv Comedy feat. Deerstalkers,"This week we're in Lavery's Middle Floor with:
+
+Duo: Deerstalkers
+
+Ensemble: BBB
+
+..........
+
+Sunday night improv features the best and brightest of Belfast's comedy improvisers and actors, creating comedy sketches from audience prompts. The scenes have never been seen before, and are never repeated, meaning each show is unique.
+
+Doors at 6.45pm
+
+Show starts at 7pm",https://www.eventbrite.co.uk/e/sunday-night-improv-tickets-1223807173199?aff=ebdssbdestsearch
+TRUE,2/2/2025 19:45:30,MAKE Improv Workshop - Endowment/Guessing games,Workshop,2/26/2025,,7:00:00 PM,9:30:00 PM,Belfast,Morton Community Centre,No,Learn some of the skills and games needed to put on a “Whose Line Is It Anyway?” style short-form improv show.,"Endowment/Guessing games
+
+Some short form games involve getting a secret suggestion for a characteristic while another player is outside the room, then returning to guess the answer through clues, such as party quirks or press conference. This workshop will look at ways to embody the provided suggestions, and incrementally provide clues in a satisfying way.
+
+This is part of a series of 6 weekly drop-in workshops (22/01/25 - 26/02/25) on different short form topics, details of each are in each event. You do not need to have attended any of the other workshops to attend any class. The content is aimed at existing performers with some improv experience, so may not be suitable for beginners. Places limited to 8 participants per workshop.
+
+
+
+About the instructors:
+
+Aaron is a founding member of the 6-person group Wonder Frog, which in 2012 was Northern Ireland’s best (and only) short form improv group. Marcus joined Wonder Frog in 2013, and together they regularly performed countless games.",https://www.eventbrite.co.uk/e/make-improv-workshop-endowmentguessing-games-tickets-1203544848039?aff=ebdssbdestsearch
+TRUE,2/2/2025 19:47:44,Who Done Did The Thing? - An Improvised Murder Mystery,Show,2/8/2025,7:30:00 PM,8:00:00 PM,9:30:00 PM,Belfast,The Sunflower,Yes,4 suspects. 2 Detectives. No Clue. Watch a fake murder will be solved in real time in this improvised comedy whodunnit.,"Who Done Did The Thing? - An Improvised Murder Mystery
+
+Come join us at the Sunflower for the comedy whodunnit, where two detectives are tasked with solving a crime that is being made up on the spot. Everyone is a suspect, but only one person knows who the killer is: the killer themselves.
+
+Join some of Belfast's best comedians and improvisers as they create a create a thrilling murder mystery right before your eyes, where nothing is prepared beforehand, and everyone is a suspect.
+
+
+
+The cast for this show features:
+
+Laura Conlon
+Patrick Meier
+Janey Mac
+Claire Thompson
+Conor Reddick
+Tiff Minson
+Amelia Price
+Conleth McVeigh
+
+
+There will also be an opening performance (TBA) to kick off the night in comedic style.",https://www.eventbrite.co.uk/e/who-done-did-the-thing-an-improvised-murder-mystery-tickets-1215511992089?aff=ebdssbdestsearch
+TRUE,2/2/2025 19:49:54,MOB COMEDY: Improv Jam & Student Armando,Show,2/6/2025,,8:00:00 PM,10:30:00 PM,Dublin,Wigwam,No,LIVE COMEDY featuring Dublin's Top Comedians and Improvisers. Different show every Thursday night.,"Alternative Comedy from Dublin's top up-and-coming comedians! One ticket gets you into the whole night. Come with friends or show up solo and make new ones! Doors at 745.
+
+8PM- IMPROV JAM
+
+Sign-Up at 730 and take the stage at 8PM along with some of MOB's top performers. All experience levels welcome, perform improv in front of the friendliest crowd in town!
+
+9PM- Student Armando: featuring Maria Cunningham & Saorla Rodger
+
+See some of MOB's advanced students perform a long-form improv show inspired by on-the-spot monologues from special guest comedians.",https://www.eventbrite.co.uk/e/mob-comedy-improv-jam-student-armando-tickets-1230477714969?aff=ebdssbdestsearch&keep_tld=1
+TRUE,2/2/2025 19:52:11,VALENTINE'S COMEDY NIGHT,Show,2/13/2025,7:45:00 PM,8:00:00 PM,10:30:00 PM,Dublin,Wigwam,No,A night of Improv Comedy and Bad date Stories from of Dublin's top comedians,"IT'S THE MOB COMEDY VALENTINE'S COMEDY SHOOOOW....
+
+8PM- BLIND DATE IMPROV SHOW
+
+Long-form improv inspired by two random audience members and the great love affair they'll *probably never have.
+
+9PM- LOSER MUSEUM
+
+Bad dates, break-ups, heart-break---- our comedian guests will make the pain of LOVE funny for ONE NIGHT ONLY.
+
+
+
+ABOUT MOB:
+
+Alternative Comedy from Dublin's top up-and-coming comedians! One ticket gets you into the whole night. Come with friends or show up solo and make new ones! Doors at 745.",https://www.eventbrite.ie/e/valentines-comedy-night-tickets-1231523723609?aff=ebdsoporgprofile
+TRUE,2/2/2025 19:53:54,NERD COMEDY NIGHT: MOB THEATRE DUBLIN,Show,2/20/2025,7:45:00 PM,8:00:00 PM,10:30:00 PM,Dublin,Wigwam,No,DUNGEONS & NAGGINS: Live Comedy RPG & SNEAK PREVIEW: The Improvised Movie!,"IT'S A COMEDY NIGHT FOR THE NERDS (AND EVERYONE ELSE)
+
+8PM- SNEAK PREVIEW: The Improvised Movie
+
+YOU suggest the title of the film and SNEAK PREVIEW will perform it for you live just like you're in the cinema (* except it's live and not filmed and a comedy show)
+
+9PM- DUNGEONS & NAGGINS
+
+Lead by Nagginlord, Steve Bennett, three comedians will complete an entire unique campaign in less than an hour. Come for the roleplay...stay for the lil goblin fella...
+
+
+
+
+
+ABOUT MOB:
+
+Alternative Comedy from Dublin's top up-and-coming comedians! One ticket gets you into the whole night. Come with friends or show up solo and make new ones! Doors at 745.",https://www.eventbrite.ie/e/nerd-comedy-night-mob-theatre-dublin-tickets-1231591706949?aff=ebdsoporgprofile
+TRUE,2/2/2025 19:55:38,Dublin Comedy Improv - Sundays at the international,Show,2/9/2025,7:30:00 PM,8:00:00 PM,10:00:00 PM,Dublin,"The International Bar, 23 Wicklow St",No,The hugely popular Dublin Comedy Improv perform Every Sunday 8pm.,"The Dublin Comedy Improv is the longest running Improv troupe in Ireland and second longest in Europe.
+
+They perform every Sunday @8PM (Doors 7:30pm) in the International Bar (the birth place of Irish comedy). The show is made up on the spot based on audience suggestions, it has been described as
+
+“absolutely amazing”
+
+“hilariously funny” (Hot Press). The DCI membership is made up of acclaimed comedians, actors, VO artists, writers and all-round funny people who have been at the forefront of Irish comedy since its inception. Fr Ted, Don’t Feed the Gondolas, Moone Boy, Republic of Telly and Bridget & Eamon are just some of the shows that the DCI have been involved in. They have also toured the world playing all sorts of festivals working with cast members from the Simpsons, Never Mind the Buzzcocks, 8 out of 10 Cats, Would I Lie To You, Mock The Week, The Drew Carey Show, and, of course, Whose Line is it Anyway.
+
+The show never fails to impress and always leaves the audience wanting more. The most original & inspiring comedy show you will ever see!
+
+DOORS 7:30 SHARP.
+
+Please arrive by 7:45pm or you may not get a seat!",https://www.eventbrite.co.uk/e/dublin-comedy-improv-sundays-at-the-international-tickets-699661465277
+TRUE,2/2/2025 19:55:38,MOB IMPROV COMEDY,Show,2/27/2025,7:45:00 PM,8:00:00 PM,10:30:00 PM,Dublin,Wigwam,No,Longform Improv Night featuring some of the brightest and best upcoming Comedians LIVE at WIGWAM,"LONG-FORM IMPROV FROM THE BEST AND BRIGHTEST
+
+8PM- BUFF JESUS & FEAR US PLEASE
+
+Two of Dublin's best long-form improv groups perform sets based solely on a single suggestion from the audience.
+
+9PM- Cuppa Der & Jo: Improvised Morning Show
+
+A fully improvised morning show, now at NIGHT!
+
+
+
+
+
+ABOUT MOB:
+
+Alternative Comedy from Dublin's top up-and-coming comedians! One ticket gets you into the whole night. Come with friends or show up solo and make new ones! Doors at 745.",https://www.eventbrite.ie/e/mob-improv-comedy-tickets-1231604705829?aff=ebdsoporgprofile
+TRUE,2/2/2025 20:04:11,"F*CK OFF, CUPID! - Love & Improv",Show,2/8/2025,,7:30:00 PM,9:30:00 PM,Dublin,Teachers Club,No,"Sick of Cupid's cheesy arrows? Join us for a night of love-themed improv comedy that'll make you say ""F*ck off, Cupid!""","F*CK OFF, CUPID! - Love & Improv
+
+Date: February 8th
+
+Time: 7:30 PM
+
+Location: Teachers Club, D01 T6V6
+
+Had enough of Cupid's arrows missing the mark? Or maybe, you believe in the power of love? Either way, join us for a night of Improv Comedy featuring some of Dublin's finest improvisers where we'll be poking fun at all things romance.
+
+
+Performing on the night:
+
+Underthings
+Broccoli Shock
+Cad É An Scéal
+
+So whether you're single, taken, in a fucked up relationship, or jealous of your mate's lover, this show is for anyone looking to laugh and have a good time. Let's celebrate or commiserate together - either way, we will be telling Cupid to fuck right off!",https://www.eventbrite.co.uk/e/fck-off-cupid-love-improv-tickets-1223371008619?aff=ebdssbdestsearch&keep_tld=1
+TRUE,2/2/2025 20:06:12,BROAD STROKES,Show,2/21/2025,,8:00:00 PM,9:30:00 PM,Dublin,The Pearse Centre,No,"Come and celebrate Broad Strokes' THIRD birthday!! We are so big :') We're kicking off this year with our classic, totally improvised show!",,https://www.eventbrite.co.uk/e/broad-strokes-tickets-1219448446129?aff=ebdssbdestsearch&keep_tld=1
+TRUE,2/2/2025 20:09:24,TheatreSports,Show,2/16/2025,,6:00:00 PM,,Dublin,The Pearse Centre,No,"There's no ""I"" in TheatreSports™...","Improvisers will test their mettle in a spontaneous theatre competition fuelled by Team Spirit!
+
+Theatre entertains and educates. Sports fuels a crowd. TheatreSports™ combines these forces, igniting the stage and generating audience ‘heat’ in the spirit of true competition.
+
+Expect the unexpected from our Team Players — seizing the moment, taking chances, and risking it all to raise their game and up the competition, with every challenge — making “Absolute Scenes"" out of audience suggestions. It's all to play for!
+
+Grand Stretch® is proud to bring this world-renowned impro theatre format to Irish audiences as Ireland's leading member of the International TheatreSports™ Institute. Learn more about TheatreSports™ at grandstretch.com",https://grandstretch.com/book-now/ola/services/theatresports-feb-2025
+TRUE,2/2/2025 20:11:32,Soul Mates,Workshop,2/22/2025,,10:00:00 AM,4:00:00 PM,Dublin,The LAB,No,"A “Personal, Meaningful, and Powerful” workshop
+for Soul Mates, as part of the Spirit Guides series.","""Leap, and the net shall appear!"" — Robin Williams
+
+Spirit Guides is a fun-fuelled, game-oriented adventure in spontaneous theatre, improvisation and comedy. In six themed workshops, Darren Yorke will guide a group of Spirited Players from schoolyard favourites to 'Absolute Scenes!' with Team Spirit.
+
+Each workshop has its own feel and focus. In sequence, they serve as an energetic yet enlightening journey to a holistic state of being, play-making, and performing, as one with your team.
+
+Limited sign-ups for the full course cost €330.
+Remaining spaces are available in individual workshops at a cost of €65 each, for players who'd like to be selective.
+
+For more information, visit grandstretch.com/spirit-guides",https://grandstretch.com/book-now/ola/services/soul-mates-2
+TRUE,2/2/2025 20:11:32,Dublin Comedy Improv - Sundays at the international,Show,2/16/2025,7:30:00 PM,8:00:00 PM,10:00:00 PM,Dublin,"The International Bar, 23 Wicklow St",No,The hugely popular Dublin Comedy Improv perform Every Sunday 8pm.,"The Dublin Comedy Improv is the longest running Improv troupe in Ireland and second longest in Europe.
+
+They perform every Sunday @8PM (Doors 7:30pm) in the International Bar (the birth place of Irish comedy). The show is made up on the spot based on audience suggestions, it has been described as
+
+“absolutely amazing”
+
+“hilariously funny” (Hot Press). The DCI membership is made up of acclaimed comedians, actors, VO artists, writers and all-round funny people who have been at the forefront of Irish comedy since its inception. Fr Ted, Don’t Feed the Gondolas, Moone Boy, Republic of Telly and Bridget & Eamon are just some of the shows that the DCI have been involved in. They have also toured the world playing all sorts of festivals working with cast members from the Simpsons, Never Mind the Buzzcocks, 8 out of 10 Cats, Would I Lie To You, Mock The Week, The Drew Carey Show, and, of course, Whose Line is it Anyway.
+
+The show never fails to impress and always leaves the audience wanting more. The most original & inspiring comedy show you will ever see!
+
+DOORS 7:30 SHARP.
+
+Please arrive by 7:45pm or you may not get a seat!",https://www.eventbrite.co.uk/e/dublin-comedy-improv-sundays-at-the-international-tickets-699661465278
+TRUE,2/2/2025 20:11:32,Dublin Comedy Improv - Sundays at the international,Show,2/23/2025,7:30:00 PM,8:00:00 PM,10:00:00 PM,Dublin,"The International Bar, 23 Wicklow St",No,The hugely popular Dublin Comedy Improv perform Every Sunday 8pm.,"The Dublin Comedy Improv is the longest running Improv troupe in Ireland and second longest in Europe.
+
+They perform every Sunday @8PM (Doors 7:30pm) in the International Bar (the birth place of Irish comedy). The show is made up on the spot based on audience suggestions, it has been described as
+
+“absolutely amazing”
+
+“hilariously funny” (Hot Press). The DCI membership is made up of acclaimed comedians, actors, VO artists, writers and all-round funny people who have been at the forefront of Irish comedy since its inception. Fr Ted, Don’t Feed the Gondolas, Moone Boy, Republic of Telly and Bridget & Eamon are just some of the shows that the DCI have been involved in. They have also toured the world playing all sorts of festivals working with cast members from the Simpsons, Never Mind the Buzzcocks, 8 out of 10 Cats, Would I Lie To You, Mock The Week, The Drew Carey Show, and, of course, Whose Line is it Anyway.
+
+The show never fails to impress and always leaves the audience wanting more. The most original & inspiring comedy show you will ever see!
+
+DOORS 7:30 SHARP.
+
+Please arrive by 7:45pm or you may not get a seat!",https://www.eventbrite.co.uk/e/dublin-comedy-improv-sundays-at-the-international-tickets-699661465279
+TRUE,2/2/2025 20:11:32,Dublin Comedy Improv - Sundays at the international,Show,3/2/2025,7:30:00 PM,8:00:00 PM,10:00:00 PM,Dublin,"The International Bar, 23 Wicklow St",No,The hugely popular Dublin Comedy Improv perform Every Sunday 8pm.,"The Dublin Comedy Improv is the longest running Improv troupe in Ireland and second longest in Europe.
+
+They perform every Sunday @8PM (Doors 7:30pm) in the International Bar (the birth place of Irish comedy). The show is made up on the spot based on audience suggestions, it has been described as
+
+“absolutely amazing”
+
+“hilariously funny” (Hot Press). The DCI membership is made up of acclaimed comedians, actors, VO artists, writers and all-round funny people who have been at the forefront of Irish comedy since its inception. Fr Ted, Don’t Feed the Gondolas, Moone Boy, Republic of Telly and Bridget & Eamon are just some of the shows that the DCI have been involved in. They have also toured the world playing all sorts of festivals working with cast members from the Simpsons, Never Mind the Buzzcocks, 8 out of 10 Cats, Would I Lie To You, Mock The Week, The Drew Carey Show, and, of course, Whose Line is it Anyway.
+
+The show never fails to impress and always leaves the audience wanting more. The most original & inspiring comedy show you will ever see!
+
+DOORS 7:30 SHARP.
+
+Please arrive by 7:45pm or you may not get a seat!",https://www.eventbrite.co.uk/e/dublin-comedy-improv-sundays-at-the-international-tickets-699661465280
+TRUE,2/2/2025 20:11:32,Dublin Comedy Improv - Sundays at the international,Show,3/9/2025,7:30:00 PM,8:00:00 PM,10:00:00 PM,Dublin,"The International Bar, 23 Wicklow St",No,The hugely popular Dublin Comedy Improv perform Every Sunday 8pm.,"The Dublin Comedy Improv is the longest running Improv troupe in Ireland and second longest in Europe.
+
+They perform every Sunday @8PM (Doors 7:30pm) in the International Bar (the birth place of Irish comedy). The show is made up on the spot based on audience suggestions, it has been described as
+
+“absolutely amazing”
+
+“hilariously funny” (Hot Press). The DCI membership is made up of acclaimed comedians, actors, VO artists, writers and all-round funny people who have been at the forefront of Irish comedy since its inception. Fr Ted, Don’t Feed the Gondolas, Moone Boy, Republic of Telly and Bridget & Eamon are just some of the shows that the DCI have been involved in. They have also toured the world playing all sorts of festivals working with cast members from the Simpsons, Never Mind the Buzzcocks, 8 out of 10 Cats, Would I Lie To You, Mock The Week, The Drew Carey Show, and, of course, Whose Line is it Anyway.
+
+The show never fails to impress and always leaves the audience wanting more. The most original & inspiring comedy show you will ever see!
+
+DOORS 7:30 SHARP.
+
+Please arrive by 7:45pm or you may not get a seat!",https://www.eventbrite.co.uk/e/dublin-comedy-improv-sundays-at-the-international-tickets-699661465281
+TRUE,2/2/2025 20:11:32,Dublin Comedy Improv - Sundays at the international,Show,3/16/2025,7:30:00 PM,8:00:00 PM,10:00:00 PM,Dublin,"The International Bar, 23 Wicklow St",No,The hugely popular Dublin Comedy Improv perform Every Sunday 8pm.,"The Dublin Comedy Improv is the longest running Improv troupe in Ireland and second longest in Europe.
+
+They perform every Sunday @8PM (Doors 7:30pm) in the International Bar (the birth place of Irish comedy). The show is made up on the spot based on audience suggestions, it has been described as
+
+“absolutely amazing”
+
+“hilariously funny” (Hot Press). The DCI membership is made up of acclaimed comedians, actors, VO artists, writers and all-round funny people who have been at the forefront of Irish comedy since its inception. Fr Ted, Don’t Feed the Gondolas, Moone Boy, Republic of Telly and Bridget & Eamon are just some of the shows that the DCI have been involved in. They have also toured the world playing all sorts of festivals working with cast members from the Simpsons, Never Mind the Buzzcocks, 8 out of 10 Cats, Would I Lie To You, Mock The Week, The Drew Carey Show, and, of course, Whose Line is it Anyway.
+
+The show never fails to impress and always leaves the audience wanting more. The most original & inspiring comedy show you will ever see!
+
+DOORS 7:30 SHARP.
+
+Please arrive by 7:45pm or you may not get a seat!",https://www.eventbrite.co.uk/e/dublin-comedy-improv-sundays-at-the-international-tickets-699661465282
+TRUE,2/2/2025 20:11:32,Dublin Comedy Improv - Sundays at the international,Show,3/23/2025,7:30:00 PM,8:00:00 PM,10:00:00 PM,Dublin,"The International Bar, 23 Wicklow St",No,The hugely popular Dublin Comedy Improv perform Every Sunday 8pm.,"The Dublin Comedy Improv is the longest running Improv troupe in Ireland and second longest in Europe.
+
+They perform every Sunday @8PM (Doors 7:30pm) in the International Bar (the birth place of Irish comedy). The show is made up on the spot based on audience suggestions, it has been described as
+
+“absolutely amazing”
+
+“hilariously funny” (Hot Press). The DCI membership is made up of acclaimed comedians, actors, VO artists, writers and all-round funny people who have been at the forefront of Irish comedy since its inception. Fr Ted, Don’t Feed the Gondolas, Moone Boy, Republic of Telly and Bridget & Eamon are just some of the shows that the DCI have been involved in. They have also toured the world playing all sorts of festivals working with cast members from the Simpsons, Never Mind the Buzzcocks, 8 out of 10 Cats, Would I Lie To You, Mock The Week, The Drew Carey Show, and, of course, Whose Line is it Anyway.
+
+The show never fails to impress and always leaves the audience wanting more. The most original & inspiring comedy show you will ever see!
+
+DOORS 7:30 SHARP.
+
+Please arrive by 7:45pm or you may not get a seat!",https://www.eventbrite.co.uk/e/dublin-comedy-improv-sundays-at-the-international-tickets-699661465283
+TRUE,2/2/2025 20:11:32,Dublin Comedy Improv - Sundays at the international,Show,3/30/2025,7:30:00 PM,8:00:00 PM,10:00:00 PM,Dublin,"The International Bar, 23 Wicklow St",No,The hugely popular Dublin Comedy Improv perform Every Sunday 8pm.,"The Dublin Comedy Improv is the longest running Improv troupe in Ireland and second longest in Europe.
+
+They perform every Sunday @8PM (Doors 7:30pm) in the International Bar (the birth place of Irish comedy). The show is made up on the spot based on audience suggestions, it has been described as
+
+“absolutely amazing”
+
+“hilariously funny” (Hot Press). The DCI membership is made up of acclaimed comedians, actors, VO artists, writers and all-round funny people who have been at the forefront of Irish comedy since its inception. Fr Ted, Don’t Feed the Gondolas, Moone Boy, Republic of Telly and Bridget & Eamon are just some of the shows that the DCI have been involved in. They have also toured the world playing all sorts of festivals working with cast members from the Simpsons, Never Mind the Buzzcocks, 8 out of 10 Cats, Would I Lie To You, Mock The Week, The Drew Carey Show, and, of course, Whose Line is it Anyway.
+
+The show never fails to impress and always leaves the audience wanting more. The most original & inspiring comedy show you will ever see!
+
+DOORS 7:30 SHARP.
+
+Please arrive by 7:45pm or you may not get a seat!",https://www.eventbrite.co.uk/e/dublin-comedy-improv-sundays-at-the-international-tickets-699661465284
+TRUE,2/2/2025 20:11:32,Dublin Comedy Improv - Sundays at the international,Show,4/6/2025,7:30:00 PM,8:00:00 PM,10:00:00 PM,Dublin,"The International Bar, 23 Wicklow St",No,The hugely popular Dublin Comedy Improv perform Every Sunday 8pm.,"The Dublin Comedy Improv is the longest running Improv troupe in Ireland and second longest in Europe.
+
+They perform every Sunday @8PM (Doors 7:30pm) in the International Bar (the birth place of Irish comedy). The show is made up on the spot based on audience suggestions, it has been described as
+
+“absolutely amazing”
+
+“hilariously funny” (Hot Press). The DCI membership is made up of acclaimed comedians, actors, VO artists, writers and all-round funny people who have been at the forefront of Irish comedy since its inception. Fr Ted, Don’t Feed the Gondolas, Moone Boy, Republic of Telly and Bridget & Eamon are just some of the shows that the DCI have been involved in. They have also toured the world playing all sorts of festivals working with cast members from the Simpsons, Never Mind the Buzzcocks, 8 out of 10 Cats, Would I Lie To You, Mock The Week, The Drew Carey Show, and, of course, Whose Line is it Anyway.
+
+The show never fails to impress and always leaves the audience wanting more. The most original & inspiring comedy show you will ever see!
+
+DOORS 7:30 SHARP.
+
+Please arrive by 7:45pm or you may not get a seat!",https://www.eventbrite.co.uk/e/dublin-comedy-improv-sundays-at-the-international-tickets-699661465285
+TRUE,2/2/2025 20:11:32,Dublin Comedy Improv - Sundays at the international,Show,4/13/2025,7:30:00 PM,8:00:00 PM,10:00:00 PM,Dublin,"The International Bar, 23 Wicklow St",No,The hugely popular Dublin Comedy Improv perform Every Sunday 8pm.,"The Dublin Comedy Improv is the longest running Improv troupe in Ireland and second longest in Europe.
+
+They perform every Sunday @8PM (Doors 7:30pm) in the International Bar (the birth place of Irish comedy). The show is made up on the spot based on audience suggestions, it has been described as
+
+“absolutely amazing”
+
+“hilariously funny” (Hot Press). The DCI membership is made up of acclaimed comedians, actors, VO artists, writers and all-round funny people who have been at the forefront of Irish comedy since its inception. Fr Ted, Don’t Feed the Gondolas, Moone Boy, Republic of Telly and Bridget & Eamon are just some of the shows that the DCI have been involved in. They have also toured the world playing all sorts of festivals working with cast members from the Simpsons, Never Mind the Buzzcocks, 8 out of 10 Cats, Would I Lie To You, Mock The Week, The Drew Carey Show, and, of course, Whose Line is it Anyway.
+
+The show never fails to impress and always leaves the audience wanting more. The most original & inspiring comedy show you will ever see!
+
+DOORS 7:30 SHARP.
+
+Please arrive by 7:45pm or you may not get a seat!",https://www.eventbrite.co.uk/e/dublin-comedy-improv-sundays-at-the-international-tickets-699661465286
+TRUE,2/2/2025 20:11:32,Dublin Comedy Improv - Sundays at the international,Show,4/20/2025,7:30:00 PM,8:00:00 PM,10:00:00 PM,Dublin,"The International Bar, 23 Wicklow St",No,The hugely popular Dublin Comedy Improv perform Every Sunday 8pm.,"The Dublin Comedy Improv is the longest running Improv troupe in Ireland and second longest in Europe.
+
+They perform every Sunday @8PM (Doors 7:30pm) in the International Bar (the birth place of Irish comedy). The show is made up on the spot based on audience suggestions, it has been described as
+
+“absolutely amazing”
+
+“hilariously funny” (Hot Press). The DCI membership is made up of acclaimed comedians, actors, VO artists, writers and all-round funny people who have been at the forefront of Irish comedy since its inception. Fr Ted, Don’t Feed the Gondolas, Moone Boy, Republic of Telly and Bridget & Eamon are just some of the shows that the DCI have been involved in. They have also toured the world playing all sorts of festivals working with cast members from the Simpsons, Never Mind the Buzzcocks, 8 out of 10 Cats, Would I Lie To You, Mock The Week, The Drew Carey Show, and, of course, Whose Line is it Anyway.
+
+The show never fails to impress and always leaves the audience wanting more. The most original & inspiring comedy show you will ever see!
+
+DOORS 7:30 SHARP.
+
+Please arrive by 7:45pm or you may not get a seat!",https://www.eventbrite.co.uk/e/dublin-comedy-improv-sundays-at-the-international-tickets-699661465287
+TRUE,2/2/2025 20:13:07,Team Spirit,Workshop,3/22/2025,,10:00:00 AM,4:00:00 PM,Dublin,The LAB,No,"There’s no “i” in Theatre: a TheatreSports™ intensive, as part of the Spirit Guides series — it’s all to play for","""Leap, and the net shall appear!"" — Robin Williams
+
+Spirit Guides is a fun-fuelled, game-oriented adventure in spontaneous theatre, improvisation and comedy. In six themed workshops, Darren Yorke will guide a group of Spirited Players from schoolyard favourites to 'Absolute Scenes!' with Team Spirit.
+
+Each workshop has its own feel and focus. In sequence, they serve as an energetic yet enlightening journey to a holistic state of being, play-making, and performing, as one with your team.
+
+Limited sign-ups for the full course cost €330.
+Remaining spaces are available in individual workshops at a cost of €65 each, for players who'd like to be selective.
+
+For more information, visit grandstretch.com/spirit-guides",https://grandstretch.com/book-now/ola/services/team-spirit
+TRUE,2/2/2025 20:18:05,The Tiny Lock-In,Show,2/15/2025,,8:00:00 PM,,Dublin,Smock Alley Theatre,Yes,"Wherever you choose, they're trapped!","The Tiny Lock-In - TINY Improv
+Help! We’re locked in improvised chaos! One of Ireland's longest running-improv teams brings their infectious comedic style to the explosive Lock-in! The audience choose the location, Tiny try to get out!
+
+CAST: Luke Benson, Mark Cantan, Pearl O’Rourke, Camille Lucy Ross, Kelly Shatter
+
+PRODUCER Anna Brady",https://smockalley.ticketsolve.com/ticketbooth/shows/873651937?_gl=1*4h9y0l*_gcl_aw*R0NMLjE3Mzg1MjcyNzAuQ2p3S0NBaUF6UHk4QmhCb0Vpd0Fibk05TzdGSHN2NFBHaTRDYXAyU0dyU3JXc2prUjBsUXdKdGNRUmRZNXlSRHo5U0pDSUdEVURtWnFSb0MwRXNRQXZEX0J3RQ..*_ga*OTk5ODc3MTEuMTczMTI0NTQxMA..*_ga_MWDVV00WLD*MTczODUyNzIyNS4yLjEuMTczODUyNzI3MC4xNS4wLjA.
+TRUE,2/2/2025 20:18:05,The Tiny Lock-In,Show,2/16/2025,,8:00:00 PM,,Dublin,Smock Alley Theatre,Yes,"Wherever you choose, they're trapped!","The Tiny Lock-In - TINY Improv
+Help! We’re locked in improvised chaos! One of Ireland's longest running-improv teams brings their infectious comedic style to the explosive Lock-in! The audience choose the location, Tiny try to get out!
+
+CAST: Luke Benson, Mark Cantan, Pearl O’Rourke, Camille Lucy Ross, Kelly Shatter
+
+PRODUCER Anna Brady",https://smockalley.ticketsolve.com/ticketbooth/shows/873651937?_gl=1*4h9y0l*_gcl_aw*R0NMLjE3Mzg1MjcyNzAuQ2p3S0NBaUF6UHk4QmhCb0Vpd0Fibk05TzdGSHN2NFBHaTRDYXAyU0dyU3JXc2prUjBsUXdKdGNRUmRZNXlSRHo5U0pDSUdEVURtWnFSb0MwRXNRQXZEX0J3RQ..*_ga*OTk5ODc3MTEuMTczMTI0NTQxMA..*_ga_MWDVV00WLD*MTczODUyNzIyNS4yLjEuMTczODUyNzI3MC4xNS4wLjA.
+TRUE,2/26/2025 2:11:45,CobbleProv,Show,3/7/2025,7:15:00 PM,7:30:00 PM,10:00:00 PM,Dublin,The Cobblestone Pu,Yes,Cobbleprov is our approach to try and embrace and give opportunities for new improv talent and groups to perform to help further grow and establish themselves in one of the most art-friendly pubs in Dublin.,"Cobbleprov is our approach to try and embrace and give opportunities for new improv talent and groups to perform to help further grow and establish themselves in one of the most art-friendly pubs in Dublin. The Cobblestone Pub has a rich history of giving platforms to established and upcoming talent to want to leave Irish music in a better state than when they found it and it’s an ethos we want to take into the recent surge and interest in Irish and global improv. We want to see acts experiment, we want to see chemistry grow and we want to see people be able to find themselves in the wide world of improvisation.
+
+For out first show, our lineup is:
+
+Tea Quakes!
+Elevator Operator!
+Possessive Robot!
+Underthings!",https://www.eventbrite.co.uk/e/cobbleprov-tickets-1217840506739
+TRUE,2/27/2025 22:56:59,Swings & Roundabouts Improv Variety,Show,3/22/2025,7:20:00 PM,7:30:00 PM,9:30:00 PM,Dublin,Teachers Club,No,The Improv Playground's Spring Improv Variety Night featuring 9 great acts!,"The Improv Playground presents its Spring Swings & Roundabouts Improv Variety, featuign 9 great acts:
+
+The Dragon & The City
+Soggy Biscuits
+Business Pitch
+Call Us Icarus
+We find love (in the hopeless place)
+Bonobos
+Wet hens
+This isn't improv
+The very exciting show
+
+Join us for the afterparty karaoke!",https://www.eventbrite.co.uk/e/swings-roundabouts-improv-variety-night-tickets-1259473401849?aff=ebdssbdestsearch&keep_tld=1
+TRUE,2/28/2025 0:02:26,Improvaganza: West-World & Grand Stretch,Show,3/8/2025,7:20:00 PM,7:30:00 PM,9:30:00 PM,Dublin,Teachers Club,No,A double bill of improv featuring West-World and Grand Stretch. Special guest on the night is Ron West (Whose Line Is It Anyway?),"Join us for a double bill of improv featuring West-World and Grand Stretch!
+
+West-World is Niamh O'Keeffe, Derbáil Kinsella, Neil Curran and special guest, Ron West. Taking an audience suggestion and turning it into a whirlwind show of comedy, drama and everything inbetween.
+Ron West is no stranger to the big and small screen having appeared in Whose Line Is It Anyway?, Backdraft, Malcolm in the Middle, 3rd Rock From The Sun and Seinfeld.
+
+
+
+Grand Stretch is bringing the heat with TheatreSports™️ — a spontaneous theatre competition fuelled by Team Spirit, with Team Players led by Darren Yorke.",https://www.eventbrite.co.uk/e/improvaganza-west-world-grand-stretch-tickets-1259452860409?aff=ebdssbdestsearch&keep_tld=1
+TRUE,2/28/2025 9:21:52,Shes and Theys for DRCC,Variety Night,3/7/2025,8:00:00 PM,8:30:00 PM,10:30:00 PM,Dublin,Bello Bar,No,Alternative comedy night from some of the funniest Shes and Theys of Ireland. All proceeds go to Dublin Rape Crisis Centre,"Pin Drop (Róisín McGuigan & Amy LaGrue) are delighted to invite you to another Shes and Theys Comedy Night.
+
+We have a fantastic line up of improv, sketch and stand-up from some of the funniest Shes and Theys of Ireland.
+
+All proceeds from the night will be donated to Dublin Rape Crisis Centre, which works to prevent the harm and heal the trauma of rape and other forms of sexual violence.
+
+Dublin Rape Crisis Centre is a Registered Charity (RCN: 20021078, CHY8529). This event is not being run directly by Dublin Rape Crisis Centre. Instead, Pin Drop are running the event and will donate all proceeds to Dublin Rape Crisis Centre.
+
+Doors at 8.00pm. Show at 8.30pm.
+
+Follow @pin_drop_improv for acts announcements!",https://www.eventbrite.ie/e/1235823133259?aff=oddtdtcreator
+TRUE,3/3/2025 13:30:38,MAKE Improv - Starting a Scene Workshop,Workshop,3/9/2025,12:00:00 PM,12:00:00 PM,4:00:00 PM,Belfast,Ballynafeigh Community Development Association,Yes,Learn how to initiate and make intentional choices in order to quickly establish a strong foundation for scenes.,"In this workshop you will practice initiating and making intentional choices in order to quickly establish a strong foundation for scenes. This is suitable for both beginners and experienced improvisers, and is applicable to any style of improv.
+
+Max 8 participants
+
+Date: Sunday 9th March, 12pm - 4pm
+
+Ballynafeigh Community Development Association
+
+Cost: £10
+
+Refreshments not provided, we will aim to take a 15/20 min break halfway, so recommend you eat beforehand or bring a snack, as you may not have time to go out for something.
+
+About the instructors:
+
+Aaron is a founding member of the 6-person group Wonder Frog, which in 2012 was Northern Ireland’s best (and only) short form improv group. Marcus joined Wonder Frog in 2013, and together they regularly performed countless games and shows.",https://www.eventbrite.co.uk/e/make-improv-starting-a-scene-workshop-tickets-1267009923789
+TRUE,3/3/2025 19:31:57,Auto-Correbt and Friends Comedy Improv,Show,3/14/2025,7:45:00 PM,8:00:00 PM,10:00:00 PM,Dublin,The Pearse Centre,No,"Funny characters, scenes and stories, all made up on the spot for a chaotic night of comedy.","Auto-Correbt return with their chaotic comedy show where no one knows what's going to happen next. They've invited some of their improv friends to perform mini-shows with them in a fast-paced comedy spectacular. Everything is made up on the spot and it's always funny.
+
+Doors: 7:45pm
+Show: 8:00pm
+BYOB!",https://www.eventbrite.co.uk/e/auto-correbt-and-friends-comedy-improv-tickets-1265705722889?aff=ebdssbdestsearch&keep_tld=1
+TRUE,3/3/2025 19:33:35,MOB COMEDY: MARCH Improv Jam & Student Armando,Show,3/6/2025,7:30:00 PM,8:00:00 PM,10:30:00 PM,Dublin,Wigwam,No,LIVE COMEDY featuring Dublin's Top Comedians and Improvisers. Different show every Thursday night.,"Alternative Comedy from Dublin's top up-and-coming comedians! One ticket gets you into the whole night. Come with friends or show up solo and make new ones! Doors at 745.
+
+8PM- IMPROV JAM
+
+Sign-Up at 730 and take the stage at 8PM along with some of MOB's top performers. All experience levels welcome, perform improv in front of the friendliest crowd in town!
+
+9PM- ARMANDO SHOW
+
+See some of MOB's performers and advanced students perform a long-form improv show inspired by on-the-spot monologues from special guest comedians.",https://www.eventbrite.co.uk/e/mob-comedy-march-improv-jam-student-armando-tickets-1265052378719?aff=ebdssbdestsearch&keep_tld=1
+TRUE,3/3/2025 19:42:53,The Playground: Weekly Improv Drop-In Event,Workshop,3/10/2025,,7:00:00 PM,9:00:00 PM,Dublin,Teachers Club,No,Come join us at The Playground with our weekly drop-in improv workshop!,"Running on Monday evenings, this is a chance to experience improv among like minded people. No experience necessary and all levels are welcome!
+
+Each week we will have a different theme with exercises and activities to allow us improve our improv skills. Whether you are interested in developing the skills for your professional or personal life, or you are someone who currently performs or would like to perform on stage, then there is something for everyone.
+
+The long-term objective of The Playground is to create a place for people to develop and create projects and shows, providing regular opportunities for those who wish to perform in shows.
+
+Facilitated by two very experienced improvisers, Neil Curran and Quinton O'Reilly, join us for some play! We also have guest teachers join us too.
+
+Important Info
+* Each drop-in session lasts 2 hours and starts at 7pm in the Teachers' Club.
+
+* Each drop-in costs just €12.
+
+* You can also sign up for membership which costs just €30 per calendar month and gets you access to all workshops.
+
+* No experience necessary and all levels welcome.
+
+* Events run on a drop-in basis offering flexibility for those who can't commit to doing a course.
+
+* Payment can be made on arrival.
+
+* After the workshop, many of us stick around for chats in the bar upstairs so do stick around for it.",https://www.meetup.com/improv-comedy-dublin/events/306122020/?eventOrigin=group_upcoming_events
+FALSE,3/4/2025 14:49:47,Stoke Improv – Level 3 Showcase,Show,3/12/2025,7:00:00 PM,7:30:00 PM,,Dublin,"Sin É, Ormond Quay",No,Graduates from Stoke Improv's Level 3 Course put all their newfound knowledge into practice and amaze you!,,
+TRUE,3/3/2025 19:33:36,MOB COMEDY: Improv and Alternative Comedy,Show,3/13/2025,7:45:00 PM,8:00:00 PM,10:30:00 PM,Dublin,Wigwam,No,LIVE COMEDY featuring Dublin's Top Comedians and Improvisers. Different show every Thursday night.,Alternative Comedy from Dublin's top up-and-coming comedians! One ticket gets you into the whole night. Come with friends or show up solo and make new ones! Doors at 745.,https://www.eventbrite.ie/e/mob-comedy-improv-and-alternative-comedy-tickets-1265100643079?aff=ebdsoporgprofile
+TRUE,3/3/2025 19:33:37,MOB COMEDY: Improv and Alternative Comedy,Show,3/20/2025,7:45:00 PM,8:00:00 PM,10:30:00 PM,Dublin,Wigwam,No,LIVE COMEDY featuring Dublin's Top Comedians and Improvisers. Different show every Thursday night.,Alternative Comedy from Dublin's top up-and-coming comedians! One ticket gets you into the whole night. Come with friends or show up solo and make new ones! Doors at 745.,https://www.eventbrite.ie/e/mob-comedy-improv-and-alternative-comedy-tickets-1265109820529?aff=ebdsoporgprofile
